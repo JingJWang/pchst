@@ -1,0 +1,439 @@
+.mainstay{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom:18px;
+}
+.mainstay .feather{
+    width:1200px;
+    height:auto;
+}
+.mainstay .feather .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.mainstay .feather .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .status .apellation.active{
+    background-image: url(../images/right1.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.mainstay .feather .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .brief{
+    padding:20px 30px 35px 15px;
+    width:1155px;
+    height:470px;
+    background-color: #ffffff;
+    float:left;
+}
+.mainstay .feather .dimension .brief .productImg{
+    width:500px;
+    height:470px;
+    float:left;
+    margin-right: 100px;
+}
+.mainstay .feather .dimension .brief .productImg .preview{
+    width:500px;
+    height:223px;
+    padding:78.5px 0px;
+}
+.mainstay .feather .dimension .brief .productImg .preview img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .dimension .brief .productImg .refer{
+    width:500px;
+    height:80px;
+    margin-top: 10px;
+}
+.mainstay .feather .dimension .brief .productImg .refer .graph{
+    width:108px;
+    height: 50px;
+    padding: 14px 0px;
+    border:1px solid #F1F1F1;
+    float:left;
+    margin-left: 20px;
+}
+.mainstay .feather .dimension .brief .productImg .refer .graph:hover{
+    border: 1px solid #FEA549;
+}
+.mainstay .feather .dimension .brief .productImg .refer .graph.active{
+    border: 1px solid #FEA549
+}
+.mainstay .feather .dimension .brief .productImg .refer .graph.first{
+    margin-left: 0px;
+}
+.mainstay .feather .dimension .brief .productImg .refer .graph img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .dimension .brief .describe{
+    width:550px;
+    height:470px;
+    float:left;
+}
+.mainstay .feather .dimension .brief .describe .title{
+    width:100%;
+    height:22px;
+    line-height:22px;
+    color:#333333;
+    margin:30px 0px 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.mainstay .feather .dimension .brief .describe .votes{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    font-size: 16px;
+    text-align: left;
+}
+.mainstay .feather .dimension .brief .describe .price{
+    padding-left:12px;
+    width:538px;
+    height:54px;
+    line-height: 54px;
+    background-color: #F9F9F9;
+    margin:40px 0px 20px 0px;
+    text-align: left;
+}
+.mainstay .feather .dimension .brief .describe .price .pay{
+    font-size: 22px;
+    color:#F27C00;
+    padding-left: 12px;
+}
+.mainstay .feather .dimension .brief .describe .price .path{
+    font-size: 18px;
+    color:#F27C00;
+}
+.mainstay .feather .dimension .brief .describe .mode{
+    padding-left: 10px;
+    width:540px;
+    height:14px;
+    line-height: 14px;
+}
+.mainstay .feather .dimension .brief .describe .mode .type{
+    padding-left: 28px;
+    color:#333333;
+}
+.mainstay .feather .dimension .brief .describe .depict{
+    padding-left:10px;
+    width:540px;
+    height:auto;
+    float:left;
+    margin-top: 20px;
+    display:none;
+}
+.mainstay .feather .dimension .brief .describe .depict .words{
+    width:85px;
+    height:26px;
+    line-height: 26px;
+    float:left;
+    text-align: left;
+}
+.mainstay .feather .dimension .brief .describe .depict .provide{
+    width:455px;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .brief .describe .depict .provide .quality{
+    width:auto;
+    padding:0px 20px;
+    height:24px;
+    line-height: 24px;
+    border:1px solid #DDDDDD;
+    float:left;
+    margin:0px 18px 14px 0px;
+}
+.mainstay .feather .dimension .brief .describe .handle{
+    padding-left: 10px;
+    width:540px;
+    height:40px;
+    margin:44px 0px 20px 0px;
+    float:left;
+}
+.mainstay .feather .dimension .brief .describe .handle .buying{
+    width:156px;
+    height:40px;
+    line-height: 40px;
+    background-color: #FEA549;
+    color:#ffffff;
+    float:left;
+    display:block;
+}
+.mainstay .feather .dimension .brief .describe .handle .relate{
+    width:154px;
+    height:38px;
+    line-height: 38px;
+    color:#F27C00;
+    border:1px solid #FEA549;
+    float:left;
+    display:block;
+    margin-left: 20px;
+}
+.mainstay .feather .dimension .brief .describe .handy{
+    padding-left: 10px;
+    width:540px;
+    height:20px;
+    float:left;
+}
+.mainstay .feather .dimension .brief .describe .handy .viewBtn{
+    height:20px;
+    line-height: 20px;
+    background-image: url(../images/look.png);
+    background-size:20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+    display:block;
+    float:left;
+}
+.mainstay .feather .dimension .summary{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular{
+    width:952px;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .title{
+    padding-left: 30px;
+    width:922px;
+    height:62px;
+    line-height: 62px;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 2px solid #FCC182;
+}
+.mainstay .feather .dimension .summary .particular .introduce{
+    padding:0px 81px;
+    width:790px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.mainstay .feather .dimension .summary .particular .introduce .theme{
+    width:100%;
+    height:70px;
+    line-height: 70px;
+    padding-top: 10px;
+    font-size: 20px;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .item{
+    width:100%;
+    height:22px;
+    line-height: 22px;
+    font-size: 20px;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .information{
+    width:789px;
+    height:auto;
+    float:left;
+    border-top:1px solid #E1E1E1;
+    border-left:1px solid #E1E1E1;
+    text-align: left;
+    margin-bottom: 43px;
+}
+.mainstay .feather .dimension .summary .particular .introduce .information .property{
+    padding-left: 32px;
+    width:164px;
+    height:45px;
+    line-height: 45px;
+    border-right:1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    float:left;
+    overflow:hidden;
+}
+.mainstay .feather .dimension .summary .particular .introduce .photoShow{
+    width:790px;
+    height:1194px;
+    float:left;
+    overflow:hidden;
+}
+.mainstay .feather .dimension .summary .particular .introduce .photoShow .print{
+    width:790px;
+    height:376px;
+    position:relative;
+    margin-top: 22px;
+}
+.mainstay .feather .dimension .summary .particular .introduce .photoShow .print img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .dimension .summary .particular .introduce .photoShow .print .desc{
+    width:120px;
+    height:22px;
+    line-height: 22px;
+    font-size: 20px;
+    color:#333333;
+    position:absolute;
+    top:18px;
+    left:22px;
+    text-align: left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .operate{
+    width:100%;
+    height:18px;
+    margin: 18px 0px 45px 0px;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .operate .check{
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#333333;
+    background-image: url(../images/deploy.png);
+    background-size: 16px 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 24px;
+    display:inline-block;
+}
+.mainstay .feather .dimension .summary .particular .introduce .operate .check.active{
+    background-image: url(../images/collect.png);
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 34px;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .caption{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 20px;
+    color:#333333;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-top: 25px;
+    text-align: left;
+    font-size:16px;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .recap{
+    width:88px;
+    height:18px;
+    line-height: 18px;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .bewrite{
+    width:702px;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .bewrite .words{
+    width:100%;
+    height:18px;
+    line-height:18px;
+    color:#333333;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .bewrite .region{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    color:#333333;
+    margin-bottom: 16px;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .bewrite .region .limit{
+    padding-left: 10px;
+    font-size: 14px;
+    color:#666666;
+}
+.mainstay .feather .dimension .summary .particular .introduce .illustrate .catalogue .bewrite .votes{
+    margin-bottom: 10px;
+    color:#333333;
+}
+.mainstay .feather .dimension .summary .recommend{
+    width:230px;
+    height:auto;
+    float:right;
+}
+.mainstay .feather .dimension .summary .recommend .title{
+    padding-left: 6px;
+    width:224px;
+    height:62px;
+    line-height: 62px;
+    font-size: 18px;
+    color:#333333;
+    border-bottom: 2px solid #FCC182;
+    text-align: left;
+}
+.mainstay .feather .dimension .summary .recommend .commend{
+    width:230px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    display:block;
+}
+.mainstay .feather .dimension .summary .recommend .commend .picture{
+    width:230px;
+    height:160px;
+    margin:36px 0px 30px 0px;
+}
+.mainstay .feather .dimension .summary .recommend .commend .picture .print{
+    width:200px;
+    height:160px;
+}
+.mainstay .feather .dimension .summary .recommend .commend .picture .print img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .dimension .summary .recommend .commend .detail{
+    padding:0px 15px;
+    width:200px;
+    height:auto;
+}
+.mainstay .feather .dimension .summary .recommend .commend .detail .name{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    color:#333333;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.mainstay .feather .dimension .summary .recommend .commend .detail .price{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 16px;
+    color:#F27C00;
+    margin:10px 0px 24px 0px;
+}
+.mainstay .feather .dimension .summary .recommend .commend .divide{
+    width:100%;
+    height:1px;
+}
+.mainstay .feather .dimension .summary .recommend .commend.first .divide{
+    display:none;
+}
+.mainstay .feather .dimension .summary .recommend .commend .divide .line{
+    width:180px;
+    height:1px;
+    background-color: #E6E6E6;
+}

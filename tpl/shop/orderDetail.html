@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/orderDetail.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    <div class="mainstay">
+    {include file="shop/header.html"}
+        <div class="feather">
+            <div class="status">
+                <a class="apellation" href="javascript:;">首页</a>
+                <a class="apellation active" href="javascript:;">个人中心</a>
+                <a class="apellation active" href="javascript:;">我的订单</a>
+                <a class="apellation active" href="javascript:;">订单详情</a>
+            </div>
+            <div class="dimension">
+                {include file="common/security_left.html"}
+                <div class="right">
+                    <div class="groom">订单详情</div>
+                    <div class="information">
+                        {if $orderinfo==false}
+                            <span>没有此订单</span>
+                        {else}
+                        <div class="title">订单状态</div>
+                        <p class="attribute">
+                            <span>订单编号：</span>
+                            <span>{$orderinfo.0.pid}</span>
+                        </p>
+                        <p class="attribute">
+                            <span>下单时间：</span>
+                            <span>{date('Y-m-d H:i:s',$orderinfo.0.jointime)}</span>
+                        </p>
+                        <div class="state">
+                            {if $orderinfo.0.status==1}
+                            <div class="stateName">交易完成</div>
+                            {else if $orderinfo.0.status==-1}
+                            <div class="stateName">订单已取消</div>
+                            {else}
+                            <div class="stateName">交易正在进行</div>
+                            {/if}
+                            <!-- <div class="stateName">待付款</div> -->
+                            <!-- <a class="payment" href="javascript:;">立即支付</a> -->
+                        </div>
+                        <div class="title">收货信息</div>
+                        {if $orderinfo.0.tid==1||$orderinfo.0.fid==1}
+                            <p class="attribute">
+                                <span>兑换码：</span>
+                                <span>{$orderinfo.0.code.0}</span>
+                            </p>
+                        {else if $orderinfo.0.tid==2||$orderinfo.0.fid==2}
+                            {if $orderinfo.0.adress.0!=''}
+                            <p class="attribute">
+                                <span>收货人：</span>
+                                <span>{$orderinfo.0.adress.0}</span>
+                            </p>
+                            <p class="attribute">
+                                <span>收货地址：</span>
+                                <span>{$orderinfo.0.adress.2}</span>
+                            </p>
+                            <p class="attribute" style="padding-bottom: 8px;">
+                                <span>联系电话：</span>
+                                <span>{$orderinfo.0.adress.1}</span>
+                            </p>
+                            {/if}
+                            {if $orderinfo.0.code.0!=''}
+                            <p class="attribute" style="padding-bottom: 8px;">
+                                <span>快递：</span>
+                                <span>{$orderinfo.0.code.0}</span>
+                            </p>
+                            <p class="attribute" style="padding-bottom: 8px;">
+                                <span>快递编号：</span>
+                                <span>{$orderinfo.0.code.1}</span>
+                            </p>
+                            {else}
+                            <p class="attribute" style="padding-bottom: 8px;">
+                                <span>正在为您配送</span>
+                            </p>
+                            {/if}
+                        {else if $orderinfo.0.tid==4}
+                            <p class="attribute">
+                                <span>充值号码：</span>
+                                <span>{$orderinfo.0.code.0}</span>
+                            </p> 
+                        {/if}
+
+                        <div class="title">商品详情</div>
+                        <div class="description">
+                            <div class="picture">
+                                <img src="{$orderinfo.0.img}"/>
+                            </div>
+                            <div class="brief">
+                                <div class="model">{$orderinfo.0.name}</div>
+                                <div class="votes">正品行货  性价比高  全国包邮</div>
+                            </div>
+                            <!-- <div class="number">￥{$orderinfo.0.price/100}+{$orderinfo.0.aintegral}通花×1</div> -->
+                            <div class="price">￥{$orderinfo.0.price/100}+{$orderinfo.0.aintegral}通花</div>
+                        </div>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="service">
+            <div class="advantage first" data-index="1">
+                <span>正品保障</span>
+            </div>
+            <div class="advantage" data-index="2">
+                <span>极速物流</span>
+            </div>
+            <div class="advantage" data-index="3">
+                <span>售后无忧</span>
+            </div>
+            <div class="advantage" data-index="4">
+                <span>全场包邮</span>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+
+
+<script type="text/javascript" src="/static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/shop/js/head.js"></script>
+<script type="text/javascript" src="/static/shop/js/footer.js"></script>
+<script type="text/javascript" src="/static/shop/js/orderDetail.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

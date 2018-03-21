@@ -1,0 +1,111 @@
+body{
+    background-color: #f5f9fd;
+}
+.context{
+    width:100%;
+    height:368px;
+    background-image: url(../images/bg-2.png);
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box{
+    width:100%;
+    height:512px;
+    margin-top:-126px;
+    position:relative;
+}
+.frame{
+    padding:0px 20px;
+    width:720px;
+    height:512px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow:0px 2px 5px #EEF0F4;
+}
+.frame .title{
+    width:100%;
+    height:128px;
+    line-height: 128px;
+    font-size:40px;
+    color:#333333;
+    border-bottom:1px solid #dddddd;
+}
+.frame .punching{
+    margin:58px 50px 0px 85px;
+    width:585px;
+    height:45px;
+}
+.frame .punching .icon{
+    width:28px;
+    height:28px;
+    margin:0px 20px 17px 0px;
+    float:left;
+}
+.frame .punching .icon img{
+    width:100%;
+    height:100%;
+}
+.frame .punching .input-box{
+    margin-left:48px;
+    height:28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #AAAAAA;
+}
+.frame .punching .input-box .message{
+    width:100%;
+    height:28px;
+    line-height:28px;
+    font-size:20px;
+    color:#666666;
+    font-family: 'Microsoft Yahei';
+    outline:none;
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+.frame .handle{
+    margin: 24px 0px 0px 133px;
+    width:587px;
+    height:22px;
+}
+.frame .handle .forget-btn{
+    height:22px;
+    line-height:22px;
+    font-size:20px;
+    float:left;
+    color:#666666;
+}
+.frame .login{
+    width:682px;
+    height:60px;
+    margin:30px 38px 0px 0px;
+}
+.frame .login .login-btn{
+    width:180px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #0099CE;
+    font-size: 22px;
+    color:#ffffff;
+    border-radius: 10px;
+    float:right;
+    display:block;
+}
+.frame .login .login-btn span{
+    height:60px;
+    line-height: 60px;
+    background-image: url(../images/arrow.png);
+    background-size:26px 19px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 34px;
+    display:inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+    .context {
+        background-image:url(../images/gb-2.2.png)
+    }
+}

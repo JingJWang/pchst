@@ -1,0 +1,397 @@
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom: 15px;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+    padding-bottom: 80px;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+    font-weight:bold;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    line-height: 39px;
+    color:#333333;
+    border-bottom:1px solid #EDEDED;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .elite{
+    padding-left: 10px;
+    width:210px;
+    float:left;
+    height:40px;
+    border-bottom: 1px solid #CFCFCF;
+    color:#383838;
+    line-height: 46px;
+    text-align: left;
+}
+.entire .posses .dimension .left .groom{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    padding:4px 0px 40px 0px;
+}
+.entire .posses .dimension .left .groom .headline{
+    font-size: 12px;
+    height:14px;
+    line-height: 14px;
+    color:#666666;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-top: 12px;
+    text-align: left;
+    padding:0px 5px 0px 10px;
+}
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+    background-color: #ffffff;
+    padding-bottom: 200px;
+}
+.entire .posses .dimension .right .cream{
+    margin:0px 17px;
+    width:934px;
+    height:54px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.entire .posses .dimension .right .cream .topic{
+    padding:0px 36px 0px 10px;
+    height:53px;
+    line-height: 58px;
+    border-bottom: 2px solid #FEA549;
+    float:left;
+    font-size: 18px;
+    color:#333333;
+}
+.entire .posses .dimension .right .content{
+    padding:0px 20px 0px 28px;
+    width:920px;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .content .braised{
+    padding:31px 20px 16px 0px;
+    height:80px;
+    border-bottom: 1px solid #DDDDDD;
+    display:block;
+    text-align: left;
+}
+.entire .posses .dimension .right .content .braised .graphic{
+    width:80px;
+    height:80px;
+    float:left;
+}
+.entire .posses .dimension .right .content .braised .graphic img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .content .braised .detail{
+    margin-left: 96px;
+    height:80px;
+}
+.entire .posses .dimension .right .content .braised .detail .title{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 18px;
+    color:#333333;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .content .braised .detail .digest{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    margin:17px 0px 11px 0px;
+    color:#666666;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .content .braised .detail .date{
+    width:100%;
+    height:16px;
+}
+.entire .posses .dimension .right .content .braised .detail .date span{
+    background-image: url(../images/date.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 16px;
+    padding-left: 24px;
+    display:inline-block;
+    font-size: 12px;
+    color:#999999;
+}
+
+
+.entire .posses .dimension .offside{
+    padding:0px 20px 28px 28px;
+    width:920px;
+    height:auto;
+    float:right;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .offside .mostly{
+    padding-top: 30px;
+    height:58px;
+    border-bottom: 2px solid #FEB76C;
+    text-align: left;
+}
+.entire .posses .dimension .offside .mostly .caption{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 18px;
+    color:#333333;
+    margin-bottom: 15px;
+}
+.entire .posses .dimension .offside .mostly .reveal{
+    width:100%;
+    height:16px;
+}
+.entire .posses .dimension .offside .mostly .reveal .motif{
+    height:16px;
+    line-height: 16px;
+    font-size: 12px;
+    color:#3E91E6;
+    float:left;
+    margin-right: 35px;
+}
+.entire .posses .dimension .offside .mostly .reveal .time{
+    height:16px;
+    line-height: 16px;
+    background-image: url(../images/date.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+    float:left;
+    font-size: 12px;
+    color:#999999;
+}
+.entire .posses .dimension .offside .mostly .reveal .line{
+    width:1px;
+    height:10px;
+    margin:3px 20px 3px 13px;
+    background-color: #ACACAC;
+    float:left;
+}
+.entire .posses .dimension .offside .mostly .reveal .read-amount{
+    height:16px;
+    line-height: 16px;
+    background-image: url(../images/read.png);
+    background-size: 18px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+    float:left;
+    font-size: 12px;
+    color:#999999;
+    margin-right: 15px;
+}
+.entire .posses .dimension .offside .mostly .reveal .discuss{
+    height:16px;
+    line-height: 16px;
+    background-image: url(../images/pl.png);
+    background-size: 18px 16px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    padding-left: 24px;
+    color:#999999;
+    float:left;
+}
+.entire .posses .dimension .offside .review{
+    width:920px;
+    padding:28px 0px 0px 0px;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .offside .review .article{
+    padding-right: 28px;
+    width:892px;
+    height:auto;
+    float:left;
+    margin-bottom: 17px;
+}
+.entire .posses .dimension .offside .review .words{
+    color:#666666;
+    line-height: 26px;
+    margin-bottom: 4px;
+}
+.entire .posses .dimension .offside .review .introduce{
+    width:100%;
+    height:auto;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #B7B7B7;
+    float:left;
+}
+.entire .posses .dimension .offside .review .introduce .rocky{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 35px;
+    text-align: left;
+}
+.entire .posses .dimension .offside .review .introduce .rocky .summary{
+    width:100%;
+    color:#363636;
+}
+.entire .posses .dimension .offside .review .introduce .rocky .tight{
+    width:100%;
+    color:#666666;
+    margin-top: 6px;
+}
+.entire .posses .dimension .offside .review .nominate{
+    padding:22px 28px 0px 0px;
+    width:892px;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.entire .posses .dimension .offside .review .nominate .subtitle{
+    width:100%;
+    color:#363636;
+    font-weight: bold;
+}
+.entire .posses .dimension .offside .review .nominate  .list{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .offside .review .nominate  .list .headline{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#666666;
+    display:block;
+    margin-top: 12px;
+}
+.newspage{
+    float: left;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 214px;
+    height: 30px;
+    left: 50%;
+    margin-left: -107px;
+    margin-top: 10px;
+}
+.newspage li{
+	float:left;
+	margin-left: 5px;
+}
+.newadd_page{
+    float: left;
+    width: 920px;
+    height: 30px;
+    padding: 10px 0;
+    position: relative;
+}

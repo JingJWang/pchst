@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>添加新代理</title>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/addAgent.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    <div class="content">
+        <div class="mainstay">
+            <div class="title">
+                <span>{if $tag eq '1'}添加新代理{elseif $tag eq '2'}添加推广员{/if}</span>
+            </div>
+            <form id="substance">
+	            <div class="substance" style="padding:60px 0px 20px 30px">
+	                <div class="words">{if $tag eq '1'}添加新代理账号{elseif $tag eq '2'}添加推广员账号{/if}</div>
+	                <input class="phone" name="phone" type="text" placeholder="输入代理注册手机号"/>
+	                <input type="hidden" id="tag" name ="tag" value={$tag}>
+	            </div>
+	            <div class="substance" style="padding:0 30px">
+	                <div class="words">设置分成比例</div>
+	                <input class="phone" name="proportion" id="proportion" type="text" placeholder="设置分成比例"/>
+	                <div style="color:red;font-size:12px;padding-right:180px;text-align:left">请输入数字0-99,所填的数字为所添加代理获得的分成数 如填6则表示新代理获得的利润为总利润的6%</div>
+	            </div>
+	            <div class="handle"style="margin-top:20px">
+	                <a class="sure" href="javascript:;" >确认</a>
+	            </div>
+          	</form>
+        </div>
+    </div>
+</div>
+
+<div class="shade"></div>
+<div class="circle">
+    <div class="covers">
+        <p class="text">
+            <span>确认将</span>
+            <span class="number"></span>
+            {if $tag eq '1'}<span>添加为您的二级代理 分成比例为</span><span id="words"></span>{elseif $tag eq '2'}<span>添加为您的推广员 分成比例为</span><span id="words"></span>{/if}
+            
+        </p>
+    </div>
+    <div class="operate">
+        <a class="ensure" href="javascript:;" onclick="operater.submit()">确定</a>
+        <a class="abolish" href="javascript:;">取消</a>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../static/trans/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="../../static/trans/ajax/ajax_home.js"></script>
+<script type="text/javascript" src="../../static/trans/js/head.js"></script>
+<script type="text/javascript" src="../../static/trans/js/addAgent.js"></script>
+<script type="text/javascript">
+    $(".mnav.active").removeClass("active");
+    $("#proxy").addClass("active");
+    if({$tag}==2){
+    	$("#proxy").html("设置推广员");
+    }else if({$tag}==1){
+    	$("#proxy").html("设置新代理");
+    }else if({$tag}==3){
+    	$("#proxy").hide();
+    }
+</script>
+</body>
+</html>

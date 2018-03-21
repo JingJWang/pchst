@@ -1,0 +1,109 @@
+.entire{
+    width:100%;
+    height:auto;
+    background-color: #FBFBFB;
+    float:left;
+    padding-bottom: 25px;
+}
+.posses{
+    width:1200px;
+    height:auto;
+}
+.backdrop{
+    margin:16px 0px 25px 0px;
+    width:1200px;
+    height:301px;
+    background-image: url(../images/bg2.png);
+    background-size: 1200px 301px;
+}
+.prompt{
+    width:100%;
+    height:132px;
+    background-color: #ffffff;
+    margin-bottom: 16px;
+}
+.prompt .palette{
+    width:20%;
+    height:132px;
+    float:left;
+    display:block;
+    font-size: 16px;
+    color:#666666;
+    background-size: 54px 54px;
+    background-repeat: no-repeat;
+    background-position: center 26px;
+}
+.prompt .palette.active{
+    box-shadow: 0px 2px 5px #dddddd;
+    border-bottom: 2px solid #FEA549;
+}
+.prompt .palette[data-index="1"]{
+    background-image: url(../images/let1.png);
+}
+.prompt .palette[data-index="2"]{
+    background-image: url(../images/let2.png);
+}
+.prompt .palette[data-index="3"]{
+    background-image: url(../images/let3.png);
+}
+.prompt .palette[data-index="4"]{
+    background-image: url(../images/let4.png);
+}
+.prompt .palette[data-index="5"]{
+    background-image: url(../images/let5.png);
+}
+.prompt .palette span{
+    padding-top: 92px;
+    display:inline-block;
+}
+.substance{
+    padding:0px 38px;
+    width:1124px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.substance .theme{
+    width:100%;
+    height:65px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 40px;
+}
+.substance .theme .sums{
+    padding:17px 26px 0px 20px;
+    height:48px;
+    line-height: 48px;
+    border-bottom: 2px solid #FEA549;
+    float:left;
+    font-size: 18px;
+    color:#333333;
+}
+.substance .master{
+    width:100%;
+    color:#666666;
+    font-size: 18px;
+}
+.substance .depict{
+    width:100%;
+    line-height: 32px;
+    font-size: 18px;
+    color:#666666;
+    margin:13px 0px;
+}
+.substance .patch{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 62px;
+}
+.substance .patch .name{
+    width:100%;
+    font-size: 18px;
+    color:#333333;
+}
+.substance .patch .point{
+    width:100%;
+    font-size: 18px;
+    color:#666666;
+    margin-top: 15px;
+}

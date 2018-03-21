@@ -1,0 +1,494 @@
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom: 8px;
+}
+.entire .procedure{
+    width:100%;
+    height:44px;
+    background-color: #ffffff;
+    border-top:1px solid #E1E1E1;
+    margin-bottom: 15px;
+}
+.entire .procedure .circle{
+    width:1200px;
+    height:44px;
+    position:relative;
+}
+.entire .procedure .circle .step{
+    width:25%;
+    height:44px;
+    line-height: 44px;
+    float:left;
+    color:#666666;
+}
+.entire .procedure .circle .step.active{
+    background-color: #FEA549;
+    color:#ffffff;
+}
+.entire .procedure .circle .step span{
+    background-image: url(../images/xt3.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+}
+.entire .procedure .circle .step.active span{
+    background-image: url(../images/xt2.png);
+}
+.entire .procedure .circle .step.finish span{
+    background-image: url(../images/xt1.png);
+}
+.entire .procedure .circle .step.active.finish span{
+    background-image: url(../images/xt2.png);
+}
+.entire .procedure .circle .line{
+    width:1px;
+    height:36px;
+    background-color: #DDDDDD;
+    position:absolute;
+    margin:3px 0;
+}
+.entire .particulars{
+    width:1200px;
+    height:592px;
+}
+.entire .particulars .left{
+    width:220px;
+    height:592px;
+    background-color: #ffffff;
+    float:left;
+}
+.entire .particulars .left .message{
+    width:220px;
+    height:auto;
+    margin-bottom: 27px;
+}
+.entire .particulars .left .message .grap{
+    width:220px;
+    height:220px;
+}
+.entire .particulars .left .message .grap img{
+    width:100%;
+    height:100%;
+}
+.entire .particulars .left .message .model{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#333333;
+    margin-top: 3px;
+}
+.entire .particulars .left .message .price{
+    width:100%;
+    height:18px;
+    color:#666666;
+    margin:17px 0px;
+}
+.entire .particulars .left .message .price .way{
+    padding-left: 10px;
+    line-height: 18px;
+    display:inline-block;
+}
+.entire .particulars .left .message .price .money{
+    padding-left: 0px;
+    font-size: 18px;
+    color:#F27C00;
+    line-height: 18px;
+    display:inline-block;
+}
+.entire .particulars .left .message .number{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    font-size: 12px;
+    color:#666666;
+}
+.entire .particulars .left .merchants{
+    width:200px;
+    height:auto;
+    margin:0px 10px;
+}
+.entire .particulars .left .merchants .item{
+    width:100%;
+    height:20px;
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 8px;
+}
+.entire .particulars .left .merchants .item .trade{
+    float:left;
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#666666;
+    padding-left: 8px;
+}
+.entire .particulars .left .merchants .item .chose{
+    height:14px;
+    line-height:14px;
+    margin-top: 5px;
+    float:right;
+    margin-right: 6px;
+    font-size: 12px;
+    color:#5D9AFF;
+}
+.entire .particulars .left .merchants .detail{
+    margin-left: 8px;
+    height:auto;
+    padding:18px 0px;
+}
+.entire .particulars .left .merchants .detail .storeName{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 16px;
+    color:#333333;
+    text-align: left;
+    margin-bottom:14px;
+}
+.entire .particulars .left .merchants .detail .probate{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    color:#FEA547;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.entire .particulars .left .merchants .detail .distance{
+    width:100%;
+    height:16px;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.entire .particulars .left .merchants .detail .distance span{
+    background-image: url(../images/away.png);
+    background-size: 12px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color:#666666;
+    padding-left: 20px;
+    line-height: 16px;
+    display:inline-block;
+}
+.entire .particulars .left .merchants .detail .grade{
+    width:100%;
+    height:16px;
+}
+.entire .particulars .left .merchants .detail .grade .saith{
+    height:16px;
+    line-height: 16px;
+    border-right:1px solid #888888;
+    color:#666666;
+    float:left;
+    padding-right:10px;
+}
+.entire .particulars .left .merchants .detail .grade .score{
+    height:16px;
+    line-height: 16px;
+    color:#666666;
+    float:left;
+    padding-left:10px;
+}
+.entire .particulars .left .merchants .advantage{
+    width:198px;
+    height:58px;
+    border:1px solid #F1F1F1;
+    background-color: #FBFBFB;
+}
+.entire .particulars .left .merchants .advantage .ground{
+    width:33.3%;
+    height:58px;
+    float:left;
+}
+.entire .particulars .left .merchants .advantage .ground span{
+    background-size: 20px 17px;
+    background-repeat: no-repeat;
+    background-position: center 8px;
+    padding-top: 39px;
+    font-size: 12px;
+    color:#666666;
+    display:inline-block;
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="1"] span{
+    background-image: url(../images/vote1.png);
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="2"] span{
+    background-image: url(../images/vote2.png);
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="3"] span{
+    background-image: url(../images/vote3.png);
+}
+.entire .particulars .right{
+    width:965px;
+    height:auto;
+    background-color: #ffffff;
+    float:right;
+}
+.entire .particulars .right .title{
+    margin:0px 8px 0px 10px;
+    padding-left:10px;
+    height:50px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 18px;
+    color:#666666;
+    text-align: left;
+    line-height: 54px;
+}
+.entire .particulars .right .trade-info{
+    width:939px;
+    padding:30px 0px 0px 26px;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.entire .particulars .right .trade-info .pattern{
+    width:100%;
+    height:20px;
+    margin-bottom: 44px;
+}
+.entire .particulars .right .trade-info .pattern .words{
+    width:148px;
+    height:20px;
+    line-height: 20px;
+    float:left;
+    color:#999999;
+    font-size: 16px;
+}
+.entire .particulars .right .trade-info .pattern .recover{
+    width:104px;
+    height:20px;
+    float:left;
+    cursor:default;
+    margin-right:75px;
+}
+.entire .particulars .right .trade-info .pattern .recover span{
+    background-image: url(../images/chosefo.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 18px;
+    color:#666666;
+    padding-left: 32px;
+}
+.entire .particulars .right .trade-info .pattern .recover.active span{
+    background-image: url(../images/chosef.png);
+}
+.entire .particulars .right .trade-info .place{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 50px;
+}
+.entire .particulars .right .trade-info .place .words{
+    width:148px;
+    height:40px;
+    line-height: 40px;
+    float:left;
+    color:#999999;
+    font-size: 16px;
+}
+.entire .particulars .right .trade-info .place .name{
+    width:210px;
+    height:38px;
+    line-height: 38px;
+    margin:0px 28px 0px 0px;
+    padding:0px 18px 0px 10px;
+    border:0px;
+    color:#999999;
+    font-family: 'Microsoft YaHei';
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+    float:left;
+    border:1px solid #DDDDDD;
+}
+.entire .particulars .right .trade-info .place .address{
+    width:225px;
+    padding:0px 0px 0px 15px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    float:left;
+    color:#EDEDED;
+    margin:0px;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+}
+.entire .particulars .right .trade-info .place .write{
+    width:791px;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .trade-info .place .write .fence{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 18px;
+}
+.entire .particulars .right .trade-info .place .write .fence .sign{
+    width:225px;
+    padding:0px 0px 0px 15px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    float:left;
+    color:#EDEDED;
+    margin:0px;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+}
+.entire .particulars .right .trade-info .place .write .tel{
+    width:225px;
+    padding:0px 0px 0px 15px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    float:left;
+    color:#EDEDED;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    margin:0px 28px 0px 0px;
+}
+.entire .particulars .right .trade-info .place .write .code{
+    width:149px;
+    padding-left: 15px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    border-right:0px;
+    float:left;
+    color:#EDEDED;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+}
+.entire .particulars .right .trade-info .place .write .getCode{
+    width:75px;
+    height:40px;
+    line-height: 40px;
+    background-color: #FEA549;
+    font-size: 12px;
+    color:#ffffff;
+    font-family: 'Microsoft YaHei';
+    float:left;
+    outline:none;
+}
+.entire .particulars .right .trade-info .inventory{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .words{
+    width:148px;
+    height:20px;
+    line-height: 20px;
+    float:left;
+    color:#999999;
+    font-size: 16px;
+}
+.entire .particulars .right .trade-info .inventory .recoverList{
+    width:705px;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .explicit{
+    width:100%;
+    height:auto;
+    float:left;
+    border-bottom: 1px solid #F1F1F1;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .classes{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    color:#333333;
+    margin-bottom: 30px;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .classes .articles{
+    width:232px;
+    height:18px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .classes .valuable{
+    width:125px;
+    height:18px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .classes .sum{
+    width:123px;
+    height:18px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .classes .orderState{
+    width:224px;
+    height:18px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report .group{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    color:#666666;
+    margin-bottom: 24px;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report .group .phoneModel{
+    width:232px;
+    height:20px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report .group .price{
+    width:125px;
+    height:20px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report .group .sm{
+    width:123px;
+    height:20px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .report .group .state{
+    width:224px;
+    height:20px;
+    float:left;
+    font-size: 16px;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .payment{
+    width:100%;
+    padding:32px 0px 34px 0px;
+    height:50px;
+    float:left;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .payment .submit{
+    width:238px;
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    color:#ffffff;
+    background-color: #FEA549;
+    color:#ffffff;
+    float:right;
+    margin-right:30px;
+    display:block;
+    text-align: center;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .payment .obtain{
+    margin-right:268px;
+    height:50px;
+    line-height: 50px;
+    color:#333333;
+    font-size: 18px;
+}
+.entire .particulars .right .trade-info .inventory .recoverList .payment .obtain .count{
+    color:#FF9900;
+    font-size: 22px;
+}
+
+

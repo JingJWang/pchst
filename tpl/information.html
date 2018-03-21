@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{$seo['title']}</title>
+    <meta name="keywords" content="{$seo['keyowrd']}"/>
+    <meta name="description" content="{$seo['descript']}"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/information.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/header.html"}
+    <div class="entire">
+        <div class="posses">
+            <div class="status">
+                <a class="apellation" href="/">首页</a>
+                <a class="apellation active" href="javascript:;">热门资讯</a>
+                <a class="apellation active" href="javascript:;">{if $type==1}活动公告{elseif $type==2}公司动态{elseif $type==3}回收资讯{/if}</a>
+            </div>
+
+            <div class="dimension">
+                <div class="left">
+                    <div class="sidebar">
+                        <a class="part" href="javascript:;">热门资讯</a>
+                        {foreach from=$types item=v}
+                            <div class="restrain {if $type==$v.id}active{/if}">
+                                <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}/1">{$v.title}</a>
+                            </div>
+                        {/foreach}
+                    </div>
+
+                    <div class="elite">推荐阅读</div>
+                    <div class="groom">
+                        {foreach from=$rec_read item=v}
+                        <a class="headline" href="{$v.url}">
+                            <span>▪ </span>
+                            <span>{$v.title}</span>
+                        </a>
+                        {/foreach}
+                        <!-- <a class="headline" href="javascript:;">
+                            <span>▪ </span>
+                            <span>一大波品牌奢侈品包包正高能来袭</span>
+                        </a>
+                        <a class="headline" href="javascript:;">
+                            <span>▪ </span>
+                            <span>奢而不贵 | 正品价优才是正确选择</span>
+                        </a>
+                        <a class="headline" href="javascript:;">
+                            <span>▪ </span>
+                            <span>一大波品牌奢侈品包包正高能来袭</span>
+                        </a>
+                        <a class="headline" href="javascript:;">
+                            <span>▪ </span>
+                            <span>奢而不贵 | 正品价优才是正确选择</span>
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="cream">
+                        <div class="topic">{if $type==1}活动公告{elseif $type==2}公司动态{elseif $type==3}回收资讯{/if}</div>
+                    </div>
+                    <div class="content">
+                        {if $texts==false}
+                        <div>没有相关信息</div>
+                        {else}
+                        {foreach from=$texts item=v}
+                        <a class="braised" href="http://{$seo['host_name']}/news/artical/{$v.id}">
+                            <div class="graphic">
+                                <img src="{$v.img}"/>
+                            </div>
+                            <div class="detail">
+                                <div class="title">{$v.title}</div>
+                                <div class="digest">{$v.des}</div>
+                                <div class="date">
+                                    <span>{date('Y-m-d H:i:s',$v.jtime)}</span>
+                                </div>
+                            </div>
+                        </a>
+                        {/foreach}
+                        {/if}						
+                    </div>
+					<div class="newadd_page">
+						<ul class="newspage">
+							<li>共{$page.total}页</li>
+							<li> <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}/1">首页</a></li>
+							<li> <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}/{$page.previous}">上一页</a></li>
+							<li> <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}/{$page.next}">下一页</a></li>
+							<li> <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}/{$page.last}">尾页</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {include file='common/footer.html'}
+
+</div>
+
+<script type="text/javascript" src="/static/notice/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/notice/js/information.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

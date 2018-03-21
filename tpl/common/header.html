@@ -1,0 +1,41 @@
+﻿<div class="navigation">
+	<div class="navigation-bar">
+		<h1>
+			<a class="logo" title="回收通—二手手机回收" href="http://{$seo['host_name']}">
+				<img src="/static/home/images/logo2.png" alt="二手手机回收"/>
+			</a>
+		</h1>
+		<a class="logoWord" href="/">价值驱动环保</a>
+		<div class="genre">
+			<div class="classify">
+				<a class="className {if  $header['sign'] == 'home'}active{/if}"  href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/">首页</a> 
+				<a class="className {if  $header['sign'] == 'mobile'}active{/if}" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/recover/mobile">数码回收</a> 
+				<a class="className {if  $header['sign'] == 'luxuries'}active{/if}" href="javascript:;">奢侈品寄售/回收</a>
+				<a class="className {if  $header['sign'] == 'metal'}active{/if}"  href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/metal/metal/">贵金属回收</a>
+				<a class="className {if  $header['sign'] == 'shop'}active{/if}"   href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/shops/shopinfo/">通花商城</a>
+			</div>
+			{nocache}
+			{if $top['name'] !=''}
+			<div class="facility">
+				<div class="head-ion">
+					<img src="{$top['photo']}" alt="二手手机回收"/>
+				</div>
+				<div class="consumer"><a style="color:#3668ce;" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/center/info">{if $top['name']==''}个人信息{else}{$top['name']}{/if}</a>&nbsp;&nbsp;<a href="JavaScript:;" onclick="loginOut();">退出</a></a>
+				</div>
+			</div>
+			{else if}
+			<div class="facility">
+				<div class="head-ion">
+					<img src="/static/recover/images/avatar.png" alt="二手手机回收"/>
+				</div>
+				<div class="consumer">
+					<input class="login" type="button" onclick="javascript:window.location.href='{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/user/login'"value="登录" /> 
+					<input class="register" type="button" onclick="javascript:window.location.href='{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/user/register'"value="注册" />
+				</div>
+			</div>
+			{/if}
+			{/nocache}
+		</div>
+	</div>
+</div>
+<div class="full-top"></div>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>回收通|贵金属回收</title>
+    <link rel="stylesheet" type="text/css" href="../../static/metal/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/metal/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/metal/css/preciousMetal.css"/>
+</head>
+<body onclick="Message.none();">
+<div class="container" align="center">
+     {include file="common/header.html"}
+    <!--  <a class="advert" href="javascript:;">
+        <img src="../../static/metal/images/adv.png"/>
+    </a>-->
+    <div class="entire">
+        <div class="posses">
+            <div class="notice">
+                <span>交易时间为周一早7:00到周六早4:00</span>
+            </div>
+            <div class="category">
+                {foreach $metal['type'] as $key=>$val}
+                {if $key == 1 }
+                <div class="classify active" align="center" metal-id="{$key}" onclick="Matel.purity({$key},this)">
+                {else}
+                <div class="classify " align="center" metal-id="{$key}" onclick="Matel.purity({$key},this)">
+                {/if}
+                    <div class="graphic">
+                        <img src="../../static/metal/images/{$val['img']}"/>
+                    </div>
+                    <div class="breed">{$val['name']}</div>
+                </div>
+                {/foreach}
+                <div class="wait">-敬请期待-</div>
+            </div>
+            <div class="recent">
+            	当前黄金价格：<span id='matelprice_1'>{$metal['price']['1']}</span>/克&nbsp&nbsp&nbsp&nbsp
+            	铂金价格：<span id='matelprice_2'>{$metal['price']['2']}</span>/克&nbsp&nbsp&nbsp&nbsp
+            	白银价格：<span id='matelprice_3'>{$metal['price']['3']}</span>/克&nbsp&nbsp&nbsp&nbsp
+            	价格以最高纯度价格计算,其他纯度换算为最高纯度计算
+            	</div>
+                <div class="whole">
+                    <div class="information">
+                        <div class="dimension">
+                            <div class="groups" id="purity">
+                                <div class="raise">纯度</div>
+                                {foreach $metal['purity'] as $key=>$val}
+                                	{if $key == 1} 
+                                	<div class="choice" id="metal_{$key}" >
+                                	{else}
+                                	<div class="choice" id="metal_{$key}" style="display:none;">
+                                	{/if}
+                                	{foreach $val as $i=>$n}
+		                                   {if $i == 1} 
+		                                     <a class="parameter active" href="javascript:;" purity-id="{$key}">
+		                                   {else}
+		                                     <a class="parameter " href="javascript:;" purity-id="{$key}">
+		                                   {/if}
+		                                        <span>{$n}</span>
+		                                        <div class="pitch"></div>
+		                                    </a>
+                                	{/foreach}
+                                	</div>
+                                 {/foreach}                                
+                            </div>
+                        </div>
+                        <div class="dimension">
+                            <div class="groups">
+                                <div class="raise">分类</div>
+                                <div class="choice" id="classify">
+                                    {foreach $metal['classify'] as $key=>$val }
+                                    	{if $key == 1}
+	                                    <a class="parameter active" href="javascript:;" classify-id="{$key}">
+	                                    {else}
+	                                    <a class="parameter " href="javascript:;" classify-id="{$key}">
+	                                    {/if}
+	                                        <span>{$val}</span>
+	                                        <div class="pitch"></div>
+	                                    </a>
+                                    {/foreach}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dimension">
+                            <div class="groups">
+                                <div class="raise">克数</div>
+                                <div class="reckon">
+                                    <div class="convert">
+                                        <a class="minus" href="javascript:;" onclick="Matel.price(-1)"></a>
+                                        <a class="add" href="javascript:;" onclick="Matel.price(1)"></a>
+                                        <div class="amount">
+                                            <input class="grams" id="weight" type="text" value="0" onchange="Matel.price(0)"/>
+                                        </div>
+                                    </div>
+                                    <div class="units">0.001kg</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recycle">
+                            <div class="percent">
+                                <span>回收总价：</span>
+                                <span class="money"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="methods">
+                        <div class="trade" id="dealtype">
+                            <div class="words">交易方式</div>
+                            <div class="pattern" style="margin-bottom: 38px;">
+                                <a class="mode active" dealtype-id="D" href="javascript:;">添加到库存</a>
+                                <div class="hints">提示：库存仅支持99.99%（24K）黄金，如果您的黄金纯度不够则按价格折算克数</div>
+                            </div>
+                            <div class="pattern">
+                                <a class="mode" dealtype-id="A" href="javascript:;">我要现金</a>
+                                <div class="hints">提示：最终价格以我们接收货物时价格为准您将获得现金</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="indicate">
+                        <div class="reveal">
+                            <div class="total">
+                                <span>回收总价：</span>
+                                <span class="price"></span>
+                            </div>
+                            <a class="next-btn" href="javascript:;" onclick="Request.submit();">下一步</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ {include file="common/message.html"}
+ {include file="common/footer.html"}
+</div>
+<script type="text/javascript" src="../../static/metal/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/metal/js/preciousMetal.js"></script>
+<script type="text/javascript" src="../../static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="../../static/metal/js/metal.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

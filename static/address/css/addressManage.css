@@ -1,0 +1,552 @@
+.trawled{
+    width:100%;
+    height:100px;
+    background-image: url(../images/bg3.png);
+    background-size: 100% 100px;
+    background-position: center center;
+}
+.trawled .search-box{
+    width:482px;
+    height:70px;
+    padding-top: 30px;
+}
+.trawled .search-box .search-rock{
+    width:100%;
+    height:42px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.trawled .search-box .search-rock .classify{
+    width:112px;
+    height:30px;
+    line-height: 30px;
+    margin:6px 0;
+    border-right:2px solid #F27C00;
+    text-align: center;
+    float:left;
+    position:relative;
+}
+.trawled .search-box .search-rock .classify .total{
+    color:#F27C00;
+    background-image: url(../images/drop.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 19px;
+    cursor:default;
+}
+.trawled .search-box .search-rock .classify .categorize{
+    width:112px;
+    /*height:106px;*/
+    padding-top:10px;
+    background-color: #ffffff;
+    position:absolute;
+    margin-top: 11px;
+    box-shadow: 0 3px 5px #dddddd;
+    display:none;
+    z-index:20;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name{
+    margin-left: 14px;
+    display:block;
+    text-align: left;
+    color:#666666;
+    height:15px;
+    line-height: 15px;
+    margin-bottom:12px;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name.active{
+    color:#F27C00;
+}
+.trawled .search-box .search-rock .search{
+    width:66px;
+    height:42px;
+    border-left:1px solid #F27C00;
+    float:right;
+    background-color: #ffffff;
+    background-image: url(../images/search.png);
+    background-size: 20px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline:none;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.trawled .search-box .search-rock .imports{
+    margin:0 67px 0 132px;
+    height:42px;
+}
+.trawled .search-box .search-rock .imports .entry{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.trawled .search-box .version{
+    width:100%;
+    height:24px;
+    line-height: 24px;
+}
+.trawled .search-box .model{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    font-size: 10px;
+    color:#E9E9E9;
+}
+
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom: 16px;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    height:39px;
+    line-height: 40px;
+    border-bottom:1px solid #EDEDED;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+}
+.entire .posses .dimension .right .groom{
+    padding-left: 18px;
+    width:950px;
+    height:30px;
+    line-height: 26px;
+    font-size: 18px;
+    color:#333333;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .receipt{
+    padding:0px 8px;
+    width: 952px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 8px;
+}
+.entire .posses .dimension .right .receipt .major{
+    padding-left: 18px;
+    width:930px;
+    height:48px;
+    line-height: 56px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 16px;
+    color:#F27C00;
+    text-align: left;
+}
+.entire .posses .dimension .right .receipt .epitome{
+    padding-left: 28px;
+    width:920px;
+    height:48px;
+    background-color: #F9F9F9;
+    line-height: 48px;
+    font-size: 16px;
+    color:#333333;
+    text-align: left;
+}
+.entire .posses .dimension .right .receipt .epitome .name{
+    width:110px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .epitome .area{
+    width:184px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .epitome .addr{
+    width:312px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .epitome .tel{
+    width:156px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .epitome .handle{
+    width:142px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road{
+    width:100%;
+    height:74px;
+    color:#666666;
+    text-align: left;
+    border-bottom: 1px solid #F9F9F9;
+    position:relative;
+}
+.entire .posses .dimension .right .receipt .detail .road .name{
+    padding-left: 28px;
+    width:108px;
+    height:74px;
+    line-height: 74px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .area{
+    width:184px;
+    height:74px;
+    line-height: 74px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .addr{
+    width:317px;
+    height:74px;
+    line-height: 74px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .tel{
+    width:155px;
+    height:74px;
+    line-height: 74px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .handle{
+    width:140px;
+    height:74px;
+    line-height: 74px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .handle .operate{
+    width:auto;
+    height:14px;
+    margin:30px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .handle .operate .modify{
+    height:14px;
+    line-height: 14px;
+    border-right:2px solid #EDEDED;
+    float:left;
+    display:block;
+    color:#F27E04;
+    padding-right:8px;
+}
+.entire .posses .dimension .right .receipt .detail .road .handle .operate .delete{
+    height:14px;
+    line-height: 14px;
+    margin-left: 8px;
+    color:#5D9AFF;
+    float:left;
+}
+.entire .posses .dimension .right .receipt .detail .road .tacit{
+    width:49px;
+    height:38px;
+    background-image: url(../images/tat.png);
+    background-size: 49px 38px;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:0;
+    top:0;
+    display:none;
+}
+.entire .posses .dimension .right .receipt .detail .road .tacit.active{
+    display:block;
+}
+.entire .posses .dimension .right .address{
+    padding:0px 12px;
+    width:944px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .address.revise{
+    display:none;
+}
+.entire .posses .dimension .right .address .theme{
+    padding-left:8px;
+    width:936px;
+    height:50px;
+    line-height: 56px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 16px;
+    color:#666666;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.entire .posses .dimension .right .address .message{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .address .message .contact{
+    width:100%;
+    height:40px;
+    margin-bottom: 30px;
+}
+.entire .posses .dimension .right .address .message .contact .premise{
+    width:96px;
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+    margin-right: 56px;
+    font-size: 16px;
+    color:#999999;
+    float:left;
+}
+.entire .posses .dimension .right .address .message .contact .entry{
+    width:224px;
+    padding:0px 0px 0px 12px;
+    margin:0px 28px 0px 0px;
+    height:38px;
+    line-height: 38px;
+    font-family: 'Microsoft YaHei';
+    border:1px solid #DDDDDD;
+    color:#666666;
+    text-align: left;
+    float:left;
+    outline:none;
+ }
+.entire .posses .dimension .right .address .message .contact .region{
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0px 28px 0px 0px;
+    padding: 0px 16px 0px 10px;
+    border: 0px;
+    color: #666666;
+    font-family: 'Microsoft YaHei';
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #DDDDDD;
+}
+.entire .posses .dimension .right .address .message .option{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom: 30px;
+}
+.entire .posses .dimension .right .address .message .option .install{
+    height:18px;
+    line-height:18px;
+    font-size: 16px;
+    color:#999999;
+    padding-left: 24px;
+    background-image: url(../images/chose.png);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    float:left;
+    margin-left: 13px;
+    cursor:default;
+}
+.entire .posses .dimension .right .address .message .option .install.active{
+    background-image: url(../images/chose1.png);
+}
+.entire .posses .dimension .right .address .message .option .conserve{
+    width:118px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    margin-right: 272px;
+    float:right;
+}
+
+.shadow{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:999;
+    background-color: #3b3b3b;
+    opacity: 0.1;
+    display:none;
+}
+.bounced{
+    width:502px;
+    height:242px;
+    background-color: #ffffff;
+    left:50%;
+    margin-left: -251px;
+    top:50%;
+    margin-top: -121px;
+    border-radius: 5px;
+    position:fixed;
+    z-index:1000;
+    overflow:hidden;
+    display:none;
+}
+.bounced .prompt{
+    padding:0px 28px 0px 16px;
+    width:458px;
+    height:60px;
+    border-bottom: 1px solid #FAA249;
+}
+.bounced .prompt .hint{
+    height:60px;
+    line-height: 60px;
+    font-size: 18px;
+    color:#666666;
+    background-image: url(../images/tip.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 33px;
+    float:left;
+}
+.bounced .prompt .close-btn{
+    height:60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: #C1C1BF;
+    float:right;
+    display:block;
+}
+.bounced .tooltip{
+    padding:0px 40px;
+    width:422px;
+    height:100px;
+    line-height: 110px;
+    font-size: 18px;
+    color:#666666;
+    text-align: left;
+}
+.bounced .press{
+    margin:0px 40px 0px 40px;
+    padding:24px 0px;
+    width:422px;
+    height:32px;
+    border-top:1px solid #F1F1F1;
+}
+.bounced .press .confirm{
+    width:100px;
+    height:32px;
+    line-height: 32px;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    float:left;
+    text-align: center;
+}
+.bounced .press .abolish{
+    width:100px;
+    height:32px;
+    line-height: 32px;
+    border-radius: 30px;
+    background-color: #C5C6C7;
+    color:#ffffff;
+    float:left;
+    display:block;
+    margin-right: 56px;
+    text-align: center;
+}

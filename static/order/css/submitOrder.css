@@ -1,0 +1,548 @@
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #FBFBFB;
+    padding-bottom: 8px;
+}
+.entire .procedure{
+    width:100%;
+    height:44px;
+    background-color: #ffffff;
+    border-top:1px solid #E1E1E1;
+    margin-bottom: 15px;
+}
+.entire .procedure .circle{
+    width:1200px;
+    height:44px;
+    position:relative;
+}
+.entire .procedure .circle .step{
+    width:25%;
+    height:44px;
+    line-height: 44px;
+    float:left;
+    color:#666666;
+}
+.entire .procedure .circle .step.active{
+    background-color: #FEA549;
+    color:#ffffff;
+}
+.entire .procedure .circle .step span{
+    background-image: url(../images/xt3.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+}
+.entire .procedure .circle .step.active span{
+    background-image: url(../images/xt2.png);
+}
+.entire .procedure .circle .step.finish span{
+    background-image: url(../images/xt1.png);
+}
+.entire .procedure .circle .step.active.finish span{
+    background-image: url(../images/xt2.png);
+}
+.entire .procedure .circle .line{
+    width:1px;
+    height:36px;
+    background-color: #DDDDDD;
+    position:absolute;
+    margin:3px 0;
+}
+.entire .particulars{
+    width:1200px;
+    height:592px;
+}
+.entire .particulars .left{
+    width:220px;
+    height:592px;
+    background-color: #ffffff;
+    float:left;
+}
+.entire .particulars .left .message{
+    width:220px;
+    height:auto;
+    margin-bottom: 27px;
+}
+.entire .particulars .left .message .grap{
+    width:220px;
+    height:220px;
+}
+.entire .particulars .left .message .grap img{
+    width:100%;
+    height:100%;
+}
+.entire .particulars .left .message .model{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#333333;
+    margin-top: 3px;
+}
+.entire .particulars .left .message .price{
+    width:100%;
+    height:18px;
+    color:#666666;
+    margin:17px 0px;
+}
+.entire .particulars .left .message .price .way{
+    padding-left: 10px;
+    line-height: 18px;
+    display:inline-block;
+}
+.entire .particulars .left .message .price .money{
+    padding-left: 0px;
+    font-size: 18px;
+    color:#F27C00;
+    line-height: 18px;
+    display:inline-block;
+}
+.entire .particulars .left .message .number{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    font-size: 12px;
+    color:#666666;
+}
+.entire .particulars .left .merchants{
+    width:200px;
+    height:auto;
+    margin:0px 10px;
+}
+.entire .particulars .left .merchants .item{
+    width:100%;
+    height:20px;
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 8px;
+}
+.entire .particulars .left .merchants .item .trade{
+    float:left;
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#666666;
+    padding-left: 8px;
+}
+.entire .particulars .left .merchants .item .chose{
+    height:14px;
+    line-height:14px;
+    margin-top: 5px;
+    float:right;
+    margin-right: 6px;
+    font-size: 12px;
+    color:#5D9AFF;
+}
+.entire .particulars .left .merchants .detail{
+    margin-left: 8px;
+    height:auto;
+    padding:18px 0px;
+}
+.entire .particulars .left .merchants .detail .storeName{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 16px;
+    color:#333333;
+    text-align: left;
+    margin-bottom:14px;
+}
+.entire .particulars .left .merchants .detail .probate{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    color:#FEA547;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.entire .particulars .left .merchants .detail .distance{
+    width:100%;
+    height:16px;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.entire .particulars .left .merchants .detail .distance span{
+    background-image: url(../images/away.png);
+    background-size: 12px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color:#666666;
+    padding-left: 20px;
+    line-height: 16px;
+    display:inline-block;
+}
+.entire .particulars .left .merchants .detail .grade{
+    width:100%;
+    height:16px;
+}
+.entire .particulars .left .merchants .detail .grade .saith{
+    height:16px;
+    line-height: 16px;
+    border-right:1px solid #888888;
+    color:#666666;
+    float:left;
+    padding-right:10px;
+}
+.entire .particulars .left .merchants .detail .grade .score{
+    height:16px;
+    line-height: 16px;
+    color:#666666;
+    float:left;
+    padding-left:10px;
+}
+.entire .particulars .left .merchants .advantage{
+    width:198px;
+    height:58px;
+    border:1px solid #F1F1F1;
+    background-color: #FBFBFB;
+}
+.entire .particulars .left .merchants .advantage .ground{
+    width:33.3%;
+    height:58px;
+    float:left;
+}
+.entire .particulars .left .merchants .advantage .ground span{
+    background-size: 20px 17px;
+    background-repeat: no-repeat;
+    background-position: center 8px;
+    padding-top: 39px;
+    font-size: 12px;
+    color:#666666;
+    display:inline-block;
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="1"] span{
+    background-image: url(../images/vote1.png);
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="2"] span{
+    background-image: url(../images/vote2.png);
+}
+.entire .particulars .left .merchants .advantage .ground[data-index="3"] span{
+    background-image: url(../images/vote3.png);
+}
+.entire .particulars .right{
+    width:965px;
+    height:auto;
+    background-color: #ffffff;
+    float:right;
+    padding-bottom: 50px;
+}
+.entire .particulars .right .title{
+    margin:0px 8px 0px 10px;
+    padding-left:10px;
+    height:50px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 18px;
+    color:#666666;
+    text-align: left;
+    line-height: 54px;
+}
+.entire .particulars .right .trade-info{
+    width:905px;
+    padding:30px 30px 0px 30px;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.entire .particulars .right .trade-info .pattern{
+    width:100%;
+    height:20px;
+    margin-bottom: 40px;
+}
+.entire .particulars .right .trade-info .pattern .words{
+    width:148px;
+    height:20px;
+    line-height: 20px;
+    float:left;
+    color:#999999;
+    font-size: 16px;
+}
+.entire .particulars .right .trade-info .pattern .recover{
+    width:104px;
+    height:20px;
+    float:left;
+    cursor:default;
+    margin-right:75px;
+}
+.entire .particulars .right .trade-info .pattern .recover span{
+    background-image: url(../images/chosefo.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 18px;
+    color:#666666;
+    padding-left: 32px;
+}
+.entire .particulars .right .trade-info .pattern .recover.active span{
+    background-image: url(../images/chosef.png);
+}
+.entire .particulars .right .trade-info .select{
+    width:100%;
+    height:32px;
+    margin-bottom: 10px;
+}
+.entire .particulars .right .trade-info .select .chief{
+    height:32px;
+    line-height: 32px;
+    float:left;
+    font-size: 16px;
+    color:#999999;
+}
+.entire .particulars .right .trade-info .select .append{
+    width:114px;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    float:right;
+    display:block;
+    text-align: center;
+}
+.entire .particulars .right .trade-info .select .append span{
+    background-image: url(../images/add.png);
+    background-size: 13px 13px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color:#666666;
+    display:inline-block;
+}
+.entire .particulars .right .trade-info .details{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road{
+    width:100%;
+    height:58px;
+    color:#666666;
+    text-align: left;
+    border:1px solid #f1f1f1;
+    position:relative;
+    box-shadow: 0px 2px 5px #F1F1F1;
+    margin-bottom: 8px;
+    cursor:default;
+}
+.entire .particulars .right .trade-info .details .road.active{
+    border:1px solid #FEA549;
+    box-shadow: 0px 0px 0px 0px;
+}
+.entire .particulars .right .trade-info .details .road .name{
+    padding-left: 28px;
+    width:108px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .area{
+    width:180px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .addr{
+    width:316px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .tel{
+    width:155px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .handle{
+    width:102px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .handle .operate{
+    width:auto;
+    height:14px;
+    margin:26px 0px 20px 0px;
+    float:left;
+}
+.entire .particulars .right .trade-info .details .road .handle .operate .modify{
+    height:14px;
+    line-height: 14px;
+    float:left;
+    color:#F27E04;
+    padding-right:8px;
+    display:none;
+}
+.entire .particulars .right .trade-info .details .road.active .handle .operate .modify{
+    display:inline-block;
+}
+.entire .particulars .right .trade-info .details .road .tacit{
+    width:49px;
+    height:38px;
+    background-image: url(../images/tat.png);
+    background-size: 49px 38px;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:0;
+    top:0;
+    display:none;
+}
+.entire .particulars .right .trade-info .details .road .tacit.active{
+    display:block;
+}
+.entire .particulars .right .address{
+    width: 903px;
+    height: auto;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 2px 5px #F1F1F1;
+}
+.entire .particulars .right .address.revise{
+    display:none;
+}
+.entire .particulars .right .address .theme{
+    padding-left:26px;
+    width:879px;
+    height:50px;
+    line-height: 56px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 16px;
+    color:#666666;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.entire .particulars .right .address .theme .action{
+    float:left;
+    line-height: 56px;
+}
+.entire .particulars .right .address .theme .abolish{
+    width:16px;
+    height:16px;
+    background-image: url(../images/cue.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    float:right;
+    margin:20px 40px 14px 0px;
+    cursor:pointer;
+    display:none;
+}
+.entire .particulars .right .address .message{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .particulars .right .address .message .contact{
+    width:100%;
+    height:40px;
+    margin-bottom: 30px;
+}
+.entire .particulars .right .address .message .contact .premise{
+    width:110px;
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+    margin-right: 56px;
+    font-size: 16px;
+    color:#999999;
+    float:left;
+}
+.entire .particulars .right .address .message .contact .entry{
+    width:224px;
+    padding:0px 0px 0px 12px;
+    margin:0px 28px 0px 0px;
+    height:38px;
+    line-height: 38px;
+    font-family: 'Microsoft YaHei';
+    border:1px solid #DDDDDD;
+    color:#666666;
+    text-align: left;
+    float:left;
+    outline:none;
+}
+.entire .particulars .right .address .message .contact .region{
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0px 28px 0px 0px;
+    padding: 0px 16px 0px 10px;
+    border: 0px;
+    color: #666666;
+    font-family: 'Microsoft YaHei';
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #DDDDDD;
+}
+.entire .particulars .right .address .message .option{
+    width: 637px;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0px 242px 0px 26px;
+}
+.entire .particulars .right .address .message .option .install{
+    height:18px;
+    line-height:18px;
+    font-size: 16px;
+    color:#999999;
+    padding-left: 24px;
+    background-image: url(../images/chose.png);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    float:left;
+    cursor:default;
+}
+.entire .particulars .right .address .message .option .install.active{
+    background-image: url(../images/chose1.png);
+}
+.entire .particulars .right .address .message .option .conserve{
+    width:118px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    text-align: center;
+    float:right;
+}
+.entire .particulars .right .confirm{
+    padding-right: 70px;
+    width:825px;
+    height:50px;
+    margin-top: 60px;
+    float:left;
+}
+.entire .particulars .right .confirm .transaction{
+    width:238px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color:#ffffff;
+    background-color: #FEA549;
+    border-radius: 30px;
+    float:right;
+}
+.entire .particulars .right .confirm .transaction.active{
+    background-color: #ACACAC;
+}
+.entire .particulars .right .confirm .acquire{
+    margin-right:281px;
+    height:50px;
+    line-height: 50px;
+    color:#363636;
+    text-align: right;
+    font-size: 15px;
+}
+.entire .particulars .right .confirm .acquire .money{
+    font-size: 20px;
+    color:#FF9900;
+}

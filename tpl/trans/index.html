@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/trans/css/index.css"/>
+</head>
+<body{if $tag eq 3} class = "promoter" {/if}>
+<div class="container" align="center">
+    <div class="seize">
+        <div class="record">
+            <div class="indication">
+                <div class="storey">
+                    <div class="lay"></div>
+                    <div class="data">
+                        <div class="name">总推广人数</div>
+                        <div class="sum" id="laysum">
+                        	{$person}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="indication">
+                <div class="storey">
+                    <div class="lay"></div>
+                    <div class="data">
+                        <div class="name">总佣金</div>
+                        <div class="sum" id=summoney>{$money}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hint">
+            </div>
+        </div>
+    </div>
+
+    <div class="extend">
+        <div class="spread">
+            <div class="epitome">
+                <span class="words">推广码：</span>
+                <span class="code">{$invitation}</span>
+            </div>
+            <div class="epitome">
+                <div class="outline">
+                    <div class="words fl">推广二维码：</div>
+                    <div class="print fl">
+                      {if $qrcode neq ''}  <img src={$qrcode} style="width:100px;height:100px;"/>{/if}
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="mainstay">
+            <div class="title">
+                <span>数据详情</span>
+            </div>
+
+            <div class="carte">
+                <a id="user" onclick="Trans.userData();" class="palette active" href="javascript:;">用户数量</a>
+                {if $tag neq 3}<a id="agent" onclick="Trans.agent(1);" class="palette" href="javascript:;">代理数量</a>{/if}
+                <a id="recover" class="palette" onclick="Trans.recover(1);" href="javascript:;">回收</a>
+                <a id="consign" class="palette" onclick="Trans.consign(1);" href="javascript:;">寄售</a>
+                <a id="sale" class="palette" onclick="Trans.sale(1);" href="javascript:;">销售</a>
+                <a id="commision" onclick="Trans.commision(1,0,0);"  class="palette" href="javascript:;">佣金</a>
+            </div>
+
+            <div class="particulars">
+                <div class="userNumber">
+                    <div class="motif">
+                        <div class="item">用户数量</div>
+                        <div class="dateChose">
+							<form id="userChose">
+								<input id="ustart" name="start" class="date first laydate-icon" type="text"/>
+								<input id="uend" name="end" class="date laydate-icon" type="text"/>
+								<input type="button" value="查询" class="query" onclick="Trans.userData();" />
+							</form>
+                        </div>
+                    </div>
+
+                    <div class="time">
+                        <span>{$smarty.now|date_format:"%Y-%m-%d"}</span>
+                    </div>
+
+                    <div class="census">
+                        <div class="words">推广人数</div>
+                        <div class="sum" id="userSum"></div>
+                    </div>
+                </div>
+                <div class="agentNumber">
+                    <div class="motif">
+                        <div class="item">代理数量</div>
+                        <div class="dateChose">
+							<form id="agentChose">
+								<input id="dstart" name="start" class="date first laydate-icon" type="text"/>
+								<input id="dend" name="end" class="date laydate-icon" type="text"/>
+								<input type="button" value="查询" class="query" onclick="Trans.agent(1);" />
+							</form>
+                        </div>
+                    </div>
+					
+                    <div class="census">
+                        <div class="words">代理总数量</div>
+                        <div class="sum"></div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">
+                            <div class="serial fl">序号</div>
+                            <div class="phone fl">手机号码</div>
+                            <div class="times fl">加入时间</div>
+                            <div class="amount fl">推广人数</div>
+                            <div class="price fl">总佣金</div>
+                            <div class="settle fl">结算详情</div>
+                           <!--  <div class="check fl">详情</div> -->
+                            <div class="handle fl">操作</div>
+                        </div>
+
+                        <div class="listing"></div>
+                        <div class="pageNumber">
+							<ul class="pagination"> </ul>
+						</div>
+                    </div>
+                </div>
+                <div class="recovery">
+                    <div class="motif">
+                        <div class="item">回收记录</div>
+                        <div class="dateChose">
+							<form id="recoverChose">
+								<input id="hstart" name="start" class="date first laydate-icon" type="text"/>
+								<input id="hend" name="end" class="date laydate-icon" type="text"/>
+								<input type="button" value="查询" class="query" onclick="Trans.recover(1);" />
+							</form>
+                        </div>
+                    </div>
+
+                    <div class="census">
+                        <div class="words">回收成交单数</div>
+                        <div class="sum" id="sumOrder"></div>
+                        <div class="words">回收成交金额</div>
+                        <div class="sum" id="sumMoney"></div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">
+                            <div class="serial fl">序号</div>
+                            <div class="orderNumber fl">订单编号</div>
+                            <div class="name fl">物品名称</div>
+                            <div class="price fl">利润金额</div>
+                            <div class="times fl">成交时间</div>
+                        </div>
+                    </div>
+
+                    <div class="recoverList"></div>
+                    <div class="pageNumber">
+						<ul class="pagination"> </ul>
+					</div>
+                </div>
+
+                <div class="consignment">
+                    <div class="motif">
+                        <div class="item">寄售记录</div>
+                        <div class="dateChose">
+							<form id="consignChose">
+								<input id="jstart" name="start" class="date first laydate-icon" type="text"/>
+								<input id="jend" name="end" class="date laydate-icon" type="text"/>
+								<input type="button" value="查询" class="query" onclick="Trans.consign(1);"/>
+							</form>
+                        </div>
+                    </div>
+
+                    <div class="census">
+                        <div class="words">寄售成交单数</div>
+                        <div class="sum" id="sumOrder"></div>
+                        <div class="words">寄售成交金额</div>
+                        <div class="sum" id="sumMoney"></div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">
+                            <div class="serial fl">序号</div>
+                            <div class="orderNumber fl">订单编号</div>
+                            <div class="name fl">物品名称</div>
+                            <div class="price fl">利润金额</div>
+                            <div class="times fl">成交时间</div>
+                        </div>
+                    </div>
+
+                    <div class="consignList"></div>
+                    <div class="pageNumber">
+						<ul class="pagination"> </ul>
+					</div>
+                </div>
+
+                <div class="market">
+                    <div class="motif">
+                        <div class="item">销售记录</div>
+                        <div class="dateChose">
+						<form id="saleChose">
+                            <input id="xstart" name="start" class="date first laydate-icon" type="text"/>
+                            <input id="xend" name="end" class="date laydate-icon" type="text"/>
+                            <input type="button" value="查询" class="query" onclick="Trans.sale(1);"/>
+						 </form>
+                        </div>
+                    </div>
+
+                    <div class="census">
+                        <div class="words">成交单数</div>
+                        <div class="sum" id="sumOrder"></div>
+                        <div class="words">成交金额</div>
+                        <div class="sum" id="sumMoney"></div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">
+                            <div class="digit fl">序号</div>
+                            <div class="number fl">订单号</div>
+                            <div class="trade fl">物品名称</div>
+                            <div class="mode fl">物品类型</div>
+                            <div class="profit fl">利润</div>
+                            <div class="deal fl">成交时间</div>
+                        </div>
+                    </div>
+                    <div class="salesList"></div>
+					<div class="pageNumber">
+						<ul class="pagination"> </ul>
+					</div>
+                </div>
+                <div class="brokerage" name="commision" >
+                 {if $tag neq 3}
+                    <div class="motif">
+                        <div class="item">佣金记录</div>
+                        <a class="count" href="javascript:;" onclick="Trans.count(0,0,0);">
+                            <span>佣金结算</span>
+                        </a>
+                    </div>
+                 {/if}
+                    <div class="census">
+                        <div class="words">佣金总额</div>
+                        <div class="sum" id="money"></div>
+                        <div class="words">已结算佣金</div>
+                        <div class="sum" id="rmoney"></div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="title">
+                            <div class="dig fl">序号</div>
+                            <div class="while fl">成交时间</div>
+                            <div class="counts fl">本次结算佣金</div>
+                            <div class="money fl">剩余佣金余额</div>
+                        </div>
+                    </div>
+                    <div class="commissionList"></div>
+					<div class="pageNumber">
+						<ul class="pagination"></ul>
+					</div>
+                </div>
+            </div>{if $tag neq 3}
+            <a id="add" class="operation" href="/trans/home/addAgent">
+                <span>{if $tag eq '1'}添加新代理{elseif $tag eq '2'}添加推广员{/if}</span>
+            </a>{/if}
+            <a class="operation fit" href="/trans/login/intercalate">
+                <span>系统设置</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="shade"></div>
+<div class="settlement">
+	    <div class="covers">
+		        <div class="caption">代理佣金结算</div>
+		        <div class="extra">
+		            <input class="sums" name="sums" id="sums" type="text" placeholder="请输入本次要结算的佣金金额"/>
+		        </div>
+		        <div class="total">
+		           		 佣金剩余总额：￥<span class="remain" id="lastMoney"></span>
+		        </div>
+	    </div>
+    <div class="operate">
+        <a class="ensure" onclick="Trans.submit()" href="javascript:;">确定</a>
+        <a class="abolish" href="javascript:;">取消</a>
+    </div>
+</div>
+<script type="text/javascript" src="../../static/trans/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="../../static/trans/ajax/ajax_trans.js"></script>
+<script type="text/javascript" src="../../static/trans/ajax/ajax_login.js"></script>
+<script type="text/javascript" src="../../static/trans/ajax/ajax_home.js"></script>
+<script type="text/javascript" src="../../static/trans/js/laydate.js"></script>
+<script type="text/javascript" src="../../static/trans/js/date.js"></script>
+<script type="text/javascript" src="../../static/trans/js/head.js"></script>
+<script type="text/javascript" src="../../static/trans/js/index.js"></script>
+<script type="text/javascript" src="../../static/trans/js/publicJS.js"></script>
+<script type="text/javascript">
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var myid=GetQueryString("id");
+    if(myid !=null && myid.toString().length> 0 )
+    {
+        if( myid == 2 ){
+            $(".mnav.active").removeClass("active");
+            $("#detail").addClass("active");
+        }
+    }
+    if({$tag}==2){
+    	$("#proxy").html("设置推广员");
+    }else if({$tag}==1){
+    	$("#proxy").html("设置新代理");
+    }else if({$tag}==3){
+    	$("#proxy").hide();
+    }
+</script>
+</body>
+</html>

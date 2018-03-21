@@ -1,0 +1,839 @@
+body{
+    background-color:#eaeff3;
+}
+.seize{
+    width:100%;
+    height:420px;
+    background-image: url(../images/bg-1.png);
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.seize .record{
+    padding:80px 60px 60px 60px;
+    width:880px;
+    height:280px;
+    position:relative;
+}
+.seize .record .hint{
+    width:100%;
+    height:20px;
+    position:absolute;
+    top:20px;
+    left:0px;
+}
+.seize .record .hint .cue{
+    height:20px;
+    line-height: 20px;
+    font-size:18px;
+    color:#ffffff;
+    float:left;
+    margin-left:40px;
+}
+.seize .record .hint .back{
+    height:20px;
+    line-height: 22px;
+    font-size:16px;
+    color:#FEC073;
+    float:left;
+    text-decoration: underline;!important;
+    margin-left:15px;
+}
+.seize .record .indication{
+    width:50%;
+    height:280px;
+    float:left;
+}
+.seize .record .indication .storey{
+    width:280px;
+    height:280px;
+    margin:0px auto;
+    position:relative;
+}
+.seize .record .indication .storey .lay{
+    width:280px;
+    height:280px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+.seize .record .indication .storey .data{
+    width:240px;
+    height:240px;
+    margin:20px 20px;
+    border-radius: 50%;
+    background-color: #F2F6FE;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+}
+.seize .record .indication .storey .data .name{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size:18px;
+    color:#414141;
+    margin:55px 0px 35px 0px;
+}
+.seize .record .indication .storey .data .sum{
+    width:100%;
+    height:34px;
+    line-height: 34px;
+    font-size:36px;
+    color:#5D42F4;
+    font-weight:bold;
+}
+.extend{
+    width:100%;
+    height:120px;
+    background-color: #ffffff;
+    display:none;
+}
+.extend .spread{
+    width:1000px;
+    height:120px;
+    position:relative;
+}
+.extend .spread .epitome{
+    width:50%;
+    height:120px;
+    float:left;
+    font-size:0px;
+}
+.extend .spread .epitome .outline{
+    width:220px;
+    height:120px;
+    margin:0px auto;
+}
+.extend .spread .epitome .words{
+    height:120px;
+    line-height: 120px;
+    font-size:18px;
+    color:#333333;
+    display:inline-block;
+}
+.extend .spread .epitome .code{
+    height:120px;
+    line-height: 120px;
+    font-size:24px;
+    color:#333333;
+    display:inline-block;
+}
+.extend .spread .epitome .outline .print{
+    width:100px;
+    height:100px;
+    padding:10px 0px 10px 10px;
+    display:inline-block;
+}
+.extend .spread .epitome .outline .print img{
+    width:100%;
+    height:100%;
+}
+.extend .spread .line{
+    width:1px;
+    height:80px;
+    background-color: #DADADA;
+    margin:20px 0px;
+    position:absolute;
+    left:50%;
+}
+.contents{
+    width:100%;
+    height:auto;
+    float:left;
+    padding-bottom: 40px;
+}
+.contents .mainstay{
+    width:1000px;
+    height:auto;
+}
+.contents .mainstay .title{
+    padding-left: 20px;
+    width:980px;
+    height:70px;
+    text-align: left;
+}
+.contents .mainstay .title span{
+    height:70px;
+    line-height: 70px;
+    background-image: url(../images/data.png);
+    background-size:32px 32px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    padding-left: 40px;
+    font-size:24px;
+    color:#333333;
+    display:inline-block;
+}
+.contents .mainstay .carte{
+    padding-left: 30px;
+    width:970px;
+    height:50px;
+    line-height: 50px;
+    border-bottom:1px solid #DDDDDD;
+    background-color: #ffffff;
+}
+.contents .mainstay .palette{
+    font-size: 18px;
+    color:#666666;
+    float:left;
+    margin-right:65px;
+}
+.contents .mainstay .palette.active{
+    color:#401FF8;
+}
+.contents .mainstay .particulars{
+    padding-left:30px;
+    width:970px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    padding-bottom:60px;
+}
+.contents .mainstay .particulars .userNumber{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.contents .mainstay .particulars .motif{
+    width:100%;
+    height:38px;
+    margin:20px 0px;
+}
+.contents .mainstay .particulars .motif .item{
+    height:38px;
+    line-height:38px;
+    font-size:20px;
+    color:#333333;
+    float:left;
+}
+.contents .mainstay .particulars .motif .dateChose{
+    height:38px;
+    float:right;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .motif .count{
+    width:132px;
+    height:36px;
+    line-height: 36px;
+    font-size:16px;
+    color:#4A4A4A;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    float:right;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .motif .count span{
+    height:36px;
+    line-height: 36px;
+    background-image: url(../images/purse.png);
+    background-size:24px 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:32px;
+    display:inline-block;
+}
+.contents .mainstay .particulars .motif .dateChose .date{
+    width:198px;
+    height:38px;
+    line-height: 38px;
+    font-size:16px;
+    color:#666666;
+    text-align: center;
+    float:left;
+    background-color: #F1F1F1;
+    margin:0px 0px 0px 30px;
+    padding:0px;
+    border:0px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+}
+.contents .mainstay .particulars .motif .dateChose .date.first{
+    margin:0px;
+}
+.query{
+    width:80px;
+    height:36px;
+    line-height: 36px;
+    color:#ffffff;
+    background-color:#0099CE;
+    margin:1px 0px 1px 20px;
+    padding:0px;
+    border:0px;
+    font-family: 'Microsoft Yahei';
+    border-radius: 4px;
+    outline:none;
+    cursor: pointer;
+}
+.contents .mainstay .particulars .motif .dateChose .date.laydate-icon{
+    background-image: url(../images/date.png);
+    background-position: left 18px center;
+}
+.contents .mainstay .particulars .time{
+    width:100%;
+    height:22px;
+    margin:5px 0px 25px 0px;
+    text-align:left;
+}
+.contents .mainstay .particulars .time span{
+    height:22px;
+    line-height: 22px;
+    font-size:16px;
+    color:#666666;
+    background-image:url(../images/date.png);
+    background-size:22px 22px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 32px;
+    display:inline-block;
+}
+.contents .mainstay .particulars .census{
+    width:100%;
+    height:26px;
+    margin: 25px 0px 20px 0px;
+    color:#333333;
+}
+.contents .mainstay .particulars .census .words{
+    height:26px;
+    line-height: 38px;
+    font-size:16px;
+    float:left;
+    margin-right:58px;
+}
+.contents .mainstay .particulars .census .sum{
+    height:26px;
+    line-height: 28px;
+    font-size:30px;
+    float:left;
+    margin-right:96px;
+}
+.contents .mainstay .particulars .agentNumber{
+    width:100%;
+    height:auto;
+    float:left;
+    display:none;
+}
+.contents .mainstay .particulars .detail{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.contents .mainstay .particulars .detail .title{
+    width:930px;
+    height:26px;
+    line-height: 26px;
+    font-size:16px;
+    color:#333333;
+    padding:10px 0px;
+    background-color:#EDEDED;
+    border-top:1px solid #DEDEDE;
+    border-bottom: 1px solid #CDCDCD;
+    margin-right:40px;
+    text-align: left;
+}
+.contents .mainstay .particulars .detail .title .serial{
+    padding-left:30px;
+    width:60px;
+    height:26px;
+}
+.contents .mainstay .particulars .detail .title .phone{
+    padding-left:15px;
+    width:138px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .detail .title .times{
+    padding-left:15px;
+    width:164px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .detail .title .amount{
+    padding-left:15px;
+    width:114px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .detail .title .price{
+    padding-left:15px;
+    width:125px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .detail .title .settle{
+    padding-left:15px;
+    width:96px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .detail .title .check{
+    padding-left:36px;
+    width:72px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .listing{
+    width:930px;
+    height:auto;
+    float:left;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .dimension{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    text-align:left;
+    color:#333333;
+    float:left;
+}
+.contents .mainstay .particulars .dimension:nth-child(2n){
+    height:48px;
+    line-height: 48px;
+    background-color: #FAFBFD;
+    border-top:1px solid #F5F5F5;
+    border-bottom:1px solid #EEEEEE;
+}
+.contents .mainstay .particulars .dimension.active{
+    height:48px;
+    line-height: 48px;
+    background-color: #FAFBFD;
+    border-top:1px solid #F5F5F5;
+    border-bottom:1px solid #EEEEEE;
+}
+.contents .mainstay .particulars .listing .dimension .serial{
+    padding-left: 28px;
+    width:76px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .phone{
+    width:152px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .times{
+    width:182px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .amount{
+    width:134px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .price{
+    width:138px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .settle{
+    width:134px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .settle .cash{
+    height:50px;
+    line-height: 50px;
+    color:#F3AE85;
+    font-size:12px;
+    float:left;
+}
+.contents .mainstay .particulars .listing .dimension .check{
+    width:74px;
+    height:50px;
+}
+.contents .mainstay .particulars .listing .dimension .check .look{
+    height:50px;
+    line-height: 50px;
+    color:#F3AE85;
+    font-size:12px;
+    float:left;
+}
+.contents .mainstay .particulars .recovery , .contents .mainstay .particulars .consignment{
+    width: 100%;
+    height: auto;
+    float: left;
+    display:none;
+}
+.contents .mainstay .particulars .recovery .title .serial , .contents .mainstay .particulars .consignment .title .serial{
+    padding-left:30px;
+    width:60px;
+    height:26px;
+}
+.contents .mainstay .particulars .recovery .title .orderNumber , .contents .mainstay .particulars .consignment .title .orderNumber{
+    padding-left:30px;
+    width:152px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .recovery .title .name , .contents .mainstay .particulars .consignment .title .name{
+    padding-left:30px;
+    width:210px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .recovery .title .price , .contents .mainstay .particulars .consignment .title .price{
+    padding-left:20px;
+    width:164px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .recovery .title .times , .contents .mainstay .particulars .consignment .title .times{
+    padding-left:15px;
+    width:215px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .recovery .recoverList , .contents .mainstay .particulars .consignList{
+    width:930px;
+    height:auto;
+    float:left;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .recovery .recoverList .dimension .serial , .contents .mainstay .particulars .consignment .consignList .dimension .serial{
+    padding-left:30px;
+    width:90px;
+    height:50px;
+}
+.contents .mainstay .particulars .recovery .recoverList .dimension .orderNumber , .contents .mainstay .particulars .consignment .consignList .dimension .orderNumber{
+    width:180px;
+    height:50px;
+}
+.contents .mainstay .particulars .recovery .recoverList .dimension .name , .contents .mainstay .particulars .consignment .consignList .dimension .name{
+    width:230px;
+    height:50px;
+}
+.contents .mainstay .particulars .recovery .recoverList .dimension .price , .contents .mainstay .particulars .consignment .consignList .dimension .price{
+    width:180px;
+    height:50px;
+}
+.contents .mainstay .particulars .recovery .recoverList .dimension .times , .contents .mainstay .particulars .consignment .consignList .dimension .times{
+    width:210px;
+    height:50px;
+}
+.contents .mainstay .particulars .market , .contents .mainstay .particulars .brokerage{
+    width: 100%;
+    height: auto;
+    float: left;
+    display:none;
+}
+.contents .mainstay .particulars .market .title .digit{
+    padding-left:28px;
+    width:70px;
+    height:26px;
+}
+.contents .mainstay .particulars .market .title .number{
+    padding-left:18px;
+    width:144px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .title .trade{
+    padding-left:15px;
+    width:146px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .title .trade{
+    padding-left:15px;
+    width:146px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .title .mode{
+    padding-left:15px;
+    width:144px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .title .profit{
+    padding-left:14px;
+    width:146px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .title .deal{
+    padding-left:15px;
+    width:168px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .market .salesList{
+    width:930px;
+    height:auto;
+    float:left;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .market .salesList .digit{
+    padding-left:28px;
+    width:86px;
+    height:50px;
+}
+.contents .mainstay .particulars .market .salesList .number{
+    width:160px;
+    height:50px;
+}
+.contents .mainstay .particulars .market .salesList .trade{
+    width:158px;
+    height:50px;
+}
+.contents .mainstay .particulars .market .salesList .mode{
+    width:158px;
+    height:50px;
+}
+.contents .mainstay .particulars .market .salesList .profit{
+    width:160px;
+    height:50px;
+}
+.contents .mainstay .particulars .market .salesList .number{
+    width:168px;
+    height:50px;
+}
+.contents .mainstay .particulars .pagination{
+    width:930px;
+    height:auto;
+    margin:55px 40px 0px 0px;
+    float:left;
+}
+.contents .mainstay .particulars .pagination .page{
+    padding:0px 8px;
+    height:28px;
+    line-height: 28px;
+    border:1px solid #F1F1F1;
+    font-size:16px;
+    color:#666666;
+    display:inline-block;
+    margin-right:20px;
+    border-radius: 4px;
+}
+.contents .mainstay .particulars .pagination .page.active{
+    height:30px;
+    line-height: 30px;
+    background-color: #589DFF;
+    color:#ffffff;
+}
+.contents .mainstay .particulars .brokerage .title .dig{
+    padding-left:28px;
+    width:70px;
+    height:26px;
+}
+.contents .mainstay .particulars .brokerage .title .while{
+    padding-left:22px;
+    width:258px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .brokerage .title .counts{
+    padding-left:15px;
+    width:182px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .brokerage .title .money{
+    padding-left:15px;
+    width:330px;
+    height:26px;
+    border-left:1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .brokerage .commissionList{
+    width:930px;
+    height:auto;
+    float:left;
+    margin-right:40px;
+}
+.contents .mainstay .particulars .brokerage .commissionList .dig{
+    padding-left:28px;
+    width:90px;
+    height:50px;
+}
+.contents .mainstay .particulars .brokerage .commissionList .while{
+    width:275px;
+    height:50px;
+}
+.contents .mainstay .particulars .brokerage .commissionList .counts{
+    width:198px;
+    height:50px;
+}
+.contents .mainstay .particulars .brokerage .commissionList .money{
+    width:325px;
+    height:50px;
+}
+
+.contents .mainstay .operation{
+    padding-left: 30px;
+    width:970px;
+    height:80px;
+    background-color: #ffffff;
+    margin-top: 18px;
+    display:block;
+    float:left;
+    text-align: left;
+}
+.contents .mainstay .operation span{
+    height:80px;
+    line-height:80px;
+    font-size:24px;
+    color:#333333;
+    background-image: url(../images/add.png);
+    background-size:25px 29px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    padding-left:47px;
+    display:inline-block;
+}
+.contents .mainstay .operation.fit span{
+    background-image: url(../images/set.png);
+    background-size:32px 32px;
+    padding-left:48px;
+}
+
+.shade{
+    width:100%;
+    height:100%;
+    background-color: #070707;
+    opacity: 0.2;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:999;
+    display:none;
+}
+.settlement{
+    width:400px;
+    height:290px;
+    background-color:#ffffff;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top:-145px;
+    margin-left:-200px;
+    z-index:1000;
+    border-radius: 4px;
+    display:none;
+}
+.settlement .covers{
+    width:340px;
+    height:142px;
+    padding:47px 0px 0px 20px;
+    margin:0px 20px;
+    border-bottom:1px solid #EEEEEE;
+}
+.settlement .covers .caption{
+    width:100%;
+    height:20px;
+    line-height:20px;
+    font-size:18px;
+    color:#333333;
+}
+.settlement .covers .extra{
+    width:300px;
+    height:50px;
+    margin:18px 40px 12px 0px;
+}
+.settlement .covers .extra .sums{
+    width:280px;
+    height:48px;
+    line-height: 48px;
+    background-color: #F5F5F5;
+    border:1px solid #DDDDDD;
+    border-radius:0.5px;
+    margin:0px;
+    padding:0px 0px 0px 18px;
+    font-size:16px;
+    color:#666666;
+    font-family: 'Microsoft Yahei';
+    outline:none;
+}
+.settlement .covers .total{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    color:#333333;
+}
+.settlement .operate{
+    padding-left:50px;
+    width:350px;
+    height:48px;
+    margin-top:20px;
+}
+.settlement .operate .ensure{
+    width:160px;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:18px;
+    background-color:#1F8DC0;
+    color:#ffffff;
+    border-radius: 4px;
+    float:left;
+}
+.settlement .operate .abolish{
+    width:98px;
+    height:46px;
+    line-height:46px;
+    text-align: center;
+    font-size:18px;
+    color:#666666;
+    border:1px solid #EEEEEE;
+    float:left;
+    margin-left:20px;
+    border-radius: 4px;
+}
+
+.promoter #proxy , .promoter #add , .promoter .count{
+    display:none;
+}
+.promoter .extend{
+    display:block;
+}
+.contents .mainstay .particulars .agentNumber .title .amount{
+    width:95px;
+}
+.contents .mainstay .particulars .agentNumber .title .price{
+    width:95px;
+}
+.contents .mainstay .particulars .agentNumber .title .settle{
+    width:90px;
+}
+.contents .mainstay .particulars .agentNumber .title .check{
+    padding-left:15px;
+}
+.contents .mainstay .particulars .agentNumber .title .handle{
+    padding-left:15px;
+    width: 72px;
+    height: 26px;
+    border-left: 1px solid #D8D8D8;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .amount{
+    width:115px;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .price{
+    width:112px;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .settle{
+    width:104px;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .check{
+    width:88px;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .handle{
+    width:60px;
+    height:50px;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .handle .frozen{
+    width:40px;
+    height:50px;
+    line-height: 50px;
+    color: #F3AE85;
+    font-size: 12px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+    background-color:transparent;
+    cursor:pointer;
+}
+.contents .mainstay .particulars .agentNumber .listing .dimension .handle .frozen.disable{
+    color:#999999;
+}
+@media screen and (max-width: 1000px) {
+    .seize {
+        background-image:url(../images/bg-1.1.png)
+    }
+}

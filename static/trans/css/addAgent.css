@@ -1,0 +1,142 @@
+body{
+    background-color:#eaeff3;
+}
+.content{
+    width:100%;
+    height:auto;
+}
+.content .mainstay{
+    width:1000px;
+    height:360px;
+    background-color: #ffffff;
+    margin-top:5px;
+}
+.content .mainstay .title{
+    padding-left: 30px;
+    width:970px;
+    height:80px;
+    border-bottom:1px solid #DDDDDD;
+    text-align:left;
+}
+.content .mainstay .title span{
+    height:80px;
+    line-height: 80px;
+    font-size:24px;
+    color:#333333;
+    background-image:url(../images/add.png);
+    background-size:25px 29px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:43px;
+    display:inline-block;
+}
+.content .mainstay .substance{
+    padding:60px 0px 60px 30px;
+    height:60px;
+}
+.content .mainstay .substance .words{
+    width:200px;
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+    color:#333333;
+    float:left;
+    text-align: left;
+}
+.content .mainstay .substance .phone{
+    width:368px;
+    height:58px;
+    line-height: 58px;
+    font-size:18px;
+    background-color: #F4F4F4;
+    color:#666666;
+    border:1px solid #DDDDDD;
+    margin:0px;
+    padding:0px 0px 0px 30px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+    float:left;
+}
+.content .mainstay .handle{
+    padding-left:230px;
+    width:770px;
+    height:48px;
+}
+.content .mainstay .handle .sure{
+    width:160px;
+    height:48px;
+    line-height: 48px;
+    font-size:18px;
+    color:#ffffff;
+    background-color: #1F8DC0;
+    float:left;
+    border-radius: 4px;
+}
+
+.shade{
+    width:100%;
+    height:100%;
+    background-color: #070707;
+    opacity: 0.2;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:999;
+    display:none;
+}
+.circle{
+    width:400px;
+    height:273px;
+    background-color:#ffffff;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top: -136.5px;
+    margin-left:-200px;
+    z-index:1000;
+    border-radius: 4px;
+    display:none;
+}
+.circle .covers{
+    margin:0px 20px;
+    padding:70px 45px 0px 30px;
+    height:92px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.circle .covers .text{
+    line-height: 24px;
+    font-size:0px;
+    color:#333333;
+}
+.circle .covers .text span{
+    font-size:18px;
+}
+.circle .operate{
+    padding-left:50px;
+    width:350px;
+    height:48px;
+    margin-top:30px;
+}
+.circle .operate .ensure{
+    width:160px;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:18px;
+    background-color:#1F8DC0;
+    color:#ffffff;
+    border-radius: 4px;
+    float:left;
+}
+.circle .operate .abolish{
+    width:98px;
+    height:46px;
+    line-height:46px;
+    text-align: center;
+    font-size:18px;
+    color:#666666;
+    border:1px solid #EEEEEE;
+    float:left;
+    margin-left:20px;
+    border-radius: 4px;
+}

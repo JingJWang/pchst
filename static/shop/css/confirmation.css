@@ -1,0 +1,657 @@
+.mainstay{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom:18px;
+}
+.mainstay .feather{
+    width:1200px;
+    height:auto;
+}
+.mainstay .feather .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.mainstay .feather .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .status .apellation.active{
+    background-image: url(../images/right1.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.mainstay .feather .steps{
+    width:1200px;
+    height:100px;
+    background-color: #ffffff;
+}
+.mainstay .feather .steps .contains{
+    padding:20px 0px 48px 60px;
+    width:1140px;
+    height:32px;
+}
+.mainstay .feather .steps .contains .rate{
+    width:32px;
+    height:32px;
+    line-height: 32px;
+    background-color: #FEA549;
+    color:#ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    float:left;
+    position:relative;
+}
+.mainstay .feather .steps .contains .rate.sure{
+    width:28px;
+    height:28px;
+    line-height: 28px;
+    background-color: #ffffff;
+    color:#F27C00;
+    border: 2px solid #FEA951;
+}
+.mainstay .feather .steps .contains .rate.not{
+    background-color: #DEDEDE;
+    color:#666666;
+}
+.mainstay .feather .steps .contains .rate .hint{
+    width:120px;
+    height:16px;
+    line-height: 16px;
+    position:absolute;
+    left:0px;
+    top:44px;
+    text-align: left;
+    font-size: 14px;
+    color:#666666;
+}
+.mainstay .feather .steps .contains .rate.sure .hint{
+    color:#333333;
+    top:42px;
+}
+.mainstay .feather .steps .contains .seize{
+    width:230px;
+    height:32px;
+    float:left;
+}
+.mainstay .feather .steps .contains .seize .line{
+    width:230px;
+    height:4px;
+    margin:14px 0px;
+    background-color: #FEA549;
+}
+.mainstay .feather .steps .contains .seize.not .line{
+    background-color: #DEDEDE;
+}
+.mainstay .feather .steps .contains .seize .grey{
+    width:115px;
+    height:4px;
+    background-color: #DEDEDE;
+    float:left;
+    margin:14px 0px;
+}
+.mainstay .feather .steps .contains .seize .grey.in{
+    background-color: #FEA549;
+}
+.mainstay .feather .orderInfo{
+    padding:0px 160px 0px 30px;
+    width:1100px;
+    height:auto;
+    background-color: #ffffff;
+    margin: 10px 0px;
+    float:left;
+}
+.mainstay .feather .orderInfo .title{
+    width:100%;
+    height:58px;
+    line-height: 58px;
+    font-size:16px;
+    color:#333333;
+    text-align: left;
+}
+.mainstay .feather .orderInfo .information{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .orderInfo .information .subtitle{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    background-color: #F9F9F9;
+    text-align: left;
+}
+.mainstay .feather .orderInfo .information .subtitle .goods{
+    width:500px;
+    padding-left:35px;
+    height:40px;
+    float:left;
+}
+.mainstay .feather .orderInfo .information .subtitle .price{
+    width:565px;
+    height:40px;
+    float:left;
+}
+.mainstay .feather .orderInfo .information .particular{
+    padding:18px 0px 30px 34px;
+    width:1066px;
+    height:88px;
+    float:left;
+    border-bottom: 1px solid #FBFBFB;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo{
+    width:480px;
+    padding-right: 20px;
+    height:88px;
+    float:left;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo .print{
+    width:110px;
+    height:88px;
+    float:left;
+    margin-right: 30px;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo .print img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo .brief{
+    width:340px;
+    height:88px;
+    float:left;
+    text-align: left;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo .brief .model{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#333333;
+    margin:14px 0px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.mainstay .feather .orderInfo .information .particular .shopinfo .brief .votes{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+}
+.mainstay .feather .orderInfo .information .particular .price{
+    width:566px;
+    padding:34px 0px;
+    height:20px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#F27C00;
+    float:left;
+    text-align: left;
+}
+.mainstay .feather .orderInfo .information .particular .price .goodsPrice{
+    height:20px;
+    line-height: 20px;
+    background-image: url(../images/chosefo.png);
+    background-size: 20px 20px;
+    background-repeat:no-repeat;
+    background-position: left center;
+    font-size: 18px;
+    color:#F27C00;
+    padding-left: 26px;
+    display:block;
+    float:left;
+    margin-right:75px;
+}
+.mainstay .feather .orderInfo .information .particular .price .goodsPrice.active{
+    background-image: url(../images/chosef.png);
+}
+.mainstay .feather .orderInfo .information .total{
+    width:100%;
+    height:52px;
+    float:left;
+}
+.mainstay .feather .orderInfo .information .total .summation{
+    height:52px;
+    line-height: 52px;
+    float:right;
+}
+.mainstay .feather .orderInfo .information .total .summation .price{
+    font-size: 18px;
+    color:#F27C00;
+}
+.mainstay .feather .contactInfo{
+    padding:0px 160px 0px 30px;
+    width:1100px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.mainstay .feather .contactInfo .core{
+    width:100%;
+    height:80px;
+    line-height: 80px;
+    text-align: left;
+    font-size: 16px;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .contactInfo .payment{
+    width:100%;
+    height:20px;
+    margin:5px 0px 45px 0px;
+    float:left;
+}
+.mainstay .feather .contactInfo .payment .mode{
+    height:20px;
+    line-height: 20px;
+    background-image: url(../images/chosefo.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 18px;
+    padding-left: 28px;
+    display:block;
+    float:left;
+    margin-right: 95px;
+}
+.mainstay .feather .contactInfo .payment .mode.active{
+    background-image: url(../images/chosef.png);
+}
+.mainstay .feather .contactInfo .confirm{
+    width:100%;
+    height:50px;
+    padding:25px 0px;
+    border-top:1px solid #DDDDDD;
+    float:left;
+}
+.mainstay .feather .contactInfo .confirm .submit{
+    width:238px;
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    color:#ffffff;
+    background-color: #5593D2;
+    border-radius: 30px;
+    display:block;
+    float:right;
+}
+.mainstay .feather .contactInfo .confirm .total{
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    color:#333333;
+    float:right;
+    margin-right:50px;
+}
+.mainstay .feather .contactInfo .confirm .total .price{
+    color:#F27C00;
+}
+.mainstay .feather .contactInfo .selectAddress{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .element{
+    padding-top:18px;
+    height:auto;
+}
+.mainstay .feather .contactInfo .selectAddress .element .select{
+    width:100%;
+    height:32px;
+    margin-bottom: 10px;
+}
+.mainstay .feather .contactInfo .selectAddress .select .chief{
+    height:32px;
+    line-height: 32px;
+    float:left;
+    font-size: 16px;
+    color:#999999;
+}
+.mainstay .feather .contactInfo .selectAddress .select .append{
+    width:114px;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    float:right;
+    display:block;
+    text-align: center;
+}
+.mainstay .feather .contactInfo .selectAddress .select .append span{
+    background-image: url(../images/add.png);
+    background-size: 13px 13px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color:#666666;
+    display:inline-block;
+}
+.mainstay .feather .contactInfo .selectAddress .details{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road{
+    width:1098px;
+    height:58px;
+    color:#666666;
+    text-align: left;
+    border:1px solid #f1f1f1;
+    position:relative;
+    box-shadow: 0px 2px 5px #F1F1F1;
+    margin-bottom: 8px;
+    cursor:default;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road.active{
+    border:1px solid #FEA549;
+    box-shadow: 0px 0px 0px 0px;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .name{
+    padding-left: 28px;
+    width:108px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .area{
+    width:180px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .addr{
+    width:316px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .tel{
+    width:155px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .handle{
+    width:102px;
+    height:58px;
+    line-height: 70px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .handle .operate{
+    width:auto;
+    height:14px;
+    margin:26px 0px 20px 0px;
+    float:left;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .handle .operate .modify{
+    height:14px;
+    line-height: 14px;
+    float:left;
+    color:#F27E04;
+    padding-right:8px;
+    display:none;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road.active .handle .operate .modify{
+    display:inline-block;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .tacit{
+    width:49px;
+    height:38px;
+    background-image: url(../images/tat.png);
+    background-size: 49px 38px;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:0;
+    top:0;
+    display:none;
+}
+.mainstay .feather .contactInfo .selectAddress .details .road .tacit.active{
+    display:block;
+}
+.mainstay .feather .contactInfo .address{
+    width: 1098px;
+    height: auto;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 2px 5px #F1F1F1;
+}
+.mainstay .feather .contactInfo .address.revise{
+    display:none;
+}
+.mainstay .feather .contactInfo .address .theme{
+    padding-left:26px;
+    width:1072px;
+    height:50px;
+    line-height: 56px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 16px;
+    color:#666666;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.mainstay .feather .contactInfo .address .theme .action{
+    float:left;
+    line-height: 56px;
+}
+.mainstay .feather .contactInfo .address .theme .abolish{
+    width:16px;
+    height:16px;
+    background-image: url(../images/cue.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    float:right;
+    margin:20px 40px 14px 0px;
+    cursor:pointer;
+    display:none;
+}
+.mainstay .feather .contactInfo .address .message{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .contactInfo .address .message .contact{
+    width:100%;
+    height:40px;
+    margin-bottom: 30px;
+}
+.mainstay .feather .contactInfo .address .message .contact .premise{
+    width:110px;
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+    margin-right: 56px;
+    font-size: 16px;
+    color:#999999;
+    float:left;
+}
+.mainstay .feather .contactInfo .address .message .contact .entry{
+    width:224px;
+    padding:0px 0px 0px 12px;
+    margin:0px 28px 0px 0px;
+    height:38px;
+    line-height: 38px;
+    font-family: 'Microsoft YaHei';
+    border:1px solid #DDDDDD;
+    color:#666666;
+    text-align: left;
+    float:left;
+    outline:none;
+}
+.mainstay .feather .contactInfo .address .message .contact .region{
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0px 28px 0px 0px;
+    padding: 0px 16px 0px 10px;
+    border: 0px;
+    color: #666666;
+    font-family: 'Microsoft YaHei';
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #DDDDDD;
+}
+.mainstay .feather .contactInfo .address .message .option{
+    width: 637px;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0px 242px 0px 26px;
+}
+.mainstay .feather .contactInfo .address .message .option .install{
+    height:18px;
+    line-height:18px;
+    font-size: 16px;
+    color:#999999;
+    padding-left: 24px;
+    background-image: url(../images/chose.png);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    float:left;
+    cursor:default;
+}
+.mainstay .feather .contactInfo .address .message .option .install.active{
+    background-image: url(../images/chose1.png);
+}
+.mainstay .feather .contactInfo .address .message .option .conserve{
+    width:118px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    text-align: center;
+    float:right;
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #3b3b3b;
+    opacity: 0.1;
+    display:none;
+}
+.defray{
+    width:600px;
+    position:fixed;
+    z-index:1000;
+    top:50%;
+    left:50%;
+    margin:-300px 0px 0px -270px;
+    background-color: #FBFBFB;
+    border-radius: 8px;
+    overflow:hidden;
+    display:none;
+}
+.defray .confirm .submit{
+    margin:auto;
+    cursor:pointer;
+    width: 238px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #5593D2;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.defray .title{
+    padding-left: 30px;
+    height: 60px;
+    line-height: 64px;
+    text-align: left;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #FBA54F;
+    position: relative;
+}
+.defray .title .close-btn{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 26px;
+    display: block;
+    font-size: 32px;
+    color: #CBCBC9;
+    top: 20px;
+}
+.defray .information{
+    margin:0px 30px;
+    padding-top:40px;
+    width:540px;
+    height:260px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.defray .information .picture{
+    width:100%;
+    height:202px;
+    margin-bottom: 14px;
+}
+.defray .information .picture .code{
+    width:200px;
+    height:200px;
+    border:1px solid #DEDEDE;
+}
+.defray .information .picture .code img{
+    width:100%;
+    height:100%;
+}
+.defray .information .payPrice{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    color:#333333;
+}
+.defray .order-detail{
+    padding:3px 0px 0px 40px;
+    width:560px;
+    height:176px;
+}
+.defray .order-detail .covers{
+    width:100%;
+    height:14px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.defray .order-detail .covers .attribute{
+    width:80px;
+    height:14px;
+    line-height:14px;
+    float:left;
+    color:#888888;
+}
+.defray .order-detail .covers .name{
+    margin-left: 80px;
+    height:14px;
+    line-height: 14px;
+    color:#575757;
+}
+.defray .order-detail .covers .price{
+    margin-left: 80px;
+    height:14px;
+    line-height: 14px;
+    color:#F85E25;
+}

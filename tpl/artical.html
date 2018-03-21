@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{$seo['title']}</title>
+    <meta name="keywords" content="{$text.0.nkey}"/>
+    <meta name="description" content="{$text.0.des}"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/notice/css/information.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/header.html"}
+    <div class="entire">
+        <div class="posses">
+            <div class="status">
+                <a class="apellation" href="javascript:;">首页</a>
+                <a class="apellation active" href="javascript:;">热门资讯</a>
+                <a class="apellation active" href="javascript:;">
+                {foreach from=$types item=v}
+                    {if $text.0.type==$v.id}
+                        {$v.title}
+                        {$titlettpe=$v.title}
+                    {/if}
+                {/foreach}
+                </a>
+            </div>
+
+            <div class="dimension">
+                <div class="left">
+                    <div class="sidebar">
+                        <a class="part" href="javascript:;">热门资讯</a>
+                        {foreach from=$types item=v}
+                            <div class="restrain {if $text.0.type==$v.id}active{/if}">
+                                <a class="fame" href="http://{$seo['host_name']}/news/Information/{$v.id}">{$v.title}</a>
+                            </div>
+                        {/foreach}
+                        
+                    </div>
+
+                    <div class="elite">推荐阅读</div>
+                    <div class="groom">
+                        {foreach from=$rec_read item=v}
+                        <a class="headline" href="{$v.url}">
+                            <span>▪ </span>
+                            <span>{$v.title}</span>
+                        </a>
+                        {/foreach}
+                    </div>
+                </div>
+
+                <div class="offside">
+                    <div class="mostly">
+                        <div class="caption">{$text.0.title}</div>
+                        <div class="reveal">
+                            <div class="motif">{$titlettpe}</div>
+                            <div class="time">{date('Y-m-d H:i:s',$text.0.jtime)}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        {$text.0.text}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file='common/footer.html'}
+<script src="/static/notice/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/notice/js/information.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

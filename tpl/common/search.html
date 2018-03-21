@@ -1,0 +1,28 @@
+    <div class="trawled">
+        <div class="search-box">
+            <div class="search-rock">
+                <div class="classify">
+                    {if !isset($other.type)||$other.type=='mobile'}
+                    <span class="total" data='mobile'>手机</span>
+                    {else if $other.type=='flat'}
+                    <span class="total" data='flat'>平板<span>
+                    {/if}
+                    <div class="categorize">
+                        <a class="sort-name active" data='mobile' href="javascript:;">手机</a>
+                        <a class="sort-name" data='flat' href="javascript:;">平板</a>
+                    </div>
+                </div>
+                <input type="button" class="search"/>
+                <div class="imports">
+                    <input class="entry" type="text" placeholder="请输入要搜索的关键词"/ value="{if isset($other['search'])}{$other['search']}{/if}">
+                </div>
+            </div>
+            <div class="version">
+                {if isset($hotSeach)&&!empty($hotSeach)}
+                {foreach from=$hotSeach item=v}
+                <a class="model" target="_blank" href="/index.php/order/digital/option?id={$v['id']}">{$v['name']}</a>
+                {/foreach}
+                {/if}
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,329 @@
+.macroblock{
+    width:100%;
+    height:600px;
+    background-image: url(../images/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.macroblock .spatial{
+    width:1200px;
+    height:600px;
+}
+.macroblock .spatial .restrain{
+    width:374px;
+    padding:0 44px;
+    height:482px;
+    float:right;
+    margin-top: 64px;
+    background-color: #ffffff;
+}
+.macroblock .spatial .restrain .title{
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    padding: 30px 0px 16px 0px;
+    text-align: left;
+    font-size: 20px;
+    cursor: default;
+    color: #F27C00;
+}
+.macroblock .spatial .restrain .frame{
+    width:100%;
+    height:auto;
+}
+.macroblock .spatial .restrain .cue{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+    color:#F27C00;
+    text-align: left;
+}
+.macroblock .spatial .restrain .punching{
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    margin-top:20px;
+}
+.macroblock .spatial .restrain .punching.first{
+    margin-top:0px;
+}
+.macroblock .spatial .restrain .punching .icon{
+    width:24px;
+    height:24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    float:left;
+    margin:8px 14px 8px 4px;
+}
+.macroblock .spatial .restrain .captcha{
+    width:100%;
+    height:40px;
+    margin-top:20px;
+}
+.macroblock .spatial .restrain .captcha .left{
+    width:154px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    float:left;
+}
+.macroblock .spatial .restrain .captcha .left .icon{
+    width:24px;
+    height:24px;
+    background-image: url(/static/home/images/icon4.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    float:left;
+    margin:7px 14px 7px 4px;
+}
+.macroblock .spatial .restrain .captcha .input-box{
+    margin-left: 42px;
+    height:38px;
+}
+.macroblock .spatial .restrain .captcha .code{
+    width:112px;
+    height:40px;
+    float:left;
+}
+.macroblock .spatial .restrain .captcha .code img{
+    width:100%;
+    height:100%;
+    margin-left: 6px;
+}
+.macroblock .spatial .restrain .captcha .replace{
+    height:18px;
+    line-height: 18px;
+    margin-top:22px;
+    float:right;
+    font-size: 12px;
+    color:#3863C4;
+    display:inline-block;
+}
+.macroblock .spatial .restrain .captcha .input-box .information{
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    margin:0;
+    padding:0;
+    border:0;
+    color:#999999;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+}
+.macroblock .spatial .restrain .punching .icon[data-index='1']{
+    background-image: url(../images/icon1.png);
+}
+.macroblock .spatial .restrain .punching .icon[data-index='2']{
+    background-image: url(../images/icon2.png);
+}
+.macroblock .spatial .restrain .punching .icon[data-index='3']{
+    background-image: url(../images/icon3.png);
+}
+.macroblock .spatial .restrain .punching .input-box{
+    margin-left: 42px;
+    height:38px;
+}
+.macroblock .spatial .restrain .punching .input-box .information{
+    width:100%;
+    height:38px;
+    line-height: 38px;
+    margin:0;
+    padding:0;
+    border:0;
+    color:#999999;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    float:left;
+}
+.macroblock .spatial .restrain .punching .input-box .reload{
+    width:auto;
+    margin-right: 138px;
+}
+.macroblock .spatial .restrain .punching .input-box .get-code{
+    width:137px;
+    height:38px;
+    line-height: 38px;
+    background-color: #F9F9F9;
+    border:0;
+    border-left:1px solid #DDDDDD;
+    float:right;
+    color:#666666;
+    font-family: 'Microsoft YaHei';
+    margin:0;
+    padding:0;
+    outline:none;
+}
+.macroblock .spatial .restrain .bargain{
+    width:100%;
+    height:12px;
+    line-height: 12px;
+    margin:16px 0px 21px 0px;
+}
+.macroblock .spatial .restrain .bargain .checkbox{
+    width:12px;
+    height:12px;
+    background-image: url(../images/noopt.png);
+    background-size: 12px 12px;
+    float:left;
+}
+.macroblock .spatial .restrain .bargain .checkbox.active{
+    background-image: url(../images/opt.png);
+}
+.macroblock .spatial .restrain .bargain .accede{
+    margin-left:20px;
+    height:12px;
+    line-height: 12px;
+    font-size: 10px;
+    text-align: left;
+}
+.macroblock .spatial .restrain .bargain .accede span{
+    color:#333333;
+}
+.macroblock .spatial .restrain .bargain .accede span.item{
+    color:#93AAE8;
+}
+.macroblock .spatial .restrain .register{
+    width:100%;
+    height:48px;
+    background-color: #FEA549;
+    color:#ffffff;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    border-radius: 3px;
+    margin:20px 0px 12px 0px;
+    padding:0;
+    border:0;
+    cursor:pointer;
+}
+.macroblock .spatial .restrain .palette{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+}
+.macroblock .spatial .restrain .palette span{
+    color:#666666;
+}
+.macroblock .spatial .restrain .palette .sign{
+    height:20px;
+    padding:0 7px;
+    line-height: 20px;
+    background-color: #4F79DD;
+    color:#ffffff;
+    display:inline-block;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+.page-bottom{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.page-bottom .footer{
+    width:1170px;
+    height:216px;
+    padding: 26px 0 22px 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.page-bottom .footer .footer-left{
+    width:792px;
+    height:216px;
+    float:left;
+}
+.page-bottom .footer .footer-left .column{
+    width:20%;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.page-bottom .footer .footer-left .column .rise{
+    width:100%;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-left .column .lets{
+    width:100%;
+    line-height: 32px;
+    font-size: 12px;
+    color:#666666;
+    display:block;
+}
+.page-bottom .footer .footer-left .column .lets:hover{
+    color:#FEA549;
+}
+.page-bottom .footer .footer-right{
+    margin-left: 792px;
+    height:216px;
+    text-align: left;
+}
+.page-bottom .footer .footer-right .relation{
+    padding-left: 6px;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-right .contact{
+    padding-left:6px;
+    height:20px;
+}
+.page-bottom .footer .footer-right .contact .tel{
+    font-size: 14px;
+    line-height: 20px;
+    display:inline-block;
+    color:#F2253C;
+}
+.page-bottom .footer .footer-right .contact .timer{
+    font-size: 12px;
+    line-height: 20px;
+    display:inline-block;
+    color:#666666;
+    padding-left: 60px;
+}
+.page-bottom .footer .footer-right .addr{
+    padding-left: 6px;
+    font-size: 12px;
+    color:#666666;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.page-bottom .footer .footer-right .concern{
+    width:100%;
+    height:112px;
+}
+.page-bottom .footer .footer-right .concern .concern-left{
+    width:137px;
+    height:112px;
+    float:left;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code{
+    width:88px;
+    height:88px;
+    margin:0 55px 8px 6px;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code img{
+    width:100%;
+    height:100%;
+}
+.page-bottom .footer .footer-right .concern .concern-left .stamp{
+    width:100%;
+    height:16px;
+    font-size: 12px;
+    color:#333333;
+}
+.page-bottom .copyright{
+    width:1200px;
+    height:56px;
+    line-height: 56px;
+    font-size: 12px;
+    color:#666666;
+}
+/*
+#error_msg{
+	height:20px;
+	color:red;
+	text-align:left;
+}
+*/

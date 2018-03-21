@@ -1,0 +1,31 @@
+.line{
+    width:100%;
+    height:1px;
+    background-color: #F27C00;
+}
+.code{
+    width:100%;
+    height:663px;
+    background-color: #D1D5D6;
+}
+.code .picture{
+    width:1200px;
+    height:663px;
+}
+.code .picture img{
+    width:100%;
+    height:100%;
+}
+.wares{
+    width:100%;
+    height:1389px;
+    background-color: #FFA447;
+}
+.wares .graphic{
+    width:1200px;
+    height:1389px;
+}
+.wares .graphic img{
+    width:100%;
+    height:100%;
+}

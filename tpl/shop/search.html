@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>手机数码</title>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/phones.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    <div class="mainstay">
+    {include file="shop/header.html"}
+        <div class="feather">
+            <div class="status">
+                <a class="apellation" href="/">首页</a>
+                <a class="apellation active" href="/index.php/shops/shopinfo/">通花商城</a>
+                <a class="apellation active" href="javascript:;">{$searchtext}</a>
+            </div>
+            <div class="assortment">
+                
+                <div class="reveal">
+                    <div class="reorder">
+                        <div class="words">排序方式：</div>
+                        <a class="mode first {if {$sort}==1}active{/if}" href="/index.php/shops/shopinfo/searchshop/{$searchtext}/1">综合</a>
+                        <a class="mode {if $sort==2}active{/if}" href="/index.php/shops/shopinfo/searchshop/{$searchtext}/2">最新</a>
+                        <a class="mode {if $sort==3||$sort==4}active{/if}" href="{if $sort==3}4{else if $sort==4}3{else}4{/if}">
+                            <span>价格</span>
+                        </a>
+                    </div>
+                    <div class="chose">
+                        <a class="left" href="javascript:;"></a>
+                        <a class="right" href="javascript:;"></a>
+                    </div>
+                    <div class="sales">
+                        <span>共</span>
+                        <span class="sum">{$num}</span>
+                        <span>在售</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="parade">
+                    {if $goods!=''}
+                    {foreach from=$goods item=v key=i}
+                    <a class="goodsList" href="/index.php/shops/shopinfo/getgoodinfo/{$v.id}">
+                        <div class="picture" align="center">
+                            <div class="print">
+                                <img src="{$v.img}"/>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="title">{$v.name}</div>
+                            <!-- <div class="desc">9成新 全网通</div> -->
+                            <div class="price">￥{$v.ppri/100}</div>
+                        </div>
+                    </a>
+                    {/foreach}
+                    {else}
+                        <div class="picture" align="center">
+                            未找到商品
+                        </div>
+                    {/if}
+                </div>
+
+                <div class="pagination" npage="{$page}" sort="{$sort}" text="{$searchtext}">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+
+<script type="text/javascript" src="/static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/shop/js/head.js"></script>
+<script type="text/javascript" src="/static/shop/js/footer.js"></script>
+<script type="text/javascript" src="/static/shop/js/search.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

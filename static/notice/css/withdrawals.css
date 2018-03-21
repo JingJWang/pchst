@@ -1,0 +1,673 @@
+.container{
+    width:100%;
+    height:100%;
+    min-width: 1250px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.navigation{
+    width:100%;
+    height:110px;
+    position:fixed;
+    top:0;
+    z-index:200;
+    background-color: #ffffff;
+}
+.navigation.active{
+    box-shadow: 0 2px 5px #dddddd;
+}
+.navigation .navigation-bar{
+    width:1200px;
+    height:110px;
+}
+.navigation .logo{
+    width:100px;
+    height:53px;
+    line-height: 68px;
+    margin:35px 0 22px 0;
+    display:block;
+    float:left;
+    background-image: url(../images/logo2.png);
+    background-size: 129px 53px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 16px;
+    color:#666666;
+    padding-left: 135px;
+}
+.navigation .genre{
+    margin-left: 279px;
+    height:70px;
+    padding-top: 38px;
+}
+.navigation .genre .classify{
+    width:auto;
+    height:70px;
+    float:left;
+}
+.navigation .genre .classify .className{
+    padding:0 15px;
+    height:70px;
+    line-height: 70px;
+    border:0;
+    margin:0 30px 0 0 ;
+    font-size: 16px;
+    color:#333333;
+    background-color: #ffffff;
+    font-family: 'Microsoft YaHei';
+    float:left;
+    outline: none;
+    cursor:pointer;
+    display:block;
+}
+.navigation .genre .classify .className:hover
+{
+    color:#F27C00;
+}
+.navigation .genre .classify .className.active{
+    border-bottom: 2px solid #F27C00;
+    color:#F27C00;
+}
+.navigation .genre .facility{
+    width:auto;
+    float:right;
+    height:72px;
+}
+.navigation .genre .facility .head-ion{
+    width:32px;
+    height:32px;
+    margin:20px 10px 20px 0;
+    float:left;
+}
+.navigation .genre .facility .head-ion img{
+    width:100%;
+    height:100%;
+}
+.navigation .genre .facility .consumer{
+    width:auto;
+    height:18px;
+    margin:28px 25px 28px 0;
+    float:left;
+}
+.navigation .genre .facility .consumer .login{
+    height:16px;
+    line-height: 16px;
+    padding-right: 8px;
+    border-right:1px solid #A0A0A0;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .genre .facility .consumer .login:hover
+{
+    color:#F27C00;
+}
+.navigation .genre .facility .consumer .register{
+    height:16px;
+    line-height: 16px;
+    padding-left: 8px;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .genre .facility .consumer .register:hover
+{
+    color:#F27C00;
+}
+.full-top{
+    width:100%;
+    height:110px;
+}
+
+.trawled{
+    width:100%;
+    height:100px;
+    background-image: url(../images/bg3.png);
+    background-size: 100% 100px;
+    background-position: center center;
+}
+.trawled .search-box{
+    width:482px;
+    height:70px;
+    padding-top: 30px;
+}
+.trawled .search-box .search-rock{
+    width:100%;
+    height:42px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.trawled .search-box .search-rock .classify{
+    width:112px;
+    height:30px;
+    line-height: 30px;
+    margin:6px 0;
+    border-right:2px solid #F27C00;
+    text-align: center;
+    float:left;
+    position:relative;
+}
+.trawled .search-box .search-rock .classify .total{
+    color:#F27C00;
+    background-image: url(../images/drop.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 19px;
+    cursor:default;
+}
+.trawled .search-box .search-rock .classify .categorize{
+    width:112px;
+    height:106px;
+    padding-top:10px;
+    background-color: #ffffff;
+    position:absolute;
+    margin-top: 11px;
+    box-shadow: 0 3px 5px #dddddd;
+    display:none;
+    z-index:20;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name{
+    margin-left: 14px;
+    display:block;
+    text-align: left;
+    color:#666666;
+    height:15px;
+    line-height: 15px;
+    margin-bottom:12px;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name.active{
+    color:#F27C00;
+}
+.trawled .search-box .search-rock .search{
+    width:66px;
+    height:42px;
+    border-left:1px solid #F27C00;
+    float:right;
+    background-color: #ffffff;
+    background-image: url(../images/search.png);
+    background-size: 20px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline:none;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.trawled .search-box .search-rock .imports{
+    margin:0 67px 0 132px;
+    height:42px;
+}
+.trawled .search-box .search-rock .imports .entry{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.trawled .search-box .search-rock .imports .entry:focus{
+    color:#666666;
+}
+.trawled .search-box .version{
+    width:100%;
+    height:24px;
+    line-height: 24px;
+}
+.trawled .search-box .model{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    font-size: 10px;
+    color:#E9E9E9;
+}
+
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    height:39px;
+    line-height: 40px;
+    border-bottom:1px solid #EDEDED;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+    padding-bottom: 38px;
+}
+.entire .posses .dimension .right .groom{
+    padding-left: 10px;
+    width:958px;
+    height:30px;
+    line-height: 26px;
+    font-size: 18px;
+    color:#666666;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .information{
+    padding:0px 20px;
+    width:928px;
+    height:auto;
+    float:left;
+    box-shadow: 0px 2px 5px #dddddd;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .information .motif{
+    padding-left:8px;
+    width:920px;
+    height:52px;
+    line-height: 56px;
+    font-size: 16px;
+    color:#666666;
+    text-align: left;
+}
+.entire .posses .dimension .right .information .account{
+    padding: 15px 0px 0px 18px;
+    width: 910px;
+    height: 85px;
+    background-color: #FBFBFB;
+}
+.entire .posses .dimension .right .information .account .sign{
+    width: 24px;
+    height: 24px;
+    margin: 6px 0px 52px 0px;
+    float: left;
+    background-image: url(../images/wx1.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+.entire .posses .dimension .right .information .account .material{
+    margin-left: 36px;
+    height:auto;
+}
+.entire .posses .dimension .right .information .account .material .debits{
+    width:100%;
+    height:36px;
+}
+.entire .posses .dimension .right .information .account .material .debits .party{
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    font-size: 16px;
+    color: #333333;
+    margin-right: 35px;
+}
+.entire .posses .dimension .right .information .account .material .debits .party .item{
+    padding-left: 6px;
+}
+.entire .posses .dimension .right .information .account .material .probate{
+    width:100%;
+    height:36px;
+}
+.entire .posses .dimension .right .information .account .material .probate .real{
+    height:36px;
+    line-height: 36px;
+    float:left;
+    font-size: 16px;
+    color:#333333;
+}
+.entire .posses .dimension .right .information .account .material .probate .real .name{
+    padding-left: 6px;
+}
+.entire .posses .dimension .right .information .measure{
+    padding:30px 0px 0px 8px;
+    width:920px;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .usable{
+    width:100%;
+    height:20px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+.entire .posses .dimension .right .information .measure .usable .basic{
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#666666;
+    float:left;
+    margin-right: 6px;
+}
+.entire .posses .dimension .right .information .measure .usable .money{
+    height:20px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#333333;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal{
+    width:100%;
+    height:auto;
+    margin-bottom: 40px;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .truth{
+    width:130px;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .import{
+    padding:0px 0px 0px 12px;
+    margin:0px 8px 0px 0px;
+    width:224px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    color:#999999;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .cash-btn {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #5D9AFF;
+    float: left;
+    display:block;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal{
+    margin-left: 130px;
+    height:auto;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .braised{
+    width:100%;
+    height:40px;
+    margin-bottom: 12px;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .braised .code{
+    width:152px;
+    padding:0px 0px 0px 12px;
+    margin:0px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    border-right:0px;
+    color:#999999;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .braised .getCode{
+    width: 74px;
+    height:40px;
+    line-height: 40px;
+    padding:0px;
+    margin:0px;
+    background-color: #FEA549;
+    color:#ffffff;
+    font-size: 12px;
+    float:left;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .sprawls{
+    width:100%;
+    height:16px;
+    text-align: left;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .sprawls .binding{
+    height:16px;
+    line-height: 16px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .reveal .sprawls .binding .tel{
+    color:#333333;
+    font-size: 16px;
+}
+.entire .posses .dimension .right .information .measure .postal .chartCode{
+    width:68px;
+    height:24px;
+    margin: 8px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .postal .chartCode img{
+    width: 100%;
+    height: 100%;
+}
+.entire .posses .dimension .right .information .measure .palette{
+    width:100%;
+    height:50px;
+    margin-bottom: 38px;
+    float:left;
+}
+.entire .posses .dimension .right .information .measure .palette .affirm{
+    width:160px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    font-size: 16px;
+    color:#ffffff;
+    display:block;
+    float:left;
+    margin-left: 128px;
+}
+
+.page-bottom{
+    width:100%;
+    height:auto;
+    float:left;
+    border-top:1px solid #F0F0F0;
+}
+.page-bottom .footer{
+    width:1170px;
+    height:216px;
+    padding: 26px 0 22px 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.page-bottom .footer .footer-left{
+    width:792px;
+    height:216px;
+    float:left;
+}
+.page-bottom .footer .footer-left .column{
+    width:20%;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.page-bottom .footer .footer-left .column .rise{
+    width:100%;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-left .column .lets{
+    width:100%;
+    line-height: 32px;
+    font-size: 12px;
+    color:#666666;
+    display:block;
+}
+.page-bottom .footer .footer-left .column .lets:hover{
+    color:#FEA549;
+}
+.page-bottom .footer .footer-right{
+    margin-left: 792px;
+    height:216px;
+    text-align: left;
+}
+.page-bottom .footer .footer-right .relation{
+    padding-left: 6px;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-right .contact{
+    padding-left:6px;
+    height:20px;
+}
+.page-bottom .footer .footer-right .contact .tel{
+    font-size: 14px;
+    line-height: 20px;
+    display:inline-block;
+    color:#F2253C;
+}
+.page-bottom .footer .footer-right .contact .timer{
+    font-size: 12px;
+    line-height: 20px;
+    display:inline-block;
+    color:#666666;
+    padding-left: 60px;
+}
+.page-bottom .footer .footer-right .addr{
+    padding-left: 6px;
+    font-size: 12px;
+    color:#666666;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.page-bottom .footer .footer-right .concern{
+    width:100%;
+    height:112px;
+}
+.page-bottom .footer .footer-right .concern .concern-left{
+    width:137px;
+    height:112px;
+    float:left;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code{
+    width:88px;
+    height:88px;
+    margin:0 55px 8px 6px;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code img{
+    width:100%;
+    height:100%;
+}
+.page-bottom .footer .footer-right .concern .concern-left .stamp{
+    width:100%;
+    height:16px;
+    font-size: 12px;
+    color:#333333;
+}
+.page-bottom .copyright{
+    width:1200px;
+    height:56px;
+    line-height: 56px;
+    font-size: 12px;
+    color:#666666;
+}
+
+

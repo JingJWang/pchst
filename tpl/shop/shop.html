@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>通花商城</title>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/shop.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="shop/header.html"}
+    <div class="banner">
+        <div class="viewport">
+            <a data-index="1" class="graphic" href="javascript:;"></a>
+            <a data-index="2" class="graphic" style="margin-left: 100%;" href="javascript:;"></a>
+            <a data-index="3" class="graphic" style="margin-left: 200%;" href="javascript:;"></a>
+            <a data-index="4" class="graphic" style="margin-left: 300%" href="javascript:;"></a>
+            <a data-index="5" class="graphic" style="margin-left: 400%;" href="javascript:;"></a>
+            <a data-index="6" class="graphic" style="margin-left: 500%;" href="javascript:;"></a>
+        </div>
+        <div class="upper" align="center">
+            <div class="dimension">
+                <div class="assortment">
+                    <div class="shade"></div>
+                    <div class="agents">
+                    {foreach from=$types item=v key=i}
+                        <a class="classify" href="http://{$seo['host_name']}/shops/shopinfo/getypegood/{$v.id}_1_1/">
+                            {$v.name}
+                            <div class="sign"></div>
+                        </a>
+                    {/foreach}
+                    </div>
+                </div>
+                <div class="sprawls">
+                    <div class="tier">
+                        <div data-id="0" class="dot first active"></div>
+                        <div data-id="1" class="dot"></div>
+                        <div data-id="2" class="dot"></div>
+                        <div data-id="3" class="dot"></div>
+                        <div data-id="4" class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainstay">
+
+        <div class="feather">
+        {foreach from=$types item=v key=i}
+            {if isset($v.goods)}
+            <div class="luxury">
+                <div class="reveal">
+                    <div class="title">{$v.name}</div>
+                    <div class="genre">
+                        {if isset($v.son)}
+                            {foreach from=$v.son.sontype item=va key=in}
+                            <a class="rubric" href="http://{$seo['host_name']}/shops/shopinfo/getypegood/{$va.id}_1_1/">{$va.name}</a>
+                            {/foreach}
+                        {/if}
+                        <a class="rubric all" href="http://{$seo['host_name']}/shops/shopinfo/getypegood/{$v.id}_1_1/">全部</a>
+                    </div>
+                </div>
+                <div class="braised">
+                    {$num=1}
+                    {foreach from=$v.goods item=va key=in}
+                    {if $num>5}
+                        {break}
+                    {/if}
+                    <a class="luxuryList {if $num==1}first{/if}" href="http://{$seo['host_name']}/shops/shopinfo/getgoodinfo/{$va.id}">
+                        <div class="print">
+                            <img src="{$va.img}"/>
+                        </div>
+                        <div class="detail">
+                            <div class="title">{$va.name}</div>
+                            <div class="price">￥{$va.prri/100}</div>
+                            <div class="state" align="center">
+                            {if isset($va.property.viewsell)&&$va.property.viewsell==1}
+                                <span class="sales">已卖出{$va.sellnum}件</span>
+                            {/if}
+                                {if isset($va.property.viewsell)&&$va.gnumber<=0}<span class="line"></span>{/if}
+                            {if $va.gnumber<=0}
+                                <span class="sold-out">已卖完</span>
+                            {/if}
+                            </div>
+                            <div class="desc">
+                            {if isset($va.property.m)&&$va.property.m==1}
+                                <span class="votes no">包邮</span>
+                            {/if}
+                            {if isset($va.property.j)&&$va.property.j==1}
+                                <span class="votes">寄售</span>
+                            {/if}
+                            </div>
+                        </div>
+                    </a>
+                    {$num=$num+1}
+                    {/foreach}
+
+                </div>
+            </div>
+            {/if}
+        {/foreach}
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="service">
+            <div class="advantage first" data-index="1">
+                <span>正品保障</span>
+            </div>
+            <div class="advantage" data-index="2">
+                <span>极速物流</span>
+            </div>
+            <div class="advantage" data-index="3">
+                <span>售后无忧</span>
+            </div>
+            <div class="advantage" data-index="4">
+                <span>全场包邮</span>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+<!-- <div class="shadow"></div>
+<div class="inform">
+    <img src="/static/shop/images/bg_03.png"/>
+    <a class="close-btn" href="javascript:;"></a>
+    <div class="handle" align="center">
+        <a class="realize" href="javascript:;"></a>
+    </div>
+</div> -->
+
+
+<script type="text/javascript" src="/static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/shop/js/head.js"></script>
+<script type="text/javascript" src="/static/shop/js/footer.js"></script>
+<script type="text/javascript" src="/static/shop/js/shop.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="page-bottom">
+        <div class="footer">
+            <div class="footer-left">
+                {foreach from=$foots item=v}
+                <div class="column">
+                    <div class="rise"><a target="_blank" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/news/getnotice/{$v.id}">{$v.title}</a></div>
+                    {if isset($v.son)}
+                    {foreach from=$v.son item=son}
+                    <a class="lets" target="_blank" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/news/getnotice/{$v.id}/#link{$son.id}">{$son.title}</a>
+                    {/foreach}
+                    {/if}
+                </div>
+                {/foreach}
+            </div>
+            <div class="footer-right">
+                <div class="relation">联系我们</div>
+                <div class="contact">
+                    <span class="tel">400-641-5080</span>
+                    <span class="timer">周一至周日：09:00-19:00</span>
+                </div>
+                <!-- <div class="addr">地址：北京市朝阳区惠新西街北口千鹤家园1号楼904</div> -->
+                <div class="concern">
+                    <div class="concern-left">
+                        <div class="code">
+                            <img src="/static/home/images/recover.png" alt="二手手机回收"/>
+                        </div>
+                        <div class="stamp">扫码关注【回收通】</div>
+                    </div>
+                    <div class="concern-left">
+                        <div class="code">
+                            <img src="/static/home/images/consign.png" alt="二手手机回收"/>
+                        </div>
+                        <div class="stamp">扫码关注【寄售通】</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">©Copyright 2014-2016 All Right Reserved   京ICP备14055664号-1； 北京知通科技有限公司   </div>
+    </div>

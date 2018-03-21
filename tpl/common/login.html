@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/login.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/page_header.html"}
+    <div class="macroblock">
+        <div class="spatial">
+            <div class="circle">
+                <div class="restrain">
+                    <div class="title">
+                        <div class="account active">账号登录</div>
+                        <div class="message">短信验证登录</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="brief">
+                        <div class="words">回收通/寄售通用户在此登录</div>
+                    </div>
+                    <div class="frame">
+                        <div class="cue" id="loginmsg"></div>
+                        <div class="punching first">
+                            <div data-index="1" class="icon"></div>
+                            <div class="input-box">
+                                <input class="information press" type="text" id="name" placeholder="请输入手机号"/>
+                            </div>
+                        </div>
+                        <div class="punching">
+                            <div data-index="3" class="icon"></div>
+                            <div class="input-box">
+                                <input class="information press" type="password" id="pwd" placeholder="请输入登录密码"/>
+                            </div>
+                        </div>
+                         <div class="captcha" id="login_code">
+                            <div class="left">
+                                <div class="icon"></div>
+                                <div class="input-box">
+                                    <input class="information press" id="code" type="text" value="1234"  placeholder="请输入验证码"/>
+                                </div>
+                            </div>
+                            <div class="code">
+                                <img src="/code/img.php?name=2" id="code_img" onclick="this.src='/code/img.php?name=2&d='+Math.random();"/>
+                            </div>
+                            <a class="replace"  href="javascript:;" onclick="upimg()">看不清楚，换一张</a>
+                        </div>
+                        <div class="bargain">
+                            <div class="checkbox"></div>
+                            <div class="accede">记住密码</div>
+                            <div class="choice">
+                                <a class="forget" href="/index.php/user/backpwd">忘记密码 ?</a>
+                                <a class="enroll" href="/index.php/user/register">注册账号</a>
+                            </div>
+                        </div>
+                        <input class="register" type="button" onclick="login();" value="立即登录"/>
+                        <div class="seat"></div>
+                    </div>
+
+                    <div class="wholly">
+                        <div class="cue" id="login_error"></div>
+                        <div class="punching first">
+                            <div data-index="1" class="icon"></div>
+                            <div class="input-box">
+                                <input class="information press" id="mobile" type="text" placeholder="请输入手机号"/>
+                            </div>
+                        </div>
+                        <div class="punching">
+                            <div data-index="2" class="icon"></div>
+                            <div class="input-box">
+                                <input type="button" class="get-code" onclick="sendCode(this);" value="获取验证码"/>
+                                <div class="reload">
+                                    <input class="information code press" id="verify" type="text" placeholder="请输入短信验证码"/>
+                                </div>
+                            </div>
+                        </div>
+ 						<div class="captcha">
+                            <div class="left">
+                                <div class="icon"></div>
+                                <div class="input-box">
+                                    <input class="information press" type="text" id="code_val" placeholder="请输入随机验证码"/>
+                                </div>
+                            </div>
+                            <div class="code">
+                                <img src="/code/img.php?name=2" id="code_check" onclick="this.src='/code/img.php?name=2&d='+Math.random();"/>
+                            </div>
+                            <a class="replace" href="javascript:;" onclick="upcode();">看不清楚，换一张</a>
+                        </div>
+                        <div class="bargain">
+                            <div class="tips">注：请输入正确的手机号码验证</div>
+                        </div>
+                        <input class="register" type="button" onclick="mobileLogin();" value="立即登录"/>
+                    </div>
+                </div>
+
+                <!--<div class="addition">
+                    <div class="rest">
+                        	第三方登录
+                        <div class="left-line"></div>
+                        <div class="right-line"></div>
+                    </div>
+                    <a class="weChat" href="javascript:;">
+                        <span>微信登录</span>
+                    </a>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+{include file="common/footer.html"}
+<script type="text/javascript"  src="/static/home/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript"  src="/static/home/js/login.js"></script>
+<script type="text/javascript"  src="/static/home/ajax/r_common.js"></script>
+<script type="text/javascript"  src="/static/home/ajax/r_user.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

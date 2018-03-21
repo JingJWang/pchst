@@ -1,0 +1,380 @@
+.container{
+    width: 100%;
+    height: 100%;
+    min-width: 1250px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.container .navigation{
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: #ffffff;
+}
+.container .topHalf{
+    width:100%;
+    height:110px;
+}
+.container .navigation .navigation-bar{
+    width: 1200px;
+    height: 110px;
+}
+.container .navigation .navigation-bar .logo{
+    width: 129px;
+    height: 53px;
+    margin: 35px 0 22px 0;
+    display: block;
+    float: left;
+}
+.container .navigation .navigation-bar .logo img{
+    width:100%;
+    height:100%;
+}
+.container .navigation .navigation-bar .logoWord{
+    width: auto;
+    height: 53px;
+    line-height: 68px;
+    margin: 35px 0 22px 0;
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #333333;
+    padding-left: 10px;
+}
+.container .navigation .navigation-bar .account{
+    height:32px;
+    padding:52px 0px 26px 0px;
+    float:right;
+}
+.container .navigation .navigation-bar .account .head-icon{
+    width:32px;
+    height:32px;
+    float:left;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.container .navigation .navigation-bar .account .head-icon img{
+    width:100%;
+    height:100%;
+}
+.navigation .account .consumer{
+    width:auto;
+    height:18px;
+    margin:8px 0px;
+    float:left;
+}
+.navigation .account .consumer .login{
+    height:16px;
+    line-height: 16px;
+    padding-right: 8px;
+    border-right:1px solid #A0A0A0;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .account .consumer .login:hover
+{
+    color:#F27C00;
+}
+.navigation .account .consumer .register{
+    height:16px;
+    line-height: 16px;
+    padding-left: 8px;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .account .consumer .register:hover
+{
+    color:#F27C00;
+}
+.navigation .search-box{
+    width:291px;
+    height:38px;
+    border:1px solid #ACACAC;
+    float:right;
+    margin:48px 84px 24px 0px;
+}
+.navigation .search-box .search{
+    width:40px;
+    height:38px;
+    background-image: url(../images/search.png);
+    background-size: 16px 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-left:1px solid #ACACAC;
+    float:right;
+}
+.navigation .search-box .search-case{
+    margin-right: 41px;
+    padding-left: 18px;
+    height:38px;
+}
+.navigation .search-box .search-text{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    background-color: transparent;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    color:#666666;
+}
+.head-bar{
+    width:100%;
+    height:50px;
+    background-color: #292727;
+}
+.head-bar .menu{
+    width:1200px;
+    height:50px;
+}
+.head-bar .menu .general{
+    width:236px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #FEA549;
+    color:#333333;
+    font-size: 16px;
+    float:left;
+    margin-right: 62px;
+    cursor: default;
+    position:relative;
+}
+.head-bar .menu .general .classList{
+    width:236px;
+    padding:6px 0px 12px 0px;
+    height:auto;
+    position:absolute;
+    top:50px;
+    left:0px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px #dddddd;
+    display:none;
+}
+.head-bar .menu .general .classList .breed{
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+
+    text-align: left;
+    font-size: 14px;
+    color:#666666;
+    position:relative;
+}
+.head-bar .menu .general .classList .breed .arrow{
+    width:8px;
+    height:14px;
+    background-image: url(../images/row.png);
+    background-size: 8px 13px;
+    position:absolute;
+    right:25px;
+    top:13px;
+}
+.head-bar .menu .general .classList .breed:hover{
+    color:#FEA549;
+}
+.head-bar .menu .general span{
+    height:50px;
+    display:inline-block;
+    background-image: url(../images/up.png);
+    background-size: 12px 12px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right:18px;
+}
+.head-bar .menu .outline{
+    height:44px;
+    padding:3px 0px;
+    float:left;
+}
+.head-bar .menu .outline .item{
+    height:44px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#ffffff;
+    display:block;
+    float:left;
+    margin-right: 58px;
+}
+.head-bar .menu .outline .item:hover{
+    color:#F27C00;
+    border-bottom:2px solid #FEA549;
+}
+.head-bar .menu .outline .item.active{
+    color:#F27C00;
+    border-bottom:2px solid #FEA549;
+}
+.head-bar .menu .order{
+    height:50px;
+    line-height: 50px;
+    background-image: url(../images/list.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 28px;
+    display:block;
+    float:right;
+    margin-right: 68px;
+    font-size: 14px;
+    color:#F49331;
+}
+.full-top{
+    width:100%;
+    height:160px;
+}
+
+.page-bottom{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.page-bottom .service{
+    width:1200px;
+    height:36px;
+    padding:36px 0px 18px 0px;
+    border-bottom: 1px solid #F5F5F5;
+}
+.page-bottom .service .advantage{
+    width:24.8%;
+    height:36px;
+    border-left:1px solid #F5F5F5;
+    float:left;
+    cursor: default;
+}
+.page-bottom .service .advantage.first{
+    border-left:0px;
+}
+.page-bottom .service .advantage span{
+    height:36px;
+    line-height: 36px;
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    display:inline-block;
+    font-size: 16px;
+    color:#333333;
+}
+.page-bottom .service .advantage[data-index="1"] span{
+    background-image: url(../images/race1.png);
+}
+.page-bottom .service .advantage[data-index="2"] span{
+    background-image: url(../images/race2.png);
+}
+.page-bottom .service .advantage[data-index="3"] span{
+    background-image: url(../images/race3.png);
+}
+.page-bottom .service .advantage[data-index="4"] span{
+    background-image: url(../images/race4.png);
+}
+.page-bottom .footer{
+    width:1170px;
+    height:216px;
+    padding: 26px 0 22px 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.page-bottom .footer .footer-left{
+    width:792px;
+    height:216px;
+    float:left;
+}
+.page-bottom .footer .footer-left .column{
+    width:20%;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.page-bottom .footer .footer-left .column .rise{
+    width:100%;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-left .column .lets{
+    width:100%;
+    line-height: 32px;
+    font-size: 12px;
+    color:#666666;
+    display:block;
+}
+.page-bottom .footer .footer-left .column .lets:hover{
+    color:#FEA549;
+}
+.page-bottom .footer .footer-right{
+    margin-left: 792px;
+    height:216px;
+    text-align: left;
+}
+.page-bottom .footer .footer-right .relation{
+    padding-left: 6px;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-right .contact{
+    padding-left:6px;
+    height:20px;
+}
+.page-bottom .footer .footer-right .contact .tel{
+    font-size: 14px;
+    line-height: 20px;
+    display:inline-block;
+    color:#F2253C;
+}
+.page-bottom .footer .footer-right .contact .timer{
+    font-size: 12px;
+    line-height: 20px;
+    display:inline-block;
+    color:#666666;
+    padding-left: 60px;
+}
+.page-bottom .footer .footer-right .concern{
+    width:100%;
+    height:112px;
+    margin-top: 10px;
+}
+.page-bottom .footer .footer-right .concern .concern-left{
+    width:137px;
+    height:112px;
+    float:left;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code{
+    width:88px;
+    height:88px;
+    margin:0 55px 8px 6px;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code img{
+    width:100%;
+    height:100%;
+}
+.page-bottom .footer .footer-right .concern .concern-left .stamp{
+    width:100%;
+    height:16px;
+    font-size: 12px;
+    color:#333333;
+}
+.page-bottom .copyright{
+    width:1200px;
+    height:56px;
+    line-height: 56px;
+    font-size: 12px;
+    color:#666666;
+}
+
+

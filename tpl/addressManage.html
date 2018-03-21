@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>地址管理</title>
+    <link rel="stylesheet" type="text/css" href="/static/address/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/address/css/addressManage.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/address/css/cityselect.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/header.html"}
+    {include file="common/search.html"}
+    <div class="entire">
+        <div class="posses">
+            <div class="status">
+                <a class="apellation" href="/">首页</a>
+                <!-- <a class="apellation active" href="javascript:;">个人中心</a> -->
+                <a class="apellation active" href="javascript:;">账户管理</a>
+            </div>
+
+            <div class="dimension">
+                {include file="common/security_left.html"}
+                <div class="right">
+                    {if $adres!=false}
+                    <div class="groom">账户管理</div>
+                    <div class="receipt">
+                        <div class="major">我的收货地址</div>
+                        <div class="epitome">
+                            <div class="name">姓名</div>
+                            <div class="area">所在地区</div>
+                            <div class="addr">详细地址</div>
+                            <div class="tel">手机号码</div>
+                            <div class="handle">操作</div>
+                        </div>
+                        <div class="detail">
+                            {foreach from=$adres item=v}
+                            <div class="road" adres-id="{$v['id']}">
+                                <div class="name">{$v['name']}</div>
+                                <div class="area">
+                                    <span class='privince'>{$v['province']}</span>
+                                    <span class='city'>{$v['city']}</span>
+                                    <span class='sarea'>{$v['area']}</span>
+                                </div>
+                                <div class="addr">{$v['details']}</div>
+                                <div class="tel">{$v['phone']}</div>
+                                <div class="handle">
+                                    <div class="operate">
+                                        <a class="modify" href="javascript:;">修改</a>
+                                        <a class="delete" href="javascript:;">删除</a>
+                                    </div>
+                                </div>
+                                <div class="{if $v['status']==2}tacit{/if} active"></div>
+                            </div>
+                            {/foreach}
+                        </div>
+                    </div>
+                    {/if}
+
+                    <div class="address addition">
+                        <div class="theme">新增地址</div>
+                        <div class="message">
+                            <div class="contact">
+                                <div class="premise">联系人信息</div>
+                                <input class="entry name" type="text" placeholder="姓名"/>
+                                <input class="entry tel" type="text" placeholder="手机号码"/>
+                            </div>
+                            <div class="contact">
+                                <div class="premise">位置信息</div>
+                                <input id="area_text" class="region" type="text" readonly="readonly" value=""/>
+                                <input class="entry addr" type="text" placeholder="详细地址"/>
+                            </div>
+                            <div class="option">
+                                <div class="install">设为默认地址</div>
+                                <a class="conserve" href="javascript:;">保存</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="address revise">
+                        <div class="theme">修改地址</div>
+                        <div class="message">
+                            <div class="contact">
+                                <div class="premise">联系人信息</div>
+                                <input class="entry name" type="text" placeholder="姓名"/>
+                                <input class="entry tel" type="text" placeholder="手机号码"/>
+                            </div>
+                            <div class="contact">
+                                <div class="premise">位置信息</div>
+                                <input id="area_text1" class="region area" type="text" readonly="readonly" value=""/>
+                                <!-- <input type="hidden" name="harea" data-id="" id="harea" value="北京">
+                                <input type="hidden" name="hproper" data-id="" id="hproper" value="北京">
+                                <input type="hidden" name="hcity" data-id="" id="hcity" value="北京"> -->
+                                <input class="entry addr" type="text" placeholder="详细地址"/>
+                            </div>
+                            <div class="option">
+                                <div class="install">设为默认地址</div>
+                                <a class="conserve" href="javascript:;">保存</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="harea" data-id="" id="harea" value="">
+                    <input type="hidden" name="hproper" data-id="" id="hproper" value="">
+                    <input type="hidden" name="hcity" data-id="" id="hcity" value="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {include file="common/footer.html"}
+
+</div>
+
+<div class="shadow"></div>
+<div class="bounced delinfo">
+    <div class="prompt">
+        <div class="hint">提示</div>
+        <a class="close-btn" href="javascript:;">×</a>
+    </div>
+    <div class="tooltip">您确定要删除该地址吗？</div>
+    <div class="press">
+        <a class="abolish" href="javascript:;">取消</a>
+        <a class="confirm suredel" href="javascript:;">确认</a>
+    </div>
+</div>
+<div class="bounced notices" style="display:none">
+    <div class="prompt">
+        <div class="hint">提示</div>
+        <a class="close-btn" href="javascript:;">×</a>
+    </div>
+    <div class="tooltip"></div>
+    <div class="press">
+        <!-- <a class="abolish" href="javascript:;">确定</a> -->
+        <a class="confirm" href="javascript:;">确认</a>
+    </div>
+</div>
+
+
+<script src="/static/address/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/address/js/citySet.js"></script>
+<script type="text/javascript" src="/static/address/js/cityJson.js"></script>
+<script type="text/javascript" src="/static/address/js/Popt.js"></script>
+<script type="text/javascript" src="/static/address/js/addressManage.js"></script>
+<script type="text/javascript" src="/static/address/ajax/r_common.js"></script>
+<script type="text/javascript" src="/static/address/ajax/r_adress.js"></script>
+<script type="text/javascript" src="/static/home/js/search.js"></script>
+<script>
+    $("#area_text").click(function (e) {
+        SelCity(this,e);
+    });
+    $("#area_text1").click(function (e) {
+        SelCity(this,e);
+    });
+</script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

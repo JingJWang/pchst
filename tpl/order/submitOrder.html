@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>提交订单</title>
+    <link rel="stylesheet" type="text/css" href="/static/order/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/order/css/submitOrder.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/order/css/cityselect.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/header.html"}
+    <div class="entire">
+        <div class="procedure">
+            <div class="circle">
+                <a class="step finish" href="javascript:;">
+                    <span>查找描述机型</span>
+                </a>
+                <a class="step finish" href="/index.php/order/quote/ViewQuote?id={$order.0.orderid}">
+                    <span>查看并选择报价</span>
+                </a>
+                <a class="step active" href="javascript:;">
+                    <span>完善信息提交订单</span>
+                </a>
+                <a class="step" href="javascript:;">
+                    <span>回收商预付款，快递物品</span>
+                </a>
+                <div class="line" style="left:25%;"></div>
+                <div class="line" style="left:50%;"></div>
+                <div class="line" style="left:75%;"></div>
+            </div>
+        </div>
+
+        <div class="particulars">
+            <div class="left">
+                <div class="message">
+                    <div class="grap">
+                        <img src="{if $order.0.img!=''}{$order.0.img}{else}/static/recover/images/bdefault.png{/if}"/>
+                    </div>
+                    <div class="model">{$order.0.name}</div>
+                    <div class="price" align="center">
+                        <span class="money">¥ {$order.0.price}</span>
+                        <span class="way">{$order.0.service}</span>
+                    </div>
+                    <div class="number">
+                        <span>订单编号：</span>
+                        <span>{$order.0.orderid}</span>
+                    </div>
+                </div>
+
+                <div class="merchants">
+                    <div class="item">
+                        <div class="trade">交易商家</div>
+                        <a class="chose" href="/index.php/order/quote/ViewQuote?id={$order.0.orderid}">重新选择</a>
+                    </div>
+                    <div class="detail">
+                        <div class="storeName">
+                            <span>{$order.0.cname}</span>
+                            <!-- <span style="padding-left: 6px;">苏老板</span> -->
+                        </div>
+                        <div class="probate">{$order.0.cauth}</div>
+                        <div class="distance">
+                            <span>{$order.0.distance/1000}KM</span>
+                        </div>
+                        <div class="grade">
+                            <div class="saith">
+                                <span>成交</span>
+                                <span>{$order.0.csum}</span>
+                                <span>单</span>
+                            </div>
+                            <div class="score">
+                                <span>评价</span>
+                                <span>{$order.0.cclass}</span>
+                                <span>分</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="ground" data-index="1">
+                            <span>平台担保</span>
+                        </div>
+                        <div class="ground" data-index="2">
+                            <span>安全认证</span>
+                        </div>
+                        <div class="ground" data-index="3">
+                            <span>钱先到账</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="title">完善交易信息</div>
+                <div class="trade-info">
+                    <div class="pattern">
+                        <div class="words">选择交易方式</div>
+                        <div class="recover active">
+                            <span>快递回收</span>
+                        </div>
+                        <!-- <div class="recover">
+                            <span>上门回收</span>
+                        </div> -->
+                    </div>
+                    {if $address!=false}
+                    <div class="select">
+                        <div class="chief">选择收货地址</div>
+                        <a class="append" href="javascript:;">
+                            <span>添加新地址</span>
+                        </a>
+                    </div>
+
+                    <div class="details">
+                        {foreach from=$address item=v}
+                        <div style="cursor:pointer;" adres-id='{$v.id}' class="road {if $v.status==2}active{/if}">
+                            <div class="name">{$v.name}</div>
+                            <div class="area">
+                            	<span class="province">{$v.province}</span>
+                            	<span class="city">{$v.city}</span>
+                            	<span class="sarea">{$v.area}</span>
+                            </div>
+                            <div class="addr">{$v.details}</div>
+                            <div class="tel">{$v.phone}</div>
+                            <div class="handle">
+                                <div class="operate">
+                                    <a class="modify" href="javascript:;">修改</a>
+                                </div>
+                            </div>
+                            <div class="tacit {if $v.status==2}active{/if}"></div>
+                        </div>
+                        {/foreach}
+                    </div>
+                    {else}
+                    <div class="afrist address addition">
+                        <div class="theme">
+                            <div class="action">新增地址</div>
+                            <div class="abolish"></div>
+                        </div>
+                        <div class="message">
+                            <div class="contact">
+                                <div class="premise">联系人信息</div>
+                                <input class="entry name" type="text" placeholder="姓名"/>
+                                <input class="entry tel" type="text" placeholder="手机号码"/>
+                            </div>
+                            <div class="contact">
+                                <div class="premise">位置信息</div>
+                                <input id="area_text" class="region area" type="text" readonly="readonly" value=""/>
+                                <input class="entry addr" type="text" placeholder="详细地址"/>
+                            </div>
+                            <div class="option">
+                                <div class="install">设为默认地址</div>
+                                <a class="conserve" href="javascript:;">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    <div class="address addition" style="display:none">
+                        <div class="theme">
+                            <div class="action">新增地址</div>
+                            <div class="abolish"></div>
+                        </div>
+                        <div class="message">
+                            <div class="contact">
+                                <div class="premise">联系人信息</div>
+                                <input class="entry name" type="text" placeholder="姓名"/>
+                                <input class="entry tel" type="text" placeholder="手机号码"/>
+                            </div>
+                            <div class="contact">
+                                <div class="premise">位置信息</div>
+                                <input id="area_text" class="region area" type="text" readonly="readonly" value=" "/>
+                                <input class="entry addr" type="text" placeholder="详细地址"/>
+                            </div>
+                            <div class="option">
+                                <div class="install">设为默认地址</div>
+                                <a class="conserve" href="javascript:;">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address revise">
+                        <div class="theme">
+                            <div class="action">修改地址</div>
+                            <div class="abolish"></div>
+                        </div>
+                        <div class="message">
+                            <div class="contact">
+                                <div class="premise">联系人信息</div>
+                                <input class="entry name" type="text" placeholder="姓名"/>
+                                <input class="entry tel" type="text" placeholder="手机号码"/>
+                            </div>
+                            <div class="contact">
+                                <div class="premise">位置信息</div>
+                                <input id="area_text1" class="region area" type="text" readonly="readonly" value=""/>
+                                <input class="entry addr" type="text" placeholder="详细地址"/>
+                            </div>
+                            <div class="option">
+                                <div class="install">设为默认地址</div>
+                                <a class="conserve" href="javascript:;">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="hproper" data-id="" id="hproper" value="">
+                    <input type="hidden" name="harea" data-id="" id="harea" value="">
+                    <input type="hidden" name="hcity" data-id="" id="hcity" value="">
+                    <div class="confirm">
+                        <a class="transaction" href="javascript:;">立即交易</a>
+                        <div class="acquire">
+                            <span>您总共可以获得 : </span>
+                            <span class="money">￥{$order.0.price}</span>
+                            <span>元</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+<script src="/static/order/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/order/js/citySet.js"></script>
+<script type="text/javascript" src="/static/order/js/cityJson.js"></script>
+<script type="text/javascript" src="/static/order/js/Popt.js"></script>
+<script type="text/javascript" src="/static/order/js/submitOrder.js"></script>
+<script type="text/javascript" src="/static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="/static/order/ajax/r_address.js"></script>
+<script>
+    $("#area_text").click(function (e) {
+        SelCity(this,e);
+    });
+    $("#area_text1").click(function (e) {
+        SelCity(this,e);
+    });
+</script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

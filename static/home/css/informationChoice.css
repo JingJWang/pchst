@@ -1,0 +1,326 @@
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+}
+.entire .information{
+    width:1200px;
+    height:auto;
+}
+.entire .information .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .information .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .information .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .information .posses{
+    width:1200px;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .detail{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    padding-bottom: 260px;
+}
+.entire .information .posses .detail .info{
+    width:220px;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .detail .info .picture{
+    width:220px;
+    height:220px;
+    padding:10px 0px;
+}
+.entire .information .posses .detail .info .picture img{
+    width:100%;
+    height:100%;
+}
+.entire .information .posses .detail .info .model{
+    width:100%;
+    height:32px;
+    line-height: 32px;
+    color:#333333;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-bottom: 10px;
+}
+.entire .information .posses .detail .info .amount{
+    padding:0 7px;
+    height:24px;
+}
+.entire .information .posses .detail .info .amount .outline{
+    height:24px;
+    line-height: 24px;
+    color:#666666;
+    float:left;
+}
+.entire .information .posses .detail .info .amount .sum{
+    height:24px;
+    line-height: 24px;
+    color:#333333;
+    float:right;
+}
+.entire .information .posses .detail .info .predict{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    margin:24px 0px 3px 0px;
+    font-size: 12px;
+    color:#666666;
+}
+.entire .information .posses .detail .info .predict .rise{
+    color:#F27C00;
+}
+.entire .information .posses .detail .info .trend{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom:20px;
+}
+.entire .information .posses .detail .info .trend .region{
+    width:35px;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .detail .info .trend .region .figure{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+    float:left;
+    font-size: 12px;
+    color:#333333;
+}
+.entire .information .posses .detail .info .trend .current{
+    width:185px;
+    height:166px;
+    float:left;
+    background-image: url(../images/drift.png);
+    background-size: 185px 166px;
+}
+.entire .information .posses .detail .describe{
+    width:220px;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .detail .describe .clarify{
+    width:100%;
+    height:42px;
+    background-color: #F5F5F5;
+}
+.entire .information .posses .detail .describe .clarify .subtitle{
+    padding-top:17px;
+    margin:0 9px;
+    height:24px;
+    line-height: 24px;
+    border-bottom: 1px solid #DDDDDD;
+    color:#333333;
+    text-align: left;
+}
+.entire .information .posses .detail .describe .relate{
+    padding:0 9px;
+    color:#666666;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.entire .information .posses .property{
+    width:955px;
+    height:auto;
+    float:left;
+    margin-left: 20px;
+    background-color: #ffffff;
+}
+.entire .information .posses .property .selecting{
+    width:940px;
+    margin-left: 15px;
+    height:auto;
+    margin-bottom: 37px;
+    float:left;
+}
+.entire .information .posses .property .selecting .epitome{
+    padding-left:15px;
+    height:39px;
+    line-height: 39px;
+    border-bottom: 1px solid #C0C0C0;
+    font-size: 18px;
+    color:#483E3E;
+    text-align: left;
+	font-weight:bold;
+}
+.entire .information .posses .property .selecting .assortment{
+    width:890px;
+    margin:15px 25px 0px 20px;
+    height:auto;
+    text-align: left;
+    float:left;
+}
+.entire .information .posses .property .selecting .assortment .raise{
+    width:100%;
+    height:40px;
+}
+.entire .information .posses .property .selecting .assortment .raise.active{
+    border-bottom: 1px solid #DDDDDD;
+}
+.entire .information .posses .property .selecting .assortment .tight{
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#888888;
+    float:left;
+}
+.entire .information .posses .property .selecting .assortment .modify{
+    width:35px;
+    height:40px;
+    line-height: 40px;
+    float:right;
+    font-size: 16px;
+    color:#888888;
+    display:none;
+}
+.entire .information .posses .property .selecting .assortment .average{
+    margin:0 35px 0 120px;
+    height:40px;
+}
+.entire .information .posses .property .selecting .assortment .average .name{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    text-align: left;
+}
+.entire .information .posses .property .selecting .choice{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .property .selecting .choice .parameter{
+    width:198px;
+    height:46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    color:#575757;
+    display:block;
+    border:1px solid #DDDDDD;
+    float:left;
+    margin:18px 30px 0px 0px;
+    position:relative;
+}
+.entire .information .posses .property .selecting .choice .parameter.right{
+    margin:18px 0px 0px 0px;
+}
+.entire .information .posses .property .selecting .choice .parameter.active{
+    color:#F27C00;
+    border:1px solid #F27C00;
+}
+.entire .information .posses .property .selecting .choice .parameter:hover{
+    color:#F27C00;
+    border:1px solid #F27C00;
+}
+.entire .information .posses .property .selecting .choice .parameter .pitch{
+    width:22px;
+    height:22px;
+    background-image: url(../images/chosein.png);
+    background-size: 22px 22px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:none;
+}
+.entire .information .posses .property .other-problem{
+    width:940px;
+    margin-left: 15px;
+    height:auto;
+    float:left;
+    margin-bottom: 30px;
+}
+.entire .information .posses .property .other-problem .prompt{
+    padding-left: 15px;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #C0C0C0;
+    text-align: left;
+	font-weight:bold;
+}
+.entire .information .posses .property .other-problem .prompt span{
+    font-size: 18px;
+    color: #483E3E;
+}
+.entire .information .posses .property .other-problem .prompt span.cue{
+    font-size: 14px;
+    color:#666666;
+}
+.entire .information .posses .property .other-problem .check{
+    width:940px;
+    margin-left: 15px;
+    height:auto;
+    float:left;
+}
+.entire .information .posses .property .other-problem .check .contain{
+    height:18px;
+    float:left;
+    margin:27px 46px 0px 0px;
+}
+.entire .information .posses .property .other-problem .check .contain .select-box{
+    width:18px;
+    height:18px;
+    background-image: url(../images/chose.png);
+    background-size: 18px 18px;
+    float:left;
+}
+.entire .information .posses .property .other-problem .check .contain .select-box.active{
+    background-image: url(../images/chose1.png);
+}
+.entire .information .posses .property .other-problem .check .contain .words{
+    height:18px;
+    line-height: 18px;
+    font-size: 16px;
+    color:#575757;
+    margin-left: 7px;
+    float:left;
+}
+.entire .information .posses .property .seize{
+    width:100%;
+    padding:28px 0px;
+    height:50px;
+    background-color: #FBFBFB;
+    float:left;
+}
+.entire .information .posses .property .seize .next-btn{
+    width:238px;
+    height:50px;
+    border-radius: 30px;
+    line-height: 50px;
+    background-color: #F27C00;
+    color:#ffffff;
+    font-size: 16px;
+    display:block;
+}

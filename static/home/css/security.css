@@ -1,0 +1,745 @@
+.container{
+    width:100%;
+    height:100%;
+    min-width: 1300px;
+    float:left;
+}
+.navigation{
+    width:100%;
+    height:110px;
+    position:fixed;
+    top:0;
+    z-index:200;
+    background-color: #ffffff;
+}
+.navigation.active{
+    box-shadow: 0 2px 5px #dddddd;
+}
+.navigation .navigation-bar{
+    width:1200px;
+    height:110px;
+}
+.navigation .logo{
+    width:100px;
+    height:53px;
+    line-height: 68px;
+    margin:35px 0 22px 0;
+    display:block;
+    float:left;
+    background-image: url(../images/logo2.png);
+    background-size: 129px 53px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 16px;
+    color:#666666;
+    padding-left: 135px;
+}
+.navigation .genre{
+    margin-left: 279px;
+    height:70px;
+    padding-top: 38px;
+}
+.navigation .genre .classify{
+    width:auto;
+    height:70px;
+    float:left;
+}
+.navigation .genre .classify .className{
+    padding:0 15px;
+    height:70px;
+    line-height: 70px;
+    border:0;
+    margin:0 30px 0 0 ;
+    font-size: 16px;
+    color:#333333;
+    background-color: #ffffff;
+    font-family: 'Microsoft YaHei';
+    float:left;
+    outline: none;
+    cursor:pointer;
+    display:block;
+}
+.navigation .genre .classify .className:hover
+{
+    color:#F27C00;
+}
+.navigation .genre .classify .className.active{
+    border-bottom: 2px solid #F27C00;
+    color:#F27C00;
+}
+.navigation .genre .facility{
+    width:auto;
+    float:right;
+    height:72px;
+}
+.navigation .genre .facility .head-ion{
+    width:32px;
+    height:32px;
+    margin:20px 10px 20px 0;
+    float:left;
+}
+.navigation .genre .facility .head-ion img{
+    width:100%;
+    height:100%;
+}
+.navigation .genre .facility .consumer{
+    width:auto;
+    height:18px;
+    margin:28px 25px 28px 0;
+    float:left;
+}
+.navigation .genre .facility .consumer .login{
+    height:16px;
+    line-height: 16px;
+    padding-right: 8px;
+    border-right:1px solid #A0A0A0;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .genre .facility .consumer .login:hover
+{
+    color:#F27C00;
+}
+.navigation .genre .facility .consumer .register{
+    height:16px;
+    line-height: 16px;
+    padding-left: 8px;
+    float:left;
+    background-color: #ffffff;
+    color:#A0A0A0;
+    font-family: 'Microsoft YaHei';
+    outline:none;
+    cursor:pointer;
+}
+.navigation .genre .facility .consumer .register:hover
+{
+    color:#F27C00;
+}
+.full-top{
+    width:100%;
+    height:110px;
+}
+
+.trawled{
+    width:100%;
+    height:100px;
+    background-image: url(../images/bg3.png);
+    background-size: 100% 100px;
+    background-position: center center;
+}
+.trawled .search-box{
+    width:482px;
+    height:70px;
+    padding-top: 30px;
+}
+.trawled .search-box .search-rock{
+    width:100%;
+    height:42px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.trawled .search-box .search-rock .classify{
+    width:112px;
+    height:30px;
+    line-height: 30px;
+    margin:6px 0;
+    border-right:2px solid #F27C00;
+    text-align: center;
+    float:left;
+    position:relative;
+}
+.trawled .search-box .search-rock .classify .total{
+    color:#F27C00;
+    background-image: url(../images/drop.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 19px;
+    cursor:default;
+}
+.trawled .search-box .search-rock .classify .categorize{
+    width:112px;
+    height:106px;
+    padding-top:10px;
+    background-color: #ffffff;
+    position:absolute;
+    margin-top: 11px;
+    box-shadow: 0 3px 5px #dddddd;
+    display:none;
+    z-index:20;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name{
+    margin-left: 14px;
+    display:block;
+    text-align: left;
+    color:#666666;
+    height:15px;
+    line-height: 15px;
+    margin-bottom:12px;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name.active{
+    color:#F27C00;
+}
+.trawled .search-box .search-rock .search{
+    width:66px;
+    height:42px;
+    border-left:1px solid #F27C00;
+    float:right;
+    background-color: #ffffff;
+    background-image: url(../images/search.png);
+    background-size: 20px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline:none;
+    cursor:pointer;
+}
+.trawled .search-box .search-rock .imports{
+    margin:0 67px 0 132px;
+    height:42px;
+}
+.trawled .search-box .search-rock .imports .entry{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.trawled .search-box .version{
+    width:100%;
+    height:24px;
+    line-height: 24px;
+}
+.trawled .search-box .model{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    font-size: 10px;
+    color:#E9E9E9;
+}
+
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    height:39px;
+    line-height: 40px;
+    border-bottom:1px solid #EDEDED;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+    padding-bottom: 15px;
+}
+.entire .posses .dimension .right .groom{
+    padding-left: 10px;
+    width:958px;
+    height:30px;
+    line-height: 26px;
+    font-size: 18px;
+    color:#333333;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .content{
+    padding:0px 20px 315px 20px;
+    width:928px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px #F1F1F1;
+}
+.entire .posses .dimension .right .content .material{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .affect{
+    width:100%;
+    height:55px;
+    line-height: 67px;
+    font-size: 16px;
+    color:#666666;
+    text-align: left;
+}
+.entire .posses .dimension .right .content .material.active .affect{
+    font-weight:bold;
+}
+.entire .posses .dimension .right .content .material .braised{
+    padding-left: 8px;
+    width:920px;
+    height:98px;
+    background-color: #FBFBFB;
+    text-align: left;
+}
+.entire .posses .dimension .right .content .number.active .braised , .entire .posses .dimension .right .content .code.active .braised{
+    background-color: #ffffff;
+    border-bottom: 1px dashed #DDDDDD;
+}
+.entire .posses .dimension .right .content .material .braised .icon{
+    width:48px;
+    height:98px;
+    background-image: url(../images/num.png);
+    background-size: 48px 48px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float:left;
+}
+.entire .posses .dimension .right .content .material.code .braised .icon{
+    background-image: url(../images/cod.png);
+}
+.entire .posses .dimension .right .content .material .braised .message{
+    margin-left: 57px;
+    padding-top:25px;
+    height:73px;
+}
+.entire .posses .dimension .right .content .material .braised .message .datum{
+    width:100%;
+    height:22px;
+    margin-bottom: 8px;
+}
+.entire .posses .dimension .right .content .material .braised .message .datum .reveal{
+    height:22px;
+    line-height: 22px;
+    float:left;
+    font-size: 16px;
+    color:#333333;
+    margin-right: 22px;
+}
+.entire .posses .dimension .right .content .material .braised .message .datum .modify{
+    height:15px;
+    line-height: 15px;
+    margin:3px 0px 4px 0px;
+    float:left;
+    display:block;
+    color:#5D9AFF;
+}
+.entire .posses .dimension .right .content .material .braised .message .datum .cancle{
+    height:15px;
+    line-height: 15px;
+    margin:3px 0px 4px 0px;
+    float:left;
+    display:none;
+    color:#5D9AFF;
+}
+.entire .posses .dimension .right .content .material .braised .message .tips{
+    width:100%;
+    color:#8B8B8B;
+    font-size: 13px;
+}
+.entire .posses .dimension .right .content .material .deviated{
+    padding:30px 398px 0px 70px;
+    width:460px;
+    height:auto;
+    float:left;
+    display:none;
+}
+.entire .posses .dimension .right .content .material .deviated .current{
+    width:100%;
+    height:100px;
+    border-bottom: 1px solid #F1F1F1;
+    text-align: left;
+    margin-bottom: 12px;
+}
+.entire .posses .dimension .right .content .material .deviated .current .step{
+    width:146px;
+    padding-bottom: 60px;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .deviated .current .brief{
+    margin:0px 74px 0px 146px;
+    height:100px;
+}
+.entire .posses .dimension .right .content .material .deviated .current .brief .current{
+    padding:0px 0px 0px 14px;
+    margin:0px 0px 7px 0px;
+    width:224px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.entire .posses .dimension .right .content .material .deviated .current .brief .hint span{
+    font-size: 12px;
+    color:#666666;
+    line-height: 18px;
+}
+.entire .posses .dimension .right .content .material .deviated .current .brief .hint span.word{
+    font-size: 14px;
+    color:#6BA1FF;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon{
+    padding:0px 100px 0px 16px;
+    width:344px;
+    height:auto;
+    float:left;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group{
+    width:100%;
+    height:40px;
+    margin-top: 18px;
+    position:relative;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .primary{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .pardon{
+    padding:0px 0px 0px 14px;
+    margin:0px;
+    width:224px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .shapes{
+    width:68px;
+    height:24px;
+    position:absolute;
+    right:14px;
+    top:8px;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .shapes img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .coming{
+    padding:0px 0px 0px 14px;
+    margin:0px;
+    width:150px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    border-right:0px;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .group .getCode{
+    width:75px;
+    height:40px;
+    line-height: 40px;
+    background-color: #FEA549;
+    font-size: 12px;
+    color:#ffffff;
+    float:left;
+    outline:none;
+    cursor:pointer;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .confirm{
+    width:100%;
+    height:40px;
+    margin:28px 0px 18px 0px;
+}
+.entire .posses .dimension .right .content .material .deviated .coupon .confirm .affirm{
+    width:158px;
+    height:40px;
+    line-height: 40px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    text-align: center;
+    border-radius: 30px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+.entire .posses .dimension .right .content .material .deviated .tips{
+    padding-left: 8px;
+    width:452px;
+    height:48px;
+    line-height: 48px;
+    font-size: 12px;
+    color:#666666;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .rocky{
+    padding-top: 12px;
+    width:100%;
+    height:auto;
+    float:left;
+    display:none;
+}
+.entire .posses .dimension .right .content .material .rocky .storey{
+    width:100%;
+    height:40px;
+    margin-top: 18px;
+}
+.entire .posses .dimension .right .content .material .rocky .storey .booklet{
+    width:102px;
+    height:40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#666666;
+    text-align: right;
+    margin-right: 18px;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .rocky .storey .cipher{
+    padding:0px 0px 0px 14px;
+    width:224px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #DDDDDD;
+    font-family: 'Microsoft YaHei';
+    color:#666666;
+    outline:none;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .rocky .storey .warn{
+    height:40px;
+    line-height: 40px;
+    color:#5D9AFF;
+    margin-left: 9px;
+    float:left;
+}
+.entire .posses .dimension .right .content .material .rocky .press{
+    width:100%;
+    height:40px;
+    margin:15px 0px 30px 0px;
+}
+.entire .posses .dimension .right .content .material .rocky .press .conserve{
+    width:160px;
+    height:40px;
+    line-height: 40px;
+    background-color: #5D9AFF;
+    font-size: 18px;
+    color:#ffffff;
+    text-align: center;
+    float:left;
+    margin-left: 118px;
+    border-radius: 5px;
+}
+
+.page-bottom{
+    width:100%;
+    height:auto;
+    float:left;
+    border-top:1px solid #F0F0F0;
+}
+.page-bottom .footer{
+    width:1170px;
+    height:216px;
+    padding: 26px 0 22px 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.page-bottom .footer .footer-left{
+    width:792px;
+    height:216px;
+    float:left;
+}
+.page-bottom .footer .footer-left .column{
+    width:20%;
+    height:auto;
+    float:left;
+    text-align: left;
+}
+.page-bottom .footer .footer-left .column .rise{
+    width:100%;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-left .column .lets{
+    width:100%;
+    line-height: 32px;
+    font-size: 12px;
+    color:#666666;
+    display:block;
+}
+.page-bottom .footer .footer-left .column .lets:hover{
+    color:#FEA549;
+}
+.page-bottom .footer .footer-right{
+    margin-left: 792px;
+    height:216px;
+    text-align: left;
+}
+.page-bottom .footer .footer-right .relation{
+    padding-left: 6px;
+    line-height: 46px;
+    font-size: 16px;
+    color:#333;
+    font-weight:bold;
+}
+.page-bottom .footer .footer-right .contact{
+    padding-left:6px;
+    height:20px;
+}
+.page-bottom .footer .footer-right .contact .tel{
+    font-size: 14px;
+    line-height: 20px;
+    display:inline-block;
+    color:#F2253C;
+}
+.page-bottom .footer .footer-right .contact .timer{
+    font-size: 12px;
+    line-height: 20px;
+    display:inline-block;
+    color:#666666;
+    padding-left: 60px;
+}
+.page-bottom .footer .footer-right .addr{
+    padding-left: 6px;
+    font-size: 12px;
+    color:#666666;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.page-bottom .footer .footer-right .concern{
+    width:100%;
+    height:112px;
+}
+.page-bottom .footer .footer-right .concern .concern-left{
+    width:137px;
+    height:112px;
+    float:left;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code{
+    width:88px;
+    height:88px;
+    margin:0 55px 8px 6px;
+}
+.page-bottom .footer .footer-right .concern .concern-left .code img{
+    width:100%;
+    height:100%;
+}
+.page-bottom .footer .footer-right .concern .concern-left .stamp{
+    width:100%;
+    height:16px;
+    font-size: 12px;
+    color:#333333;
+}
+.page-bottom .copyright{
+    width:1200px;
+    height:56px;
+    line-height: 56px;
+    font-size: 12px;
+    color:#666666;
+}

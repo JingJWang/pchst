@@ -1,0 +1,1036 @@
+.trawled{
+    width:100%;
+    height:100px;
+    background-image: url(../images/bg3.png);
+    background-size: 100% 100px;
+    background-position: center center;
+}
+.trawled .search-box{
+    width:482px;
+    height:70px;
+    padding-top: 30px;
+}
+.trawled .search-box .search-rock{
+    width:100%;
+    height:42px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.trawled .search-box .search-rock .classify{
+    width:112px;
+    height:30px;
+    line-height: 30px;
+    margin:6px 0;
+    border-right:2px solid #F27C00;
+    text-align: center;
+    float:left;
+    position:relative;
+}
+.trawled .search-box .search-rock .classify .total{
+    color:#F27C00;
+    background-image: url(../images/drop.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 19px;
+    cursor:default;
+}
+.trawled .search-box .search-rock .classify .categorize{
+    width:112px;
+    height:auto;
+    padding-top:10px;
+    background-color: #ffffff;
+    position:absolute;
+    z-index:20;
+    margin-top: 11px;
+    box-shadow: 0 3px 5px #dddddd;
+    display:none;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name{
+    margin-left: 14px;
+    display:block;
+    text-align: left;
+    color:#666666;
+    height:15px;
+    line-height: 15px;
+    margin-bottom:12px;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name.active{
+    color:#F27C00;
+}
+.trawled .search-box .search-rock .search{
+    width:66px;
+    height:42px;
+    border-left:1px solid #F27C00;
+    float:right;
+    background-color: #ffffff;
+    background-image: url(../images/search.png);
+    background-size: 20px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline:none;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.trawled .search-box .search-rock .imports{
+    margin:0 67px 0 132px;
+    height:42px;
+}
+.trawled .search-box .search-rock .imports .entry{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.trawled .search-box .search-rock .imports .entry:focus{
+    color:#666666;
+}
+.trawled .search-box .version{
+    width:100%;
+    height:24px;
+    line-height: 24px;
+}
+.trawled .search-box .model{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    font-size: 10px;
+    color:#E9E9E9;
+}
+
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #FBFBFB;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    line-height: 39px;
+    color:#333333;
+    border-bottom:1px solid #EDEDED;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+}
+.entire .posses .dimension .right .headline{
+    padding-left:10px;
+    height:28px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#483E3E;
+    text-align: left;
+}
+.entire .posses .dimension .right .orderTriage{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .orderTriage .orderClassify{
+    width:100%;
+    height:60px;
+    box-shadow: 0px 2px 5px #dddddd;
+    text-align: left;
+}
+.entire .posses .dimension .right .orderTriage .orderClassify .feather{
+    padding-left: 30px;
+    width:30%;
+    float:left;
+    height:60px;
+    line-height: 60px;
+    font-size: 18px;
+    color:#666666;
+    border-right:1px solid #F2F2F2;
+}
+.entire .posses .dimension .right .orderTriage .orderClassify .feather:hover{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .orderTriage .orderClassify .feather.shop{
+    border-right:0;
+}
+.entire .posses .dimension .right .orderTriage .orderClassify .feather.active{
+    border-bottom: 2px solid #FDB429;
+    color:#F27C00;
+}
+.entire .posses .dimension .right .digital-order{
+    padding:0 30px 0px 30px;
+    width:908px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .digital-order .order-state{
+    width:100%;
+    height:20px;
+    padding:20px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .order-state .own{
+    height:20px;
+    line-height: 20px;
+    float:left;
+    font-size: 16px;
+    color:#483E3E;
+    display:inline-block;
+}
+.entire .posses .dimension .right .digital-order .order-state .estate{
+    padding-left:18px;
+    height:20px;
+    line-height: 20px;
+    border-left:1px solid #F1F1F1;
+    float:left;
+    color:#666666;
+    font-size: 16px;
+    margin-right: 18px;
+}
+.entire .posses .dimension .right .digital-order .order-state .estate.first{
+    border-left:0px;
+    padding-left: 8px;
+}
+.entire .posses .dimension .right .digital-order .order-state .estate.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .digital-order .order-state .estate:hover{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .digital-order .order-state .sum{
+    color:#666666;
+    padding-left: 8px;
+}
+.entire .posses .dimension .right .digital-order .order-state .sum.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .digital-order .particulars{
+    width:906px;
+    height:auto;
+    border:1px solid #F1F1F1;
+    float:left;
+    text-align: left;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort{
+    padding-left: 35px;
+    height:48px;
+    background-color: #F9F9F9;
+    line-height: 48px;
+    font-size: 16px;
+    color:#483E3E;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort .recycle{
+    width:218px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort .state{
+    width:100px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort .offer{
+    width:100px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort .entry-time{
+    width:180px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .minorsort .handle{
+    width:78px;
+    height:48px;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group{
+    width:871px;
+    height:auto;
+    float:left;
+    padding:18px 0px 7px 35px;
+    border-top:1px solid #F1F1F1;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .phoneModel{
+    width:218px;
+    height:23px;
+    line-height: 23px;
+    float:left;
+    color:#666666;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .condition{
+    width:100px;
+    height:23px;
+    line-height: 23px;
+    color:#F27C00;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .offerState{
+    width:100px;
+    height:23px;
+    line-height: 23px;
+    float:left;
+    color:#666666;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .offerState .number{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .time{
+    width:180px;
+    height:23px;
+    line-height: 23px;
+    color:#666666;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .operate{
+    width:78px;
+    padding-right: 0px;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .operate .option{
+    width:76px;
+    height:22px;
+    line-height: 22px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    display:block;
+    margin-bottom: 8px;
+    color:#666666;
+    text-align: center;
+}
+.entire .posses .dimension .right .digital-order .particulars .queue .group .operate .look{
+    padding-left: 8px;
+    height:16px;
+    line-height: 16px;
+    color:#ffb86e;
+    display:block;
+}
+.entire .posses .dimension .right .nobleMetal-order{
+    padding:0px 15px;
+    width:938px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+    display:none;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass{
+    width:100%;
+    height:20px;
+    padding:20px 0px;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass .mold{
+    height:20px;
+    line-height: 20px;
+    padding-left: 20px;
+    border-left:1px solid #F1F1F1;
+    float:left;
+    display:block;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass .mold.first{
+    border-left:0px;
+    padding-left: 12px;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass .mold.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass .mold:hover{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .nobleMetal-order .orderClass .mold .sum{
+    padding-left: 6px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information{
+    width:100%;
+    height:auto;
+    float:left;
+    padding-bottom: 10px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied{
+    padding-left: 18px;
+    height:45px;
+    line-height: 45px;
+    font-size: 16px;
+    color:#333333;
+    text-align: left;
+    background-color:#F9F9F9;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied .detail{
+    width:312px;
+    height:45px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied .price{
+    width:170px;
+    height:45px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied .way{
+    width:138px;
+    height:45px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied .state{
+    width:202px;
+    height:45px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .classfied .handle{
+    width:98px;
+    height:45px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color:#F9F9F9;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .basic{
+    padding-left:12px;
+    width:924px;
+    height:38px;
+    border:1px solid #F9F9F9;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .basic .order-number{
+    height:38px;
+    line-height: 38px;
+    float:left;
+    margin-right: 24px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .basic .time{
+    height:38px;
+    line-height: 38px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal{
+    padding-left: 10px;
+    width:928px;
+    height:118px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    text-align:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category{
+    width:300px;
+    padding: 32px 15px 16px 0px;
+    height:70px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .picture{
+    width:120px;
+    height:60px;
+    padding-bottom: 10px;
+    float:left;
+    position:relative;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .picture img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .picture .tier{
+    width:120px;
+    height:22px;
+    background-color: #b3b3b3;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    opacity: 0.7;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .picture .sort-name{
+    width:120px;
+    height:22px;
+    line-height: 22px;
+    text-align: center;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    color:#333333;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .property{
+    margin-left: 132px;
+    height:70px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .property .purity{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    color:#666666;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .category .property .purity.ads{
+    margin:11px 0px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .reference{
+    width:148px;
+    height:86px;
+    padding: 32px 28px 0px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .reference .price{
+    width:100%;
+    height:18px;
+    line-height:18px;
+    color:#333333;
+    padding-bottom: 6px;
+    font-size: 16px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .reference .price .sum{
+    font-size: 18px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .reference .hint{
+    width: 100%;
+    line-height: 17px;
+    font-size: 12px;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .way{
+    padding:42px 0px 60px 0px;
+    width:135px;
+    height:16px;
+    line-height: 16px;
+    color:#333333;
+    float:left;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .orderState{
+    width:104px;
+    padding-top: 40px;
+    height:78px;
+    line-height: 22px;
+    float:left;
+    color:#F27C00;
+    margin-right: 90px;
+    text-align: center;
+}
+.entire .posses .dimension .right .nobleMetal-order .information .exhibition .reveal .cancleDeal{
+    width:76px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 5px;
+    margin:40px 0px 54px 0px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    display:block;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder{
+    padding: 0px 15px;
+    width: 938px;
+    height: auto;
+    float: left;
+    background-color: #ffffff;
+    display:none;
+}
+.entire .posses .dimension .right .mallOrder .order-state{
+    width: 100%;
+    height: 20px;
+    padding: 20px 0px;
+}
+.entire .posses .dimension .right .mallOrder .order-state .trance{
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #F1F1F1;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.entire .posses .dimension .right .mallOrder .order-state .trance.first{
+    border-left: 0px;
+    padding-left: 12px;
+}
+.entire .posses .dimension .right .mallOrder .order-state .trance.active{
+    color: #F27C00;
+}
+.entire .posses .dimension .right .mallOrder .order-state .trance:hover{
+    color:#F27C00;
+}
+.entire .posses .dimension .right .mallOrder .order-state .trance .sum{
+    padding-left: 6px;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail{
+    width:100%;
+    height:auto;
+    float:left;
+    padding-bottom: 10px;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied{
+    padding-left: 12px;
+    width:926px;
+    height:40px;
+    line-height: 40px;
+    background-color: #F9F9F9;
+    text-align: left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied .specifics{
+    width:408px;
+    height:40px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied .unit{
+    width:132px;
+    height:40px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied .total{
+    width:142px;
+    height:40px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied .state{
+    width:124px;
+    height:40px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .classfied .handle{
+    width:96px;
+    height:40px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message{
+    width:100%;
+    height:auto;
+    margin-bottom: 5px;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .basic{
+    padding-left:12px;
+    width:924px;
+    height:38px;
+    border-bottom:1px solid #F9F9F9;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .basic .order-number{
+    height:38px;
+    line-height: 38px;
+    float:left;
+    margin-right: 24px;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .basic .time{
+    height:38px;
+    line-height: 38px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal{
+    padding:10px 0px 15px 12px;
+    width:924px;
+    height:88px;
+    background-color: #ffffff;
+    text-align: left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail{
+    width:391px;
+    height:88px;
+    padding-right: 15px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail .print{
+    width:110px;
+    height:88px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail .print img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail .describe{
+    width:263px;
+    height:80px;
+    float:left;
+    margin-left: 18px;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail .describe .title{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 16px;
+    margin:15px 0px 8px 0px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .detail .describe .votes{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    font-size: 12px;
+    color:#999999;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .unitPrice{
+    width:136px;
+    height:88px;
+    line-height: 88px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .total{
+    width:138px;
+    height:88px;
+    line-height: 88px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .state{
+    width:128px;
+    height:88px;
+    line-height: 88px;
+    font-size: 16px;
+    color:#F27C00;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .handle{
+    width:78px;
+    padding-top: 23px;
+    height:65px;
+    float:left;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .handle .paying{
+    width:76px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    display:block;
+    color:#666666;
+}
+.entire .posses .dimension .right .mallOrder .orderDetail .orderList .message .reveal .handle .further{
+    width:78px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    display:block;
+    color:#666666;
+}
+
+.entire .posses .dimension .right .noOrder{
+    width:100%;
+    height:160px;
+    background-color: #ffffff;
+    float:left;
+    display:none;
+}
+.entire .posses .dimension .right .groom{
+    padding-left: 10px;
+    width:958px;
+    height:59px;
+    line-height: 74px;
+    font-size: 18px;
+    color:#483E3E;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .commodity{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .commodity .wares{
+    width:232px;
+    height:316px;
+    background-color: #ffffff;
+    margin:0px 10px 18px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .commodity .wares:hover{
+    z-index:2;
+    -webkit-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform:translate3d(0, -2px, 0);
+    transform:translate3d(0, -2px, 0)
+}
+.entire .posses .dimension .right .commodity .wares .graphic{
+    width:232px;
+    height:230px;
+}
+.entire .posses .dimension .right .commodity .wares .graphic img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .commodity .wares .wares-name{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#333333;
+    margin-top:8px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .commodity .wares .depict{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    font-size: 12px;
+    color:#666666;
+}
+.entire .posses .dimension .right .commodity .wares .price{
+    width:100%;
+    font-size: 20px;
+    color:#F27C00;
+}
+
+.dimension .pagination{
+    width:100%;
+    height:auto;
+    margin:30px 0px;
+    float:left;
+}
+.dimension .pagination .page{
+    padding:0 8px;
+    height:26px;
+    line-height: 26px;
+    border:1px solid #E9E9E9;
+    display:inline-block;
+    font-size: 12px;
+    color:#666666;
+    box-shadow: 0px 2px 5px #dddddd;
+    margin-right: 6px;
+    border-radius: 5px;
+}
+.dimension .pagination .page.sight{
+    padding:0 16px;
+}
+.dimension .pagination .page.last{
+    width:8px;
+    height:26px;
+    background-image: url(../images/lastpage.png);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: center center;
+}
+.dimension .pagination .page.next{
+    width:8px;
+    height:26px;
+    background-image: url(../images/nextpage.png);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: center center;
+}
+.dimension .pagination .page:hover{
+    background-color: #FEA549;
+    color:#FFFFFF;
+}
+.dimension .pagination .page.active{
+    background-color: #FEA549;
+    color:#FFFFFF;
+}
+.shade{
+    width:100%;
+    height:100%;
+    background-color: #3b3b3b;
+    opacity: 0.1;
+    position:fixed;
+    z-index:999;
+    display:none;
+}
+.bounced{
+    width:502px;
+    height:242px;
+    background-color: #ffffff;
+    left:50%;
+    margin-left: -251px;
+    top:50%;
+    margin-top: -121px;
+    border-radius: 5px;
+    position:fixed;
+    z-index:1000;
+    overflow:hidden;
+    display:none;
+}
+.bounced .prompt{
+    padding:0px 28px 0px 16px;
+    width:458px;
+    height:60px;
+    border-bottom: 1px solid #FAA249;
+}
+.bounced .prompt .hint{
+    height:60px;
+    line-height: 60px;
+    font-size: 18px;
+    color:#666666;
+    background-image: url(../images/tip.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 33px;
+    float:left;
+}
+.bounced .prompt .close-btn{
+    height:60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: #C1C1BF;
+    float:right;
+    display:block;
+}
+.bounced .tooltip{
+    padding:0px 40px;
+    width:422px;
+    height:100px;
+    line-height: 110px;
+    font-size: 18px;
+    color:#666666;
+    text-align: left;
+}
+.bounced .press{
+    margin:0px 40px 0px 40px;
+    padding:24px 0px;
+    width:422px;
+    height:32px;
+    border-top:1px solid #F1F1F1;
+}
+.bounced .press .confirm{
+    width:100px;
+    height:32px;
+    line-height: 32px;
+    border-radius: 30px;
+    background-color: #5D9AFF;
+    color:#ffffff;
+    display:block;
+    float:left;
+    text-align: center;
+}
+.bounced .press .abolish{
+    width:100px;
+    height:32px;
+    line-height: 32px;
+    border-radius: 30px;
+    background-color: #C5C6C7;
+    color:#ffffff;
+    float:left;
+    display:block;
+    margin-right: 56px;
+    text-align: center;
+}

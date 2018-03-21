@@ -1,0 +1,63 @@
+        <script type="text/javascript" src = "/static/home/ajax/r_common.js"></script>
+        <div class="navigation">
+        <div class="topHalf">
+            <div class="navigation-bar">
+                <h1>
+                    <a class="logo" title="回收通—二手手机回收" href="http://www.recytl.com">
+                        <img src="/static/home/images/logo2.png" alt="二手手机回收"/>
+                    </a>
+                </h1>
+                <a class="logoWord" href="/">价值驱动环保</a>
+                <div class="account">
+                {nocache}
+                    {if $top!=''}
+                    <div class="head-icon">
+                        <img src="{$top['photo']}"/>
+                    </div>
+                    <div class="consumer">
+                        <a href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/center/info"><input class="login" type="button" value="个人信息"/></a>
+                        <input class="register" type="button" onclick="loginOut();" value="退出"/>
+                    </div>
+                    {else if}
+                    <div class="head-icon">
+                        <img src="/static/recover/images/avatar.png"/>
+                    </div>
+                    <div class="consumer">
+                        <input class="login" type="button" onclick="javascript:window.location.href='{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/user/login'"value="登录" /> 
+                        <input class="register" type="button" onclick="javascript:window.location.href='{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/user/register'"value="注册" />
+                    </div>
+                    {/if}
+                    {/nocache}
+                </div>
+                <div class="search-box">
+                    <a class="search" href="javascript:;"></a>
+                    <div class="search-case">
+                        <input type="text" class="search-text" placeholder="搜索商城商品"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head-bar">
+            <div class="menu">
+                <div class="general">
+                    <span>全部分类</span>
+                    <div class="classList">
+                        {foreach from=$types.type item=v key=i}
+                            <a class="breed" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/shops/shopinfo/getypegood/{$v.id}_1_1/">
+                                {$v.name}
+                                <div class="arrow"></div>
+                            </a>
+                        {/foreach}
+                    </div>
+                </div>
+                <div class="outline">
+                    <a class="item" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/">首页</a>
+                    <a class="item" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/recover/mobile">数码回收</a>
+                    <a class="item" href="http://www.91jst.com/">奢侈品寄售/回收</a>
+                    <a class="item active" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/shops/shopinfo/">通花商城</a>
+                </div>
+                <a class="order" target="_blank" href="{if isset($seo['host_name'])}http://{$seo['host_name']}{/if}/order/orders/getOrderList/shop">我的订单</a>
+            </div>
+        </div>
+        </div>
+        <div class="full-top"></div>

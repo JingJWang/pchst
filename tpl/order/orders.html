@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/home/css/orders.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="common/header.html"}
+    {include file="common/search.html"}
+    <div class="entire">
+        <div class="posses">
+            <div class="status">
+                <a class="apellation" href="javascript:;">首页</a>
+                <a class="apellation active" href="javascript:;">数码回收</a>
+                <a class="apellation active" href="javascript:;">全部产品</a>
+            </div>
+
+            <div class="dimension">
+                {include file="common/security_left.html"}
+
+                <div class="right">
+                    <div class="headline">我的订单</div>
+                    <div class="orderTriage">
+                        <div class="orderClassify">
+                            <a class="feather active digit" href="/index.php/order/orders/getOrderList">数码回收</a>
+                            <a class="feather sale metal" href="javascript:;">其他回收</a>
+                            <a class="feather shop" href="/index.php/order/orders/getOrderList/shop">通花商城订单</a>
+                        </div>
+                    </div>
+
+                    <div class="digital-order">
+                        <div class="order-state">
+                            <!-- <a class="own" href="javascript:;">所有订单</a> -->
+                            <a class="estate active gos first" href="javascript:;" onclick="GetOrder('n');">
+                                <span>进行中订单</span>
+                                <span class="sum active go"></span>
+                            </a>
+                            <a class="estate overs" href="javascript:;" onclick="GetOrder('y');">
+                                <span>已完成订单</span>
+                                <span class="sum active voer"></span>
+                            </a>
+                        </div>
+
+                        <div class="particulars">
+                            <div class="minorsort">
+                                <div class="entry-time">订单编号</div>
+                                <div class="recycle">回收机型</div>
+                                <div class="state">订单状态</div>
+                                <div class="offer">报价状态</div>
+                                <div class="entry-time">报单时间</div>
+                                <div class="handle">操作</div>
+                            </div>
+                            <div class="queue quenofinish">
+                                
+                            </div>
+                        </div>
+                        <div class="pagination">
+                        </div>
+                    </div>
+                    <div class="nobleMetal-order">
+                        <div class="orderClass">
+                            <a class="mold first active" href="javascript:;">
+                                <span>贵金属回收</span>
+                                <span class="sum">4</span>
+                            </a>
+                            <a class="mold" href="javascript:;">
+                                <span>已完成</span>
+                                <span class="sum">0</span>
+                            </a>
+                        </div>
+                        <div class="information">
+                            <div class="classfied">
+                                <div class="detail">回收物品详情</div>
+                                <div class="price">回收价格</div>
+                                <div class="way">交易方式</div>
+                                <div class="state">订单状态</div>
+                                <div class="handle">操作</div>
+                            </div>
+                            <div class="exhibition">
+                                <div class="basic">
+                                    <div class="order-number">
+                                        <span>订单编号：</span>
+                                        <span>2016044555333750</span>
+                                    </div>
+                                    <div class="time">
+                                        <span>下单时间：</span>
+                                        <span>2016-05-02 12:23:32</span>
+                                    </div>
+                                </div>
+                                <div class="reveal">
+                                    <div class="category">
+                                        <div class="picture">
+                                            <img src="/static/home/images/gold.png"/>
+                                            <div class="tier"></div>
+                                            <div class="sort-name">黄金</div>
+                                        </div>
+                                        <div class="property">
+                                            <div class="purity">24K，含金量99.99%</div>
+                                            <div class="purity ads">投资金条</div>
+                                            <div class="purity">8克</div>
+                                        </div>
+                                    </div>
+                                    <div class="reference">
+                                        <div class="price">
+                                            <span>￥281.00×</span>
+                                            <span class="sum">8</span>
+                                        </div>
+                                        <div class="hint">（最终价格以我们接收货物时价格为准）</div>
+                                    </div>
+                                    <div class="way">现金</div>
+                                    <div class="orderState">等待商家预支付</div>
+                                    <a class="cancleDeal" href="javascript:;">取消交易</a>
+                                </div>
+                            </div>
+
+                            <div class="exhibition">
+                                <div class="basic">
+                                    <div class="order-number">
+                                        <span>订单编号：</span>
+                                        <span>2016044555333750</span>
+                                    </div>
+                                    <div class="time">
+                                        <span>下单时间：</span>
+                                        <span>2016-05-02 12:23:32</span>
+                                    </div>
+                                </div>
+                                <div class="reveal">
+                                    <div class="category">
+                                        <div class="picture">
+                                            <img src="/static/home/images/gold.png"/>
+                                            <div class="tier"></div>
+                                            <div class="sort-name">黄金</div>
+                                        </div>
+                                        <div class="property">
+                                            <div class="purity">24K，含金量99.99%</div>
+                                            <div class="purity ads">投资金条</div>
+                                            <div class="purity">8克</div>
+                                        </div>
+                                    </div>
+                                    <div class="reference">
+                                        <div class="price">
+                                            <span>￥281.00×</span>
+                                            <span class="sum">8</span>
+                                        </div>
+                                        <div class="hint">（最终价格以我们接收货物时价格为准）</div>
+                                    </div>
+                                    <div class="way">现金</div>
+                                    <div class="orderState">商家已预支付请发货</div>
+                                    <a class="cancleDeal" href="javascript:;">取消交易</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mallOrder">
+                        <div class="order-state">
+                            <a class="trance dorder" href="javascript:;">
+                                <span>配送中</span>
+                                <span class='doing'></span>
+                            </a>
+                            <a class="trance endorder" href="javascript:;">
+                                <span>已完成</span>
+                                <span class = 'end'></span>
+                            </a>
+                        </div>
+                        <div class="orderDetail">
+                            <div class="classfied">
+                                <div class="specifics">订单明细</div>
+                                <!-- <div class="unit">单价（元）</div> -->
+                                <div class="total">订单总额（元）</div>
+                                <div class="state">订单状态</div>
+                                <div class="handle">操作</div>
+                            </div>
+                            <div class="orderList">
+
+                            </div>
+                            <div class="pagination">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="noOrder"></div>
+                    {include file="common/recommend.html"}
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+<div class="shade"></div>
+<div class="bounced">
+    <div class="prompt">
+        <div class="hint">提示</div>
+        <a class="close-btn" href="javascript:;">×</a>
+    </div>
+    <div class="tooltip">您确定要取消交易吗？</div>
+    <div class="press">
+        <a class="abolish" href="javascript:;">取消</a>
+        <a class="confirm" href="javascript:;">确认</a>
+    </div>
+</div>
+
+<script src="/static/home/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/home/js/orders.js"></script>
+<script type="text/javascript" src="/static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="/static/order/ajax/r_orderlist.js"></script>
+<script type="text/javascript" src="/static/home/js/search.js"></script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

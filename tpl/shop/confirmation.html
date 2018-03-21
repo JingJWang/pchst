@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>确认订单信息</title>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cityselect.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/confirmation.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="shop/header.html"}
+    <div class="mainstay">
+        <div class="feather">
+            <div class="status">
+                <a class="apellation" href="/index.php/shops/shopinfo/">通花商城</a>
+                <a class="apellation active" href="/index.php/shops/shopinfo/getypegood/{$goodinfo.0.tyid}_1_1/">{$goodinfo.0.tname}</a>
+                <a class="apellation active" href="javascript:;">{$goodinfo.0.name}</a>
+            </div>
+            <div class="steps">
+                <div class="contains">
+                    <div class="rate">
+                        1
+                        <div class="hint">选出心仪的商品</div>
+                    </div>
+                    <div class="seize">
+                        <div class="line"></div>
+                    </div>
+                    <div class="rate sure">
+                        2
+                        <div class="hint">确认订单信息</div>
+                    </div>
+                    <div class="seize">
+                        <div class="grey in"></div>
+                        <div class="grey"></div>
+                    </div>
+                    <div class="rate not">
+                        3
+                        <div class="hint">付款到平台</div>
+                    </div>
+                    <div class="seize not">
+                        <div class="line"></div>
+                    </div>
+                    <div class="rate not">
+                        4
+                        <div class="hint">确认收货完成订单</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="orderInfo">
+                <div class="title">确认订单信息</div>
+                <div class="information">
+                    <div class="subtitle">
+                        <div class="goods">商品</div>
+                        <div class="price">价格选择</div>
+                    </div>
+                    <div class="particular">
+                        <div class="shopinfo">
+                            <div class="print">
+                                <img src="{$goodinfo.0.img}"/>
+                            </div>
+                            <div class="brief">
+                                <div class="model">{$goodinfo.0.name}</div>
+                                <div class="votes">正品行货  性价比高  全国包邮</div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            {foreach from=$goodinfo.0.otherprice item=v key=i}
+                            <a class="goodsPrice {if $i==0}active{/if}" price="{$i}" style="cursor:pointer">{if $v.p>0}￥<span class="allprice">{$v.p/100}{/if}{if $v.in>0&&$v.p>0}</span>+{/if} {if $v.in>0}{$v.in}通花{/if}</a>
+                            {/foreach}
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="summation">
+                            <span>合计：</span>
+                            <span class="price">{if $goodinfo.0.prri>0}￥<span class="allprice">{$goodinfo.0.prri/100}{/if}{if $goodinfo['0']['integral']>0&&$goodinfo.0.prri>0}</span>+{/if} {if $goodinfo['0']['integral']>0}{$goodinfo['0']['integral']}通花{/if}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactInfo">
+                <div class="selectAddress">
+                    <div class="element">
+                        <!-- 手机号码充值样式 -->
+                        {if $goodinfo.0.tyid==4}
+                        <div class="address addition">
+                            <div class="theme">
+                                <div class="action">手机充值</div>
+                                <div class="abolish"></div>
+                            </div>
+                            <div class="message">
+                                <div class="contact">
+                                    <div class="premise">充值号码</div>
+                                    <input id="phonenum" class="entry tel" type="text" value="{$mobile}" placeholder="手机号码"/>
+                                </div>
+                            </div>
+                        </div>
+                        {/if}
+                        <!-- 手机号码充值样式 -->
+                        {if $goodinfo.0.fid==2}
+                        <div class="select">
+                            <div class="chief">选择收货地址</div>
+                            <a class="append" href="javascript:;">
+                                <span>添加新地址</span>
+                            </a>
+                        </div>
+                        <div class="details">
+                            {if $address!=false}
+                                {foreach from=$address item=v key=i}
+                                    <div adres-id='{$v.id}' class="road {if $v.status==2}active{/if}">
+                                        <div class="name">{$v.name}</div>
+                                        <div class="area">
+                                            <span class="province">{$v.province}</span>
+                                            <span class="city">{$v.city}</span>
+                                            <span class="sarea">{$v.area}</span>
+                                        </div>
+                                        <div class="addr">{$v.details}</div>
+                                        <div class="tel">{$v.phone}</div>
+                                        <div class="handle">
+                                            <div class="operate">
+                                                <a class="modify" href="javascript:;">修改</a>
+                                            </div>
+                                        </div>
+                                        <div class="tacit {if $v.status==2}active{/if}"></div>
+                                    </div>
+                                {/foreach}
+                            {else}
+                            <div class="afrist address addition">
+                                <div class="theme">
+                                    <div class="action">新增地址</div>
+                                    <div class="abolish"></div>
+                                </div>
+                                <div class="message">
+                                    <div class="contact">
+                                        <div class="premise">联系人信息</div>
+                                        <input class="entry name" type="text" placeholder="姓名"/>
+                                        <input class="entry tel" type="text" placeholder="手机号码"/>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="premise">位置信息</div>
+                                        <input id="area_text" class="region area" type="text" readonly="readonly" value=""/>
+                                        <input class="entry addr" type="text" placeholder="详细地址"/>
+                                    </div>
+                                    <div class="option">
+                                        <div class="install">设为默认地址</div>
+                                        <a class="conserve" href="javascript:;">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/if}
+                        </div>
+
+                            <div class="address addition" style="display:none">
+                                <div class="theme">
+                                    <div class="action">新增地址</div>
+                                    <div class="abolish"></div>
+                                </div>
+                                <div class="message">
+                                    <div class="contact">
+                                        <div class="premise">联系人信息</div>
+                                        <input class="entry name" type="text" placeholder="姓名"/>
+                                        <input class="entry tel" type="text" placeholder="手机号码"/>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="premise">位置信息</div>
+                                        <input id="area_text" class="region area" type="text" readonly="readonly" value=" "/>
+                                        <input class="entry addr" type="text" placeholder="详细地址"/>
+                                    </div>
+                                    <div class="option">
+                                        <div class="install">设为默认地址</div>
+                                        <a class="conserve" href="javascript:;">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address revise">
+                                <div class="theme">
+                                    <div class="action">修改地址</div>
+                                    <div class="abolish"></div>
+                                </div>
+                                <div class="message">
+                                    <div class="contact">
+                                        <div class="premise">联系人信息</div>
+                                        <input class="entry name" type="text" placeholder="姓名"/>
+                                        <input class="entry tel" type="text" placeholder="手机号码"/>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="premise">位置信息</div>
+                                        <input id="area_text1" class="region area" type="text" readonly="readonly" value=""/>
+                                        <input class="entry addr" type="text" placeholder="详细地址"/>
+                                    </div>
+                                    <div class="option">
+                                        <div class="install">设为默认地址</div>
+                                        <a class="conserve" href="javascript:;">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="hproper" data-id="" id="hproper" value="">
+                            <input type="hidden" name="harea" data-id="" id="harea" value="">
+                            <input type="hidden" name="hcity" data-id="" id="hcity" value="">
+                        {/if}
+                    </div>
+                </div>
+                
+                    <input type="hidden" name="hproper" data-id="" id="hproper" value="">
+                    <input type="hidden" name="harea" data-id="" id="harea" value="">
+                    <input type="hidden" name="hcity" data-id="" id="hcity" value="">
+                <div class="core">付款方式</div>
+                <div class="payment">
+                    <a class="mode active" href="javascript:;">微信支付</a>
+                    <!-- <a class="mode" href="javascript:;">网银支付</a> -->
+                </div>
+
+                <div class="confirm">
+                    <a class="submit" type = '{if $goodinfo.0.tyid==4}4{else}{$goodinfo.0.fid}{/if}' style="cursor:pointer">提交订单</a>
+                    <div class="total">
+                        <span>商品合计：</span>
+                        <span class="price">{if $goodinfo.0.prri>0}￥{$goodinfo.0.prri/100}{/if}{if $goodinfo['0']['integral']>0&&$goodinfo.0.prri>0}+{/if} {if $goodinfo['0']['integral']>0}{$goodinfo['0']['integral']}通花{/if}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="service">
+            <div class="advantage first" data-index="1">
+                <span>正品保障</span>
+            </div>
+            <div class="advantage" data-index="2">
+                <span>极速物流</span>
+            </div>
+            <div class="advantage" data-index="3">
+                <span>售后无忧</span>
+            </div>
+            <div class="advantage" data-index="4">
+                <span>全场包邮</span>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+<div class="shadow"></div>
+<div class="defray">
+    <div class="title">
+        微信扫码支付
+        <a class="close-btn" href="javascript:;">×</a>
+    </div>
+    <div class="information">
+        <div class="picture" align="center">
+            <div class="code">
+                <img src="/static/shop/images/code.png"/>
+            </div>
+        </div>
+        <div class="payPrice">
+            <span>支付金额：</span>
+            <span>￥<span class="money"></span>元</span>
+        </div>
+    </div>
+    <div class="order-detail">
+        
+    </div>
+    <div class="confirm">
+        <a class="submit" type="2" onclick="sureoderclick()" style="">已完成支付</a>
+    </div></div>
+</div>
+
+
+<script type="text/javascript" src="/static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/shop/js/citySet.js"></script>
+<script type="text/javascript" src="/static/shop/js/cityJson.js"></script>
+<script type="text/javascript" src="/static/shop/js/Popt.js"></script>
+<script type="text/javascript" src="/static/shop/js/head.js"></script>
+<script type="text/javascript" src="/static/shop/js/footer.js"></script>
+<script type="text/javascript" src="/static/order/js/submitOrder.js"></script>
+<script type="text/javascript" src="/static/shop/js/confirmation.js"></script>
+<script type="text/javascript" src="/static/home/ajax/r_common.js"></script>
+<script type="text/javascript" src="/static/shop/ajax/ajax_shop.js"></script>
+<script type="text/javascript" src="/static/order/ajax/r_address.js"></script>
+<script>
+    $("#area_text").click(function (e) {
+        SelCity(this,e);
+    });
+    $("#area_text1").click(function (e) {
+        SelCity(this,e);
+    });
+</script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

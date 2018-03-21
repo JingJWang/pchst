@@ -1,0 +1,25 @@
+<div class="left">
+	<div class="sidebar">
+		<div class="restrain {if $se_Left['sign_f'] == 'center'}active{/if}">
+			<a class="fame" href="/center/info">个人账户</a>
+		</div>
+		<div class="restrain {if $se_Left['sign_f'] == 'order'}active{/if}">
+			<a class="fame select" href="javascript:;">我的订单</a>
+			<div class="range">
+				<a class="classes {if isset($se_Left['sign_s'])&&$se_Left['sign_s']=='mobile'}active{/if}" href="/order/orders/getOrderList">回收订单</a> 
+				<a class="classes shoporder {if isset($se_Left['sign_s'])&&$se_Left['sign_s']=='shop'}active{/if}"
+					href="/order/orders/getOrderList/shop">商城订单</a>
+			</div>
+		</div>
+		<!-- <div class="restrain">
+			<a class="fame" href="javascript:;">我的评价</a>
+		</div> -->
+		<div class="restrain {if $se_Left['sign_f'] == 'management'}active{/if}">
+			<a class="fame select" href="javascript:;">账户管理</a>
+			<div class="range">
+				<!--<a class="classes" href="javascript:;">安全中心</a>-->
+				<a class="classes {if isset($se_Left['sign_s'])&&$se_Left['sign_s']=='adres'}active{/if}" href="/address/getadres">地址管理</a>
+			</div>
+		</div>
+	</div>
+</div>

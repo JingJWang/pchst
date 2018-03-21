@@ -1,0 +1,611 @@
+.trawled{
+    width:100%;
+    height:100px;
+    background-image: url(../images/bg3.png);
+    background-size: 100% 100px;
+    background-position: center center;
+}
+.trawled .search-box{
+    width:482px;
+    height:70px;
+    padding-top: 30px;
+}
+.trawled .search-box .search-rock{
+    width:100%;
+    height:42px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.trawled .search-box .search-rock .classify{
+    width:112px;
+    height:30px;
+    line-height: 30px;
+    margin:6px 0;
+    border-right:2px solid #F27C00;
+    text-align: center;
+    float:left;
+    position:relative;
+}
+.trawled .search-box .search-rock .classify .total{
+    color:#F27C00;
+    background-image: url(../images/drop.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 19px;
+    cursor:default;
+}
+.trawled .search-box .search-rock .classify .categorize{
+    width:112px;
+    height:auto;
+    padding-top:10px;
+    background-color: #ffffff;
+    position:absolute;
+    margin-top: 11px;
+    box-shadow: 0 3px 5px #dddddd;
+    z-index:20;
+    display:none;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name{
+    margin-left: 14px;
+    display:block;
+    text-align: left;
+    color:#666666;
+    height:15px;
+    line-height: 15px;
+    margin-bottom:12px;
+}
+.trawled .search-box .search-rock .classify .categorize .sort-name.active{
+    color:#F27C00;
+}
+.trawled .search-box .search-rock .search{
+    width:66px;
+    height:42px;
+    border-left:1px solid #F27C00;
+    float:right;
+    background-color: #ffffff;
+    background-image: url(../images/search.png);
+    background-size: 20px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline:none;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.trawled .search-box .search-rock .imports{
+    margin:0 67px 0 132px;
+    height:42px;
+}
+.trawled .search-box .search-rock .imports .entry{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border:0;
+    font-family: 'Microsoft YaHei';
+    color:#999999;
+    outline:none;
+}
+.trawled .search-box .search-rock .imports .entry:focus{
+    color:#666666;
+}
+.trawled .search-box .version{
+    width:100%;
+    height:24px;
+    line-height: 24px;
+}
+.trawled .search-box .model{
+    display:block;
+    float:left;
+    margin-right: 20px;
+    font-size: 10px;
+    color:#E9E9E9;
+}
+
+.entire{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+}
+.entire .posses{
+    width:1200px;
+    height:auto;
+}
+.entire .posses .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.entire .posses .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.entire .posses .status .apellation.active{
+    background-image: url(../images/right.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.entire .posses .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.entire .posses .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.entire .posses .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    line-height: 39px;
+    color:#333333;
+    border-bottom:1px solid #EDEDED;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.entire .posses .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.entire .posses .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.entire .posses .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.entire .posses .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.entire .posses .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.entire .posses .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+}
+.entire .posses .dimension .right .individual{
+    width:100%;
+    height:202px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px #dddddd;
+ }
+.entire .posses .dimension .right .individual .personalData{
+    margin:60px 0px 40px 58px;
+    height:102px;
+    width:302px;
+    float:left;
+}
+.entire .posses .dimension .right .individual .personalData .avatar{
+    width:88px;
+    height:88px;
+    padding:3px 3px;
+    border:3px solid #FFF2E4;
+    border-radius: 50%;
+    overflow:hidden;
+    float:left;
+}
+.entire .posses .dimension .right .individual .personalData .avatar .photo{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    overflow:hidden;
+}
+.entire .posses .dimension .right .individual .personalData .avatar .photo img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .individual .personalData .fully{
+    margin-left: 121px;
+    height:102px;
+}
+.entire .posses .dimension .right .individual .personalData .fully .username{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 18px;
+    color:#666666;
+}
+.entire .posses .dimension .right .individual .personalData .fully .tel{
+    width:100%;
+    height:19px;
+    line-height: 19px;
+    text-align: left;
+    margin:10px 0px 15px 0px;
+}
+.entire .posses .dimension .right .individual .personalData .fully .tel span{
+    background-image: url(../images/phone1.png);
+    background-size: 12px 19px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 19px;
+}
+.entire .posses .dimension .right .individual .personalData .fully .address{
+    height:14px;
+    line-height: 14px;
+    color:#0040C1;
+    display:block;
+    float:left;
+}
+.entire .posses .dimension .right .individual .account{
+    width:575px;
+    padding-left: 30px;
+    height:176px;
+    border-left: 1px solid #DDDDDD;
+    float:left;
+    margin:13px 0px;
+}
+.entire .posses .dimension .right .individual .account .balance{
+    width:100%;
+    height:30px;
+    margin-top: 28px;
+}
+.entire .posses .dimension .right .individual .account .balance .premise{
+    height:30px;
+    line-height: 30px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .individual .account .balance .money{
+    height:30px;
+    line-height: 30px;
+    font-size: 18px;
+    color:#333333;
+    float:left;
+    margin-left: 25px;
+}
+.entire .posses .dimension .right .individual .account .balance .handle{
+    height:30px;
+    float:left;
+    margin-left: 40px;
+}
+.entire .posses .dimension .right .individual .account .balance .handle .cash-btn{
+    width:68px;
+    height:28px;
+    line-height: 28px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 20px;
+    color:#333333;
+    float:left;
+}
+.entire .posses .dimension .right .individual .account .freeze{
+    width:100%;
+    height:18px;
+    margin-top: 24px;
+    text-align: left;
+}
+.entire .posses .dimension .right .individual .account .freeze .congeal{
+    height:18px;
+    line-height: 18px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .individual .account .freeze .money{
+    height:18px;
+    line-height: 18px;
+    font-size: 18px;
+    color:#333333;
+    float:left;
+    margin-left: 25px;
+}
+.entire .posses .dimension .right .individual .account .freeze .tips{
+    font-size: 12px;
+    color:#999999;
+    float:left;
+    margin-left: 12px;
+    height:18px;
+    line-height: 20px;
+}
+.entire .posses .dimension .right .individual .account .flower{
+    width:100%;
+    height:16px;
+    margin-top: 34px;
+}
+.entire .posses .dimension .right .individual .account .flower .cost{
+    height:16px;
+    line-height: 16px;
+    color:#666666;
+    float:left;
+}
+.entire .posses .dimension .right .individual .account .flower .sum{
+    height:16px;
+    line-height: 16px;
+    font-size: 18px;
+    color:#333333;
+    float:left;
+    margin-left: 23px;
+}
+.entire .posses .dimension .right .individual .account .flower .tips{
+    font-size: 12px;
+    color:#999999;
+    float:left;
+    margin-left: 12px;
+    height:18px;
+    line-height: 20px;
+}
+.precious{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .recap{
+    padding-left: 10px;
+    height:59px;
+    line-height: 74px;
+    font-size: 18px;
+    text-align: left;
+}
+.entire .posses .dimension .right .genre{
+    padding: 31px 0px 32px 28px;
+    height:18px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px #dddddd;
+}
+.entire .posses .dimension .right .genre .range{
+    width:25%;
+    height:18px;
+    float:left;
+}
+.entire .posses .dimension .right .genre .range .grams{
+    height:18px;
+    line-height: 18px;
+    padding-left: 9px;
+    border-left:3px solid #F27C00;
+    float:left;
+    display:block;
+}
+.entire .posses .dimension .right .genre .range .grams .sum{
+    font-size: 16px;
+    color:#333333;
+    padding-left: 14px;
+}
+.entire .posses .dimension .right .groom{
+    padding-left: 10px;
+    width:958px;
+    height:59px;
+    line-height: 74px;
+    font-size: 18px;
+    color:#483E3E;
+    text-align: left;
+    float:left;
+}
+.entire .posses .dimension .right .orderList{
+    width:100%;
+    height:auto;
+    float:left;
+    box-shadow: 0px 2px 5px #dddddd;
+    text-align: left;
+}
+.entire .posses .dimension .right .orderList .orderSort{
+    width:100%;
+    height:60px;
+    background-color: #ffffff;
+}
+.entire .posses .dimension .right .orderList .orderSort .digital{
+    padding-left: 30px;
+    width:30%;
+    height:60px;
+    border-right:1px solid #F2F2F2;
+    float:left;
+}
+.entire .posses .dimension .right .orderList .orderSort .digital .classify{
+    height:16px;
+    line-height: 16px;
+    margin:24px 0px 20px;
+    float:left;
+    font-size: 16px;
+    color:#666666;
+}
+.entire .posses .dimension .right .orderList .orderSort .digital.last{
+    border-right:0;
+}
+.entire .posses .dimension .right .orderList .shown{
+    width:100%;
+    height:auto;
+    float:left;
+    border-top:1px solid #F2F2F2;
+}
+.entire .posses .dimension .right .orderList .shown .column{
+    padding:2px 0px 10px 30px;
+    width:30%;
+    border-right:1px solid #F2F2F2;
+    float:left;
+    color:#666666;
+}
+.entire .posses .dimension .right .orderList .shown .column.last{
+    border-right:0;
+}
+.entire .posses .dimension .right .orderList .shown .column .ongoing{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    margin-top: 20px;
+    display:block;
+}
+.entire .posses .dimension .right .orderList .shown .column .ongoing .state{
+    height:14px;
+    line-height: 14px;
+    display:block;
+    float:left;
+    color:#666666;
+}
+.entire .posses .dimension .right .orderList .shown .column .ongoing .sum{
+    color:#F27C00;
+    padding-left: 7px;
+}
+.entire .posses .dimension .right .orderList .shown .column .ongoing.shop{
+    width:132px;
+    float:left;
+}
+.entire .posses .dimension .right .commodity{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.entire .posses .dimension .right .commodity .wares{
+    width:232px;
+    height:316px;
+    background-color: #ffffff;
+    margin:0px 10px 18px 0px;
+    float:left;
+}
+.entire .posses .dimension .right .commodity .wares:hover{
+    z-index:2;
+    -webkit-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform:translate3d(0, -2px, 0);
+    transform:translate3d(0, -2px, 0)
+}
+.entire .posses .dimension .right .commodity .wares .graphic{
+    width:232px;
+    height:230px;
+}
+.entire .posses .dimension .right .commodity .wares .graphic img{
+    width:100%;
+    height:100%;
+}
+.entire .posses .dimension .right .commodity .wares .wares-name{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#333333;
+    margin-top:8px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.entire .posses .dimension .right .commodity .wares .depict{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    font-size: 12px;
+    color:#666666;
+}
+.entire .posses .dimension .right .commodity .wares .price{
+    width:100%;
+    font-size: 20px;
+    color:#F27C00;
+}
+.shade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #3b3b3b;
+    opacity: 0.1;
+    z-index: 999;
+    display:none;
+}
+.prompt{
+    width:480px;
+    height:400px;
+    background-color: #FBFBFB;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0px 0px -240px;
+    border-radius: 8px;
+    overflow: hidden;
+    display:none;
+}
+.prompt .title{
+    padding-left: 30px;
+    height: 60px;
+    line-height: 64px;
+    text-align: left;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #FBA54F;
+    position: relative;
+}
+.prompt .title .close-btn{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 26px;
+    display: block;
+    font-size: 32px;
+    color: #CBCBC9;
+    top: 20px;
+}
+.prompt .print{
+    padding:38px 0px 30px 0px;
+    margin:0px 40px;
+    width:400px;
+    height:212px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.prompt .print .code{
+    width:210px;
+    height:210px;
+    border:1px solid #DEDEDE;
+}
+.prompt .print .code img{
+    width:100%;
+    height:100%;
+}
+.prompt .hints{
+    width:100%;
+    height:58px;
+    line-height: 58px;
+    text-align: center;
+    font-size: 16px;
+    color:#F2253C;
+}

@@ -1,0 +1,221 @@
+.mainstay{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #F9F9F9;
+    padding-bottom:18px;
+}
+.mainstay .feather{
+    width:1200px;
+    height:auto;
+}
+.mainstay .feather .status{
+    padding-left: 6px;
+    height:50px;
+    line-height: 50px;
+    text-align: left;
+}
+.mainstay .feather .status .apellation{
+    padding-right: 10px;
+    line-height: 50px;
+    display:block;
+    color:#333333;
+    float:left;
+}
+.mainstay .feather .status .apellation.active{
+    background-image: url(../images/right1.png);
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 17px;
+}
+.mainstay .feather .dimension{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.mainstay .feather .dimension .left{
+    width:220px;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.mainstay .feather .dimension .left .sidebar{
+    width:220px;
+    height:auto;
+    background-color: #ffffff;
+    text-align: left;
+    float:left;
+}
+.mainstay .feather .dimension .left .sidebar .part {
+    padding-left: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+    display:block;
+}
+.mainstay .feather .dimension .left .sidebar .restrain{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    overflow:hidden;
+}
+.mainstay .feather .dimension .left .sidebar .restrain.active{
+    height:auto;
+}
+.mainstay .feather .dimension .left .sidebar .fame{
+    padding:0px 10px 0px 18px;
+    height:39px;
+    border-bottom:1px solid #EDEDED;
+    line-height: 40px;
+    color:#333333;
+    display:block;
+}
+.mainstay .feather .dimension .left .sidebar .restrain .fame.select{
+    background-image: url(../images/arrow.png);
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.mainstay .feather .dimension .left .sidebar .restrain.active .fame.select{
+    background-image: url(../images/arrow1.png);
+}
+.mainstay .feather .dimension .left .sidebar .fame:hover{
+    color:#FFB86E;
+}
+.mainstay .feather .dimension .left .sidebar .restrain.active .fame{
+    background-color:#FFB86E;
+    color:#ffffff;
+}
+.mainstay .feather .dimension .left .sidebar .range{
+    width:218px;
+    padding:5px 0;
+    height:auto;
+    border:1px solid #EDEDED;
+    border-top:0;
+    background-color: #ffffff;
+}
+.mainstay .feather .dimension .left .sidebar .range .classes{
+    padding-left: 18px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+}
+.mainstay .feather .dimension .left .sidebar .range .classes:hover
+{
+    color:#F27C00;
+}
+.mainstay .feather .dimension .left .sidebar .range .classes.active{
+    color:#F27C00;
+}
+.mainstay .feather .dimension .right{
+    width:968px;
+    height:auto;
+    float:right;
+}
+.mainstay .feather .dimension .right .groom{
+    padding-left: 10px;
+    width: 958px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+}
+.mainstay .feather .dimension .right .information{
+    padding:0px 40px 118px 20px;
+    width:908px;
+    height:auto;
+    background-color: #ffffff;
+}
+.mainstay .feather .dimension .right .information .title{
+    width:100%;
+    height:50px;
+    line-height: 56px;
+    font-size: 18px;
+    color:#483E3E;
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+.mainstay .feather .dimension .right .information .attribute{
+    width:100%;
+    padding:0px 0px 12px 0px;
+    text-align: left;
+}
+.mainstay .feather .dimension .right .information .state{
+    width:100%;
+    height:22px;
+    margin-bottom: 12px;
+}
+.mainstay .feather .dimension .right .information .state .stateName{
+    height:22px;
+    line-height: 22px;
+    float:left;
+    font-size: 16px;
+    color:#F27C00;
+    margin-right: 12px;
+}
+.mainstay .feather .dimension .right .information .state .payment{
+    width:76px;
+    height:20px;
+    line-height: 20px;
+    display:block;
+    border-radius: 5px;
+    float:left;
+    border:1px solid #DDDDDD;
+}
+.mainstay .feather .dimension .right .information .description{
+    width:100%;
+    height:88px;
+}
+.mainstay .feather .dimension .right .information .description .picture{
+    width:110px;
+    height:88px;
+    float:left;
+    margin-right: 15px;
+}
+.mainstay .feather .dimension .right .information .description .picture img{
+    width:100%;
+    height:100%;
+}
+.mainstay .feather .dimension .right .information .description .brief{
+    width:265px;
+    padding-right: 15px;
+    height:88px;
+    float:left;
+}
+.mainstay .feather .dimension .right .information .description .brief .model{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    margin:15px 0px 8px 0px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.mainstay .feather .dimension .right .information .description .brief .votes{
+    width:100%;
+    height:14px;
+    line-height:14px;
+    font-size: 12px;
+    color:#999999;
+    text-align:left;
+}
+.mainstay .feather .dimension .right .information .description .number{
+    width:140px;
+    height:88px;
+    line-height: 88px;
+    font-size: 16px;
+    float:left;
+    text-align: left;
+}
+.mainstay .feather .dimension .right .information .description .price{
+    height:88px;
+    line-height: 88px;
+    font-size: 16px;
+    float:left;
+}

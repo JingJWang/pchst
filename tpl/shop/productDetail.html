@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/shop/css/productDetail.css"/>
+</head>
+<body>
+<div class="container" align="center">
+    {include file="shop/header.html"}
+    <div class="mainstay">
+        <div class="feather">
+            <div class="status">
+                <a class="apellation" href="/">首页</a>
+                <a class="apellation active" href="http://{$seo['host_name']}/shops/shopinfo/">通花商城</a>
+                <a class="apellation active" href="http://{$seo['host_name']}/shops/shopinfo/getypegood/{$goodinfo.0.tyid}_1_1/">{$goodinfo.0.tname}</a>
+                <a class="apellation active" href="javascript:;">商品详情</a>
+            </div>
+            <div class="dimension">
+                <div class="brief">
+                    <div class="productImg">
+                        <div class="preview">
+                            <img src="{$goodinfo.0.imgs.0}"/>
+                        </div>
+                        <div class="refer">
+                            {foreach from=$goodinfo.0.imgs item=v key=i}
+                            <div class="graph {if $i==0}first active{/if}">
+                                <img src="{$v}"/>
+                            </div>
+                            {/foreach}
+                        </div>
+                    </div>
+
+                    <div class="describe">
+                        <div class="title">{$goodinfo.0.name}</div>
+                        <div class="votes">正品行货  性价比高  全国包邮</div>
+                        <div class="price">
+                            <span>商城惊喜价</span>
+                            <span class="pay">￥{$goodinfo.0.prri/100}</span>
+                            <!-- <span class="path">+ 300通花</span> -->
+                        </div>
+                        <p class="mode">
+                            <span>支付方式</span>
+                            <span class="type">微信支付</span>
+                        </p>
+                        <div class="depict">
+                            <div class="words">商品描述</div>
+                            <div class="provide">
+                                {if $des!=''}
+                                {foreach from=$des item=v key=i}
+                                    <div class="quality">{$v}</div>
+                                {/foreach}
+                                {/if}
+                            </div>
+                        </div>
+                        <div class="handle">
+                            <a class="buying" href="http://{$seo['host_name']}/shops/shopinfo/buginfo/{$goodinfo.0.id}">立即购买</a>
+                            <a class="relate" style="cursor:pointer" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1120979807&site=qq&menu=yes">联系客服</a>
+                        </div>
+                        <div class="handy">
+                            <a class="viewBtn" href="http://{$seo['host_name']}/shops/shopinfo/getypegood/{$goodinfo.0.tyid}_1_1/">查看更多商品</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <div class="particular">
+                        <div class="title">
+                            <span style="color:#F27C00">信息参数</span>
+                            <!-- <span>/ 照片展示/ 购买说明</span> -->
+                        </div>
+
+                        <div class="introduce">
+                            {$goodinfo.0.content}
+                        </div>
+                    </div>
+
+                    <div class="recommend">
+                        <div class="title">商城推荐</div>
+                        {foreach from=$srecom item=v key=i}
+                        <a class="commend {if $i==0}first{/if}" href="http://{$seo['host_name']}/shops/shopinfo/getgoodinfo/{$v.id}">
+                            <div class="divide">
+                                <div class="line"></div>
+                            </div>
+                            <div class="picture">
+                                <div class="print">
+                                    <img src="{$v.img}"/>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="name">{$v.name}</div>
+                                <div class="price">{$v.price}</div>
+                            </div>
+                        </a>
+                        {/foreach}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="service">
+            <div class="advantage first" data-index="1">
+                <span>正品保障</span>
+            </div>
+            <div class="advantage" data-index="2">
+                <span>极速物流</span>
+            </div>
+            <div class="advantage" data-index="3">
+                <span>售后无忧</span>
+            </div>
+            <div class="advantage" data-index="4">
+                <span>全场包邮</span>
+            </div>
+        </div>
+    </div>
+    {include file="common/footer.html"}
+</div>
+
+
+<script type="text/javascript" src="/static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/shop/js/head.js"></script>
+<script type="text/javascript" src="/static/shop/js/footer.js"></script>
+<script type="text/javascript" src="/static/shop/js/productDetail.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7a5cf99280e27b3d044898fc2df5ca24";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
